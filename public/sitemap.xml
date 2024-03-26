@@ -2,9 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://localhost:1313/HopoZ/categories/app/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/HopoZ/app/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/HopoZ/categories/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/HopoZ/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/HopoZ/app/idea/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/HopoZ/posts/my-first-post/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/HopoZ/app/nvim/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/HopoZ/posts/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/HopoZ/posts/texteditorbyc/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/HopoZ/categories/</loc></url><url>
+            <loc>http://localhost:1313/HopoZ/app/tmux/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/HopoZ/app/ubuntu/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/HopoZ/app/vscode/</loc><lastmod>2024-03-25T14:55:58&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/HopoZ/tags/</loc></url></urlset>

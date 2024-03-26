@@ -4,5 +4,13 @@
         <link>http://localhost:1313/HopoZ/categories/</link>
         <description>Categories - Category - HopoZ Site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
-            <webMaster>phmath41@gmail.com (HopoZ)</webMaster><atom:link href="http://localhost:1313/HopoZ/categories/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/HopoZ/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>App</title>
+    <link>http://localhost:1313/HopoZ/categories/app/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/categories/app/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

@@ -30,8 +30,8 @@ hasCJKLanguage = true
     identifier = "tags"
     pre = ""
     post = ""
-    name = "标签"
-    url = "/tags/"
+    name = "APP"
+    url = "/app/"
     title = ""
   [[menu.main]]
     weight = 3

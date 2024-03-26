@@ -1,0 +1,48 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>App - Category - HopoZ Site</title>
+        <link>http://localhost:1313/HopoZ/categories/app/</link>
+        <description>App - Category - HopoZ Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
+            <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/HopoZ/categories/app/" rel="self" type="application/rss+xml" /><item>
+    <title>idea</title>
+    <link>http://localhost:1313/HopoZ/app/idea/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/app/idea/</guid>
+    <description><![CDATA[Plugin org.apache.maven.plugins:maven-jar-plugin:1.8.1 or one of its dependencies could not be resolved: Failure to find org.apache.maven.plugins:maven-jar-plugin:jar:1.8.1 in https://maven.aliyun.com/repository/public was cached in the local repository, resolution will not be reattempted until the update interval of aliyunmaven has elapsed or updates are forced -&gt; [Help 1] [ERROR] default settings，setting只是对当前项目进行]]></description>
+</item>
+<item>
+    <title>nvim</title>
+    <link>http://localhost:1313/HopoZ/app/nvim/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/app/nvim/</guid>
+    <description><![CDATA[Language Server Protocol (LSP) 在 Neovim 中运行 :PackerSync 命令来安装或更新插件]]></description>
+</item>
+<item>
+    <title>tmux</title>
+    <link>http://localhost:1313/HopoZ/app/tmux/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/app/tmux/</guid>
+    <description><![CDATA[tmux是一个流行的终端复用器，它允许用户在一个终端窗口中运行多个终端会话，并且可以不间断地在它们之间切换。tmux对于远程工作、长期运行的]]></description>
+</item>
+<item>
+    <title>ubuntu</title>
+    <link>http://localhost:1313/HopoZ/app/ubuntu/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/app/ubuntu/</guid>
+    <description><![CDATA[快照 CRLF Carriage Return Line Feed 回车换行符，*unix上是LF touch filename 生成新文件 ENOENT Error NO ENTity]]></description>
+</item>
+<item>
+    <title>vscode</title>
+    <link>http://localhost:1313/HopoZ/app/vscode/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/app/vscode/</guid>
+    <description><![CDATA[已经实现： cpg生成C++常用结构snippets ctrl+j生成新空白行,ctrl+l相当于右箭头 用he按tab生成[]() 笔记使用相对引]]></description>
+</item>
+</channel>
+</rss>
