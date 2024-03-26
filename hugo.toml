@@ -26,14 +26,6 @@ hasCJKLanguage = true
     # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
     title = ""
   [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "APP"
-    url = "/app/"
-    title = ""
-  [[menu.main]]
     weight = 3
     identifier = "categories"
     pre = ""
