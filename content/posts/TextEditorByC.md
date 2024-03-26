@@ -2,6 +2,8 @@
 title = 'Text Editor By C'
 date = 2024-03-25T14:55:58+08:00
 draft = false
+categories = ["posts"]
+
 +++
 
 ## `<unistd.h>`

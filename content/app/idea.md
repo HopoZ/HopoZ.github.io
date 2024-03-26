@@ -1,6 +1,6 @@
 +++
 title = 'idea'
-date = 2024-03-25T14:55:58+08:00
+date = 2024-03-26T14:55:58+08:00
 draft = false
 categories = ["app"]
 +++
