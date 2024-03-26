@@ -1,25 +1,25 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>HopoZ Site</title>
-        <link>http://localhost:1313/HopoZ/</link>
+        <link>https://github.com/HopoZ/</link>
         <description>神说要有光，于是有了光</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
             <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</lastBuildDate>
-            <atom:link href="http://localhost:1313/HopoZ/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://github.com/HopoZ/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>My First Post</title>
-    <link>http://localhost:1313/HopoZ/posts/my-first-post/</link>
+    <link>https://github.com/HopoZ/posts/my-first-post/</link>
     <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
     <author>HopoZ</author>
-    <guid>http://localhost:1313/HopoZ/posts/my-first-post/</guid>
+    <guid>https://github.com/HopoZ/posts/my-first-post/</guid>
     <description><![CDATA[一次伟大的尝试]]></description>
 </item>
 <item>
     <title>Text Editor By C</title>
-    <link>http://localhost:1313/HopoZ/posts/texteditorbyc/</link>
+    <link>https://github.com/HopoZ/posts/texteditorbyc/</link>
     <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
     <author>HopoZ</author>
-    <guid>http://localhost:1313/HopoZ/posts/texteditorbyc/</guid>
+    <guid>https://github.com/HopoZ/posts/texteditorbyc/</guid>
     <description><![CDATA[&lt;unistd.h&gt; 的名字来源于“Unix standard”（Unix标准）的缩写。这个头文件定义了符合POSIX（Portable Operating System Interface，可]]></description>
 </item>
 </channel>
