@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sample - Category - HopoZ Site</title>
+        <link>http://localhost:1313/HopoZ/categories/sample/</link>
+        <description>Sample - Category - HopoZ Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
+            <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/HopoZ/categories/sample/" rel="self" type="application/rss+xml" /><item>
+    <title>FrontEnd</title>
+    <link>http://localhost:1313/HopoZ/posts/sample/frontend/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/sample/frontend/</guid>
+    <description><![CDATA[标题heading 有序列表ordered lists 定义列表(标题和描述文本)definition lists 超链接anchor vim指南 块级元素(block element):]]></description>
+</item>
+<item>
+    <title>markdown</title>
+    <link>http://localhost:1313/HopoZ/posts/sample/markdown/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/sample/markdown/</guid>
+    <description><![CDATA[超链接显示名 图片 完美 另一种图片 一般用&gt;的都是指随意移动位置，与上下文无关联的说明,~才是有关联的 目录 标题 颜色 树 //定义的id不能有大写]]></description>
+</item>
+</channel>
+</rss>

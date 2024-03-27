@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><script src="/HopoZ/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=HopoZ/livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>C&#43;&#43; - HopoZ Site</title><meta name="Description" content="神说要有光，于是有了光"><meta property="og:title" content="C&#43;&#43;" />
+<meta property="og:description" content="C&#43;&#43; cs架构client-server模式 我把快捷方式里的alt加数字改成了ctl加数字 stl containers algorithms iterators freopen(&quot;1.out&quot;,&quot;w&quot;,stdout); 通常，编写清晰、容易理解的代码比使用语言的晦" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/HopoZ/posts/base/c&#43;&#43;/" /><meta property="og:image" content="http://localhost:1313/logo.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-27T14:55:58+08:00" />
+<meta property="article:modified_time" content="2024-03-27T14:55:58+08:00" /><meta property="og:site_name" content="我的网站" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/logo.png" /><meta name="twitter:title" content="C&#43;&#43;"/>
+<meta name="twitter:description" content="C&#43;&#43; cs架构client-server模式 我把快捷方式里的alt加数字改成了ctl加数字 stl containers algorithms iterators freopen(&quot;1.out&quot;,&quot;w&quot;,stdout); 通常，编写清晰、容易理解的代码比使用语言的晦"/>
+<meta name="application-name" content="我的网站">
+<meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/HopoZ/posts/base/c&#43;&#43;/" /><link rel="prev" href="http://localhost:1313/HopoZ/posts/books/c&#43;&#43;-primer-plus/" /><link rel="next" href="http://localhost:1313/HopoZ/posts/base/c/" /><link rel="stylesheet" href="/HopoZ/css/style.min.css"><link rel="preload" href="/HopoZ/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/HopoZ/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/HopoZ/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/HopoZ/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "C++",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/HopoZ\/posts\/base\/c\u002b\u002b\/"
+        },"genre": "posts","wordcount":  1145 ,
+        "url": "http:\/\/localhost:1313\/HopoZ\/posts\/base\/c\u002b\u002b\/","datePublished": "2024-03-27T14:55:58+08:00","dateModified": "2024-03-27T14:55:58+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "HopoZ"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/HopoZ/" title="HopoZ Site"></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/HopoZ/posts/"> 文章 </a><a class="menu-item" href="/HopoZ/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/HopoZ/" title="HopoZ Site"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/HopoZ/posts/" title="">文章</a><a class="menu-item" href="/HopoZ/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">C++</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/HopoZ" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>HopoZ</a></span>&nbsp;<span class="post-category">included in <a href="/HopoZ/categories/base/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Base</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-27">2024-03-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1145 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><h1 id="c"><a href="" rel="">C++</a></h1>
+<p><code>cs架构</code>client-server模式<br>
+我把快捷方式里的alt加数字改成了ctl加数字</p>
+<p><code>stl</code></p>
+<ol>
+<li>containers</li>
+<li>algorithms</li>
+<li>iterators</li>
+</ol>
+<p><code>freopen(&quot;1.out&quot;,&quot;w&quot;,stdout); </code></p>
+<p>通常，编写清晰、容易理解的代码比使用语言的晦涩特性来显示自己的能力更为有用。</p>
+<hr>
+<p><a href="" rel="">降低cin,cout时耗</a></p>
+<pre tabindex="0"><code>cin.tie(0);
+ios::base::sync_with_stdio(false);
+</code></pre><p>算法使用的内存空间分为三种：</p>
+<ol>
+<li><strong>指令空间</strong>:编译后，程序指令所使用的内存空间。</li>
+<li><strong>数据空间</strong>:算法中的各项变量使用的空间，包括：声明的常量、变量、动态数组、动态对象等使用的内存空间。</li>
+<li><strong>栈帧空间</strong>:程序调用函数是基于栈实现的，函数在调用期间，占用常量大小的栈帧空间，直至返回后释放。</li>
+</ol>
+<hr>
+<p>有些时候，使用晦涩特性不是用来展示自己能力的，而是用来提升程序运行效率和实现更多功能的。
+任何一门语言中都没有没用的特性，语言特性设计出来就一定有其需求。
+比如下面几行</p>
+<pre tabindex="0"><code>r=x&amp;-x;
+a^=b^=a^=b;
+r=(x&gt;&gt;(a-1))&amp;1;
+</code></pre><hr>
+<p>用来注释掉代码</p>
+<pre tabindex="0"><code>#if 0
+#endif
+</code></pre><hr>
+<p><code>KPM算法</code>  串的模式匹配<br>
+<code>最长相等前后缀</code>  字符串最长的相等长度前缀和后缀,不包含字符串本身。
+<code>balanced binary tree</code> 平衡二叉树，又称AVL树（两个人名）。<br>
+  是一种循<strong>关键码</strong>访问的二叉树，并且要求保持顺序性，即任一节点不小于其左后代，不大于其右后代<br>
+<code>堆</code> 一颗完全二叉树，某个结点的值总是不小于或者不大于其父节点的值，不大于的称为大堆，反之称为小堆。
+<a href="" rel="">兼容</a><br>
+直译有一个问题, 英语的&quot;前后&quot;在时间和空间上统一, 而汉语却是相反. 比如forward在空间上指前进, 在时间上指未来. 但是汉语中的&quot;前&quot;在空间上指前进, 在时间上却指过去.<br>
+<strong>向前兼容</strong>前进兼容<br>
+<strong>向后兼容</strong>后退兼容
+<a href="" rel="">vsode终端</a> 输入chcp (change code page)后，显示936 对应 GB 2312，65001 对应 UTF-8，windows 中文系统默认是 936。
+<a href="" rel="">cwd</a> change word to double word
+<a href="" rel="">malloc</a> memory allocation  内存分配<br>
+<code>&lt;a id=&quot;&quot;&gt;&lt;/a&gt;</code>出bug了，烦<br>
+这个不清楚是什么样的bug,重启一次又没了<br>
+<a href="" rel="">CRUD</a> Create Read Update Delete</p>
+<hr>
+<p><a href="" rel="">PNG</a><code>Portable Network Graphics</code>  便携式网络图形，是一种采用无损压缩算法的位图格式，支持索引、灰度、RGB三种颜色方案以及Alpha通道等特性<br>
+<a href="" rel="">API</a><code>Application Program Interface</code>应用程序界面 <br>
+转义用的是右斜<code>\</code><br>
+<code>shift+tab</code>反向缩进
+<a href="" rel="">代码风格</a> <br>
+行尾风格：</p>
+<pre tabindex="0"><code>test{
+
+}
+</code></pre><p>次行风格:</p>
+<pre tabindex="0"><code>test
+{
+    
+}
+</code></pre><p><a href="" rel="">MSC</a> microsoft management console<br>
+<a href="" rel="">CPL</a> Presentation(Compel) &ldquo;演示强制&rdquo;<br>
+<a href="" rel="">FAT</a> File Allocation Table 文件分配表<br>
+<a href="" rel="">FCFS</a> first come first service<br>
+<a href="" rel="">无穷</a><br>
+正无穷 0x3f3f3f3f<code>1061109567</code><br>
+负无穷 0xc0c0c0c0<code>-1061109568</code> 或 -0x3f3f3f3f</p>
+<hr>
+<p><a href="" rel="">DHCP</a><code>Dynamic Host Configuration Protocol</code>，动态主机配置协议：计算机用来获得配置信息的协议。</p>
+<hr>
+<p><code>0x</code>16进制，<code>0b</code>二进制，<code>NaN</code>非数值，
+<a href="" rel="">PHP</a>personal home page,之后解释为hypertext preprocessor<br>
+<a href="" rel="">wine</a> Windows Emulator,之后解释为Wine Is Not an Emulator<br>
+<a href="" rel="">GNU</a> 许可证<code>GPL</code>: General Public License; 编译器<code>GCC</code>: General C Compiler,加入其他语言后改为Compilor Collection; 则GNU可能是General Not Unix.
+<a href="" rel="">NTFS</a> New Technology File System,以<code>簇</code>为最小读写单元<br>
+<!-- raw HTML omitted --></p>
+<p><code>typeid().name()</code>输出所属类型的首字母</p>
+<hr>
+<p><a href="" rel="">pure virtual function</a> 纯虚函数，表示抽象类，在函数末由<code>=0</code>标记</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-03-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/HopoZ/posts/base/c&#43;&#43;/" data-title="C&#43;&#43;"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/HopoZ/posts/base/c&#43;&#43;/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/HopoZ/posts/base/c&#43;&#43;/" data-title="C&#43;&#43;"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/HopoZ/posts/base/c&#43;&#43;/" data-title="C&#43;&#43;"><i data-svg-src="/HopoZ/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/HopoZ/posts/base/c&#43;&#43;/" data-title="C&#43;&#43;"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/HopoZ/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/HopoZ/posts/books/c&#43;&#43;-primer-plus/" class="prev" rel="prev" title="C&#43;&#43; Primer Plus"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>C++ Primer Plus</a>
+            <a href="/HopoZ/posts/base/c/" class="next" rel="next" title="C">C<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/HopoZ" target="_blank">HopoZ</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/HopoZ/lib/katex/katex.min.css"><script type="text/javascript" src="/HopoZ/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/HopoZ/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/HopoZ/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/HopoZ/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/HopoZ/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/katex.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50}};</script><script type="text/javascript" src="/HopoZ/js/theme.min.js"></script></body>
+</html>

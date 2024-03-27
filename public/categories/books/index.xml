@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Books - Category - HopoZ Site</title>
+        <link>http://localhost:1313/HopoZ/categories/books/</link>
+        <description>Books - Category - HopoZ Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
+            <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Wed, 27 Mar 2024 14:55:58 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/HopoZ/categories/books/" rel="self" type="application/rss+xml" /><item>
+    <title>C&#43;&#43; Primer Plus</title>
+    <link>http://localhost:1313/HopoZ/posts/books/c&#43;&#43;-primer-plus/</link>
+    <pubDate>Wed, 27 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/books/c&#43;&#43;-primer-plus/</guid>
+    <description><![CDATA[作为C++经典 5 循环和关系表达式 int x=(1,024);值为二十 6 分支语句和逻辑运算符 and or not都是C++中的保留字，如果C想用，包含头文件&]]></description>
+</item>
+<item>
+    <title>java核心技术卷一</title>
+    <link>http://localhost:1313/HopoZ/posts/books/java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%8D%B7%E4%B8%80/</link>
+    <pubDate>Wed, 27 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/books/java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%8D%B7%E4%B8%80/</guid>
+    <description><![CDATA[java中数组没有指针运算 第十章 图形用户界面程序设计 JFrame 第十一章 Swing用户界面组件 第十二章 并发]]></description>
+</item>
+<item>
+    <title>疯狂java讲义</title>
+    <link>http://localhost:1313/HopoZ/posts/books/%E7%96%AF%E7%8B%82java%E8%AE%B2%E4%B9%89/</link>
+    <pubDate>Wed, 27 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/books/%E7%96%AF%E7%8B%82java%E8%AE%B2%E4%B9%89/</guid>
+    <description><![CDATA[1 java语言概述与开发环境 javac -d destdir srcFile 编译srcFile这个java文件在destdir路径生成class文件，当前路径可以用.来表示 2 理解面]]></description>
+</item>
+</channel>
+</rss>

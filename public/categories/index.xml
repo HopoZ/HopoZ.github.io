@@ -4,7 +4,23 @@
         <link>http://localhost:1313/HopoZ/categories/</link>
         <description>Categories - Category - HopoZ Site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
-            <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/HopoZ/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Wed, 27 Mar 2024 14:55:58 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/HopoZ/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Base</title>
+    <link>http://localhost:1313/HopoZ/categories/base/</link>
+    <pubDate>Wed, 27 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/categories/base/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Books</title>
+    <link>http://localhost:1313/HopoZ/categories/books/</link>
+    <pubDate>Wed, 27 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/categories/books/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>App</title>
     <link>http://localhost:1313/HopoZ/categories/app/</link>
     <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
@@ -13,11 +29,19 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Posts</title>
-    <link>http://localhost:1313/HopoZ/categories/posts/</link>
+    <title>Notes</title>
+    <link>http://localhost:1313/HopoZ/categories/notes/</link>
     <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
     <author>HopoZ</author>
-    <guid>http://localhost:1313/HopoZ/categories/posts/</guid>
+    <guid>http://localhost:1313/HopoZ/categories/notes/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Sample</title>
+    <link>http://localhost:1313/HopoZ/categories/sample/</link>
+    <pubDate>Mon, 25 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/categories/sample/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
