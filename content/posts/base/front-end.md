@@ -28,8 +28,8 @@ B/S结构(浏览器访问)\\
 \end{array} \right.$$
 [胖客户端Fat client]() 是在本地安装了丰富资源的网络电脑，而不是像瘦客户端那样把资源分散到网络中。比如很多PC（个人电脑）就是胖客户端  
 [HTTP]() 用于传输超媒体文档(例如HTML)的应用层协议  
-<img width="800" height="300" src="../picture/Snipaste_2023-02-27_15-57-31.png">
-<img width="600" height="300" src="../picture/Snipaste_2023-02-27_16-18-30.png">
+<img width="800" height="300" src="/picture/Snipaste_2023-02-27_15-57-31.png">
+<img width="600" height="300" src="/picture/Snipaste_2023-02-27_16-18-30.png">
 动态网页技术: 
 * [PHP]() hypertext preprocessor  
 * [JSP]() Java Server Pages JavaEE的动态网页技术  
@@ -75,9 +75,9 @@ document.write() 方法仅用于测试。
 [渲染Render]() 浏览器将HTML,CSS,JS展示在页面的过程称之  
 [嵌套元素]() 将一个元素置于其他元素之中  
 [空元素(自闭和标签)]() 不含任何内容的元素，如`<img>`  
- <center> <img width="600" height="300" src="../picture/Snipaste_2023-03-01_16-25-45.png">
-  <img width="600" height="300" src="../picture/Snipaste_2023-03-01_16-28-25.png">
-  <img width="600" height="300" src="../picture/Snipaste_2023-03-01_16-38-30.png">
+ <center> <img width="600" height="300" src="/picture/Snipaste_2023-03-01_16-25-45.png">
+  <img width="600" height="300" src="/picture/Snipaste_2023-03-01_16-28-25.png">
+  <img width="600" height="300" src="/picture/Snipaste_2023-03-01_16-38-30.png">
 
 ## [CSS]() 层叠样式表（Cascading Style Sheets  
 一种描述HTML(以及其他XML`extensible Markup Language`)文档样式的语言
@@ -86,7 +86,7 @@ document.write() 方法仅用于测试。
 
 css语法：
 
-<img src="../picture/Snipaste_2023-03-05_22-50-36.png">
+<img src="/picture/Snipaste_2023-03-05_22-50-36.png">
 [选择器]()
 * 元素
 * id
@@ -178,7 +178,7 @@ let[a,b] =[5,7];//let a =5,b =7;
 ```
 [操作符]() 算数、关系、布尔、位、赋值
 JS不区分整数和浮点数，所有数值都是64位，整数可精确15位，小数可精确17位  
-<img width=300 height=100 src="../picture/Snipaste_2023-03-10_00-57-32.png">
+<img width=300 height=100 src="/picture/Snipaste_2023-03-10_00-57-32.png">
 `${}` 反引号表示法，包含的字符串称为`模板字符串`
 [类 class]() js中类是函数
 `===`值等于且类型等于

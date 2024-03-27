@@ -6,7 +6,7 @@ categories = ["base"]
 +++
 # python基础
 单引号和双引号一样
-![符号简介](../picture/2022-09-18-15-44-32.png)
+![符号简介](/picture/2022-09-18-15-44-32.png)
 `def` 定义函数
 `*arg `可变参数
 `from .py import function`
