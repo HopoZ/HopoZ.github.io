@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posteds on HopoZ Site</title>
+    <link>http://localhost:1313/HopoZ/posted/</link>
+    <description>Recent content in Posteds on HopoZ Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
+    <webMaster>phmath41@gmail.com (HopoZ)</webMaster>
+    <lastBuildDate>Tue, 26 Mar 2024 14:55:58 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/HopoZ/posted/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/app/idea/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/app/idea/</guid>
+      <description>Plugin org.apache.maven.plugins:maven-jar-plugin:1.8.1 or one of its dependencies could not be resolved: Failure to find org.apache.maven.plugins:maven-jar-plugin:jar:1.8.1 in https://maven.aliyun.com/repository/public was cached in the local repository, resolution will not be reattempted until the update interval of aliyunmaven has elapsed or updates are forced -&amp;gt; [Help 1] [ERROR] default settings，setting只是对当前项目进行</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/app/nvim/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/app/nvim/</guid>
+      <description>etc Language Server Protocol (LSP) 在 Neovim 中运行 :PackerSync 命令来安装或更新插件: 布局，搜索，点命令，寄存器，宏，撤销，折叠。。。一些有用的思想，当然，我觉得vim最本质的优点是</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/app/ubuntu/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/app/ubuntu/</guid>
+      <description>快照 CRLF Carriage Return Line Feed 回车换行符，*unix上是LF touch filename 生成新文件 ENOENT Error NO ENTity 挂载主机共享文件夹</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/app/vscode/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/app/vscode/</guid>
+      <description>已经实现： cpg生成C++常用结构snippets ctrl+j生成新空白行,ctrl+l相当于右箭头 弃用以上，还是用回了nvim，编程式移动</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/ai/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/ai/</guid>
+      <description>gpt原理 GPT（Generative Pre-trained Transformer）是一个基于Transformer架构的生成式预训练模型，广泛用于各种自然语言</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/c&#43;&#43;/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/c&#43;&#43;/</guid>
+      <description>C++ cs架构client-server模式 我把快捷方式里的alt加数字改成了ctl加数字 stl containers algorithms iterators freopen(&amp;quot;1.out&amp;quot;,&amp;quot;w&amp;quot;,stdout); 通常，编写清晰、容易理解的代码比使用语言的晦</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/c/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/c/</guid>
+      <description>&amp;lt;unistd.h&amp;gt; 的名字来源于“Unix standard”（Unix标准）的缩写。这个头文件定义了符合POSIX（Portable Operating System Interface，可</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/cmake/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/cmake/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/database/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/database/</guid>
+      <description>DBA Database Administrator数据库管理员</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/front-end/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/front-end/</guid>
+      <description>Front-end/Web 开发 CGI common gateway interface 公共网关接口 script 脚本语言，是介于HTML和Java、C++和Visual Basic之类的编程语言之间的语言。 javascript 是一种基于对象(O</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/git/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/git/</guid>
+      <description>info 缺失的git课程 vscode git git init 初始化一个仓库 完整错误： 1 fatal: unable to access &#39;https://xxxxxx&#39;: OpenSSL SSL_read: Connection was aborted, errno 10053 Git默认限制推送的大小，运行命令更改限制大小即可 增加缓冲 git config &amp;ndash;global</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/guide/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/guide/</guid>
+      <description>Socket（套接字） 套接字（Socket）是计算机网络中用于实现进程间通信的一种方式。它可以在不同的机器之间传递数据，是网络通信的基础。套</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/java/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/java/</guid>
+      <description>Unicode转义序列会在解析代码之前得到处理，如&amp;quot;\u0022+\u0022&amp;quot;只是一个空串。注释中的\u型符号也会被处</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/linux/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/linux/</guid>
+      <description>sudo chmod 600 ××× （只有所有者有读和写的权限） sudo chmod 644 ××× （所有者有读和写的权限，组用户只有读的权限） sudo chmod 700 ××× （只有所有者有读和写以及执行的权</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/makefile/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/makefile/</guid>
+      <description>makefile指定整个工程的编译规则 makefile Makefile里主要包含了五个东西：显式规则、隐式规则、变量定义、指令和注释。 etc 写好clean 文件</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/opensource/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/opensource/</guid>
+      <description>不同类型开源证书 GNU General Public License (GPL) 特点：强大的版权保护，要求衍生作品也必须以GPL发布。 例子：Linux系统核心、Inkscape、MySQL、Ma</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/python/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/python/</guid>
+      <description>python基础 单引号和双引号一样 def 定义函数 *arg 可变参数 from .py import function import .py as name 起别名 __name__是Python中一个隐含的变量它代表了模块的名字</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/shell/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/shell/</guid>
+      <description>$? 是一个特殊的 shell 变量，它保存了最近一次执行的命令的退出状态码（exit status code）</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/win10/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/win10/</guid>
+      <description>Win+Shift+S就可以快速截图了 当我们打开很多窗口的时候，想快速将其他窗口最小化，只需要拖动当前窗口快速「抖动」两下即可实现。 Alt+</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/%E7%AE%97%E6%B3%95/</guid>
+      <description>while(True)作为一种无限循环思想，然后用break跳出</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/%E8%AE%A1%E7%BB%84/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/%E8%AE%A1%E7%BB%84/</guid>
+      <description>RISC Reduced Instruction Set Computer</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/base/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/base/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</guid>
+      <description>软件架构 构造过程类型： 自顶向下 top-down 自底向上 bottom-up 迭代式 Iterative 增量式 Incremental 模块化 Modular 设计模式类型： 创建型 Creational 结构型 Structural 行为型 Behavioral 并发型 Concurrency</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/books/c&#43;&#43;-primer-plus/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/books/c&#43;&#43;-primer-plus/</guid>
+      <description>作为C++经典 5 循环和关系表达式 int x=(1,024);值为二十 6 分支语句和逻辑运算符 and or not都是C++中的保留字，如果C想用，包含头文件&amp;</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/books/java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%8D%B7%E4%B8%80/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/books/java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%8D%B7%E4%B8%80/</guid>
+      <description>java中数组没有指针运算 第十章 图形用户界面程序设计 JFrame 第十一章 Swing用户界面组件 第十二章 并发</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/books/%E7%96%AF%E7%8B%82java%E8%AE%B2%E4%B9%89/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/books/%E7%96%AF%E7%8B%82java%E8%AE%B2%E4%B9%89/</guid>
+      <description>1 java语言概述与开发环境 javac -d destdir srcFile 编译srcFile这个java文件在destdir路径生成class文件，当前路径可以用.来表示 2 理解面</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/2023-w44-10-30/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/2023-w44-10-30/</guid>
+      <description>按理说标题应该显示11，1号的，这是ob优化了它吗？</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/finished/computernetworking/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/finished/computernetworking/</guid>
+      <description>Application Layer Computer Networking Security in Computer Networks The Link Layer and LANs The Network Layer-Control Plane The Network Layer-Data Plane Transport Layer 网关，五元组--交换机，mac地址 Wireless and Mobile Networks 中文 缩写大全 CIDR Classless Inter-Domain Routing TCP：Transmission</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <description>GUIgraphical user interface 图形用户界面 并发 指两个或多个事件在同一时间间隔内发生，但在微观上是交替发生的 共享 虚拟 指把一个物理上的实体变为若干个逻辑上的对应物。 异步</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <description>目录 前记 树 树的遍历 栈 队列 最小生成树 矩阵的储存 图 查找 排序 贪心算法 最优装载问题 背包问题 会议安排 最短路径 哈夫曼编码 最小生成树 分治法 二分搜索 合并排序</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E6%9E%84%E9%80%A0/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E6%9E%84%E9%80%A0/</guid>
+      <description>代码基础 由功能偏向质量，由具体偏向抽象，由编程偏向工程，由手工偏向工具 Design Goals 编程的视野 Design Principles 编程的标尺 Design Patterns 编程的经验 三维度八视图 阶段构造时bui</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%B8%AD%E9%97%B4%E4%BB%B6/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%B8%AD%E9%97%B4%E4%BB%B6/</guid>
+      <description>课程简介 架构，中间件 资源 本机Note课件</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</guid>
+      <description>软件 一组对象或项目所形成的一个配置，由 程序 文档 数据 组成 四大特征 复杂性complexity 不可见性invisibility 易变性changea</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/finished/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
+      <description>目录 系统开发过程管理 views UML starUML Software Requirements 模型和建模 用例图 系统分析-结构化 系统分析-对象化 系统设计-结构化 需求分析与系统设计 erpEnterprise Resource Planning 联合应用设计会议(Jo</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/mysql/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/mysql/</guid>
+      <description>Sql 函数 约束 多表查询 事务 储存引擎 索引 Sql优化 储存过程 锁 InnoDB核心 MySql管理 日志 主从复制 分库分表 读写分离 基础知识 数据库Databas</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/nand2tetris/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/nand2tetris/</guid>
+      <description>info 课程网站</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/regular-expression/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/regular-expression/</guid>
+      <description>^\s*#.*$ 从行首开始查找0或多个空格，然后紧跟着一个井号(#)和任意数量的字符，直到行尾结束。 ^\s*\n 删除所有空行</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
+      <description>机器语言machine language -(编译compiling)-&amp;gt; 汇编语言assembly language -(汇编assembling)-&amp;gt; 高级语言hi</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/notes/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/notes/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/</guid>
+      <description>wifi管理 192.168.0.1 （或者192.168.1.1) 内网穿透，也即 NAT 穿透，进行 NAT 穿透是为了使具有某一个特定源 IP 地址和源端口号的数据包不被 NAT 设备屏蔽而</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/sample/frontend/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/sample/frontend/</guid>
+      <description>标题heading 有序列表ordered lists 定义列表(标题和描述文本)definition lists 超链接anchor vim指南 块级元素(block element):</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/sample/markdown/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/sample/markdown/</guid>
+      <description>超链接显示名 图片 完美 另一种图片 一般用&amp;gt;的都是指随意移动位置，与上下文无关联的说明,~才是有关联的 目录 标题 颜色 树 //定义的id不能有大写</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/work/devops/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/work/devops/</guid>
+      <description>类似于基础设施开发（比如CI/CDContinuous Integration / Continuous Delivery/Deployment流程的开发、监控系统的搭建或SaaSSof</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/work/softwaredevelopment/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/work/softwaredevelopment/</guid>
+      <description>技术债 技术债（Technical Debt）是软件开发中一个广泛使用的隐喻，用来描述为了快速交付软件而采取的非理想或简便的技术解决方案所产生的</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/work/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/work/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
+      <description>请介绍一下你在客户端开发方面的经验。 我有大约三年的客户端开发经验，在这期间我主要专注于原生iOS开发和React Native框架。我曾参与开</description>
+    </item>
+    <item>
+      <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+      <link>http://localhost:1313/HopoZ/posted/computer/work/%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Tue, 26 Mar 2024 14:55:58 +0800</pubDate><author>phmath41@gmail.com (HopoZ)</author>
+      <guid>http://localhost:1313/HopoZ/posted/computer/work/%E9%9D%A2%E8%AF%95/</guid>
+      <description>各企业面试安排 华为 1、牛客网华为真题：独立完成10~15道(保底5~8道)，真实机考使用牛客网的环境，请按照牛客的真实机考模拟时间练习，以熟</description>
+    </item>
+  </channel>
+</rss>
