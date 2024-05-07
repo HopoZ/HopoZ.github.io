@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><script src="/HopoZ/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=HopoZ/livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }} - HopoZ Site</title><meta name="Description" content="神说要有光，于是有了光"><meta property="og:title" content="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}" />
+<meta property="og:description" content="目录 前记 树 树的遍历 栈 队列 最小生成树 矩阵的储存 图 查找 排序 贪心算法 最优装载问题 背包问题 会议安排 最短路径 哈夫曼编码 最小生成树 分治法 二分搜索 合并排序" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" /><meta property="og:image" content="http://localhost:1313/logo.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-26T14:55:58+08:00" />
+<meta property="article:modified_time" content="2024-03-26T14:55:58+08:00" /><meta property="og:site_name" content="我的网站" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/logo.png" /><meta name="twitter:title" content="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}"/>
+<meta name="twitter:description" content="目录 前记 树 树的遍历 栈 队列 最小生成树 矩阵的储存 图 查找 排序 贪心算法 最优装载问题 背包问题 会议安排 最短路径 哈夫曼编码 最小生成树 分治法 二分搜索 合并排序"/>
+<meta name="application-name" content="我的网站">
+<meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" /><link rel="prev" href="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E6%9E%84%E9%80%A0/" /><link rel="next" href="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="/HopoZ/css/style.min.css"><link rel="preload" href="/HopoZ/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/HopoZ/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/HopoZ/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/HopoZ/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ replace .File.ContentBaseName \"-\" \" \" | title }}",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/HopoZ\/posts\/computer\/notes\/finished\/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\/"
+        },"genre": "posts","wordcount":  3452 ,
+        "url": "http:\/\/localhost:1313\/HopoZ\/posts\/computer\/notes\/finished\/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\/","datePublished": "2024-03-26T14:55:58+08:00","dateModified": "2024-03-26T14:55:58+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "HopoZ"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/HopoZ/" title="HopoZ Site"></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/HopoZ/posts/"> 文章 </a><a class="menu-item" href="/HopoZ/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/HopoZ/" title="HopoZ Site"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/HopoZ/posts/" title="">文章</a><a class="menu-item" href="/HopoZ/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">{{ replace .File.ContentBaseName "-" " " | title }}</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/HopoZ" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>HopoZ</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-26">2024-03-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;3452 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p><!-- raw HTML omitted --> 目录<!-- raw HTML omitted --></p>
+<ul>
+<li><a href="#start" rel="">前记</a></li>
+<li><a href="#tree" rel="">树</a>
+<ul>
+<li><a href="#1." rel="">树的遍历</a></li>
+</ul>
+</li>
+<li><a href="#2" rel="">栈</a></li>
+<li><a href="#3" rel="">队列</a></li>
+<li><a href="#4" rel="">最小生成树</a></li>
+<li><a href="#5" rel="">矩阵的储存</a></li>
+<li><a href="#6" rel="">图</a></li>
+<li><a href="#7" rel="">查找</a></li>
+<li><a href="#8" rel="">排序</a></li>
+<li><a href="" rel="">贪心算法</a>
+<ul>
+<li><a href="" rel="">最优装载问题</a></li>
+<li><a href="" rel="">背包问题</a></li>
+<li><a href="" rel="">会议安排</a></li>
+<li><a href="" rel="">最短路径</a></li>
+<li><a href="" rel="">哈夫曼编码</a></li>
+<li><a href="" rel="">最小生成树</a></li>
+</ul>
+</li>
+<li><a href="" rel="">分治法</a>
+<ul>
+<li><a href="" rel="">二分搜索</a></li>
+<li><a href="" rel="">合并排序</a></li>
+<li><a href="" rel="">快速排序</a></li>
+<li><a href="" rel="">大数整乘法</a></li>
+</ul>
+</li>
+<li><a href="" rel="">动态规划</a>
+<ul>
+<li><a href="" rel="">最长公共子序列</a></li>
+<li><a href="" rel="">编辑距离</a></li>
+<li><a href="" rel="">游艇租赁</a></li>
+<li><a href="" rel="">矩阵连乘</a></li>
+<li><a href="" rel="">最优三角剖分</a></li>
+<li><a href="" rel="">石子合并</a></li>
+<li><a href="" rel="">0-1背包</a></li>
+<li><a href="" rel="">最优二叉搜索树</a></li>
+</ul>
+</li>
+<li><a href="" rel="">回溯法</a>
+<ul>
+<li><a href="" rel="">0-1背包</a></li>
+<li><a href="" rel="">最大团</a></li>
+<li><a href="" rel="">地图着色</a></li>
+<li><a href="" rel="">n皇后问题</a></li>
+<li><a href="" rel="">最优加工序列</a></li>
+<li><a href="" rel="">旅行商问题</a></li>
+</ul>
+</li>
+<li><a href="" rel="">分支限界法</a>
+<ul>
+<li><a href="" rel="">广度优先</a></li>
+<li><a href="" rel="">0-1背包</a></li>
+<li><a href="" rel="">旅行商问题</a></li>
+<li><a href="" rel="">最优工程布线</a></li>
+</ul>
+</li>
+<li><a href="" rel="">线性规划</a>
+<ul>
+<li><a href="" rel="">单纯形算法</a></li>
+<li><a href="" rel="">最短增广路算法</a></li>
+<li><a href="" rel="">最小费用路算法</a></li>
+<li><a href="" rel="">配对方案法</a></li>
+<li><a href="" rel="">圆桌问题</a></li>
+<li><a href="" rel="">试题库问题</a></li>
+<li><a href="" rel="">最大收益问题</a></li>
+<li><a href="" rel="">方格取数问题</a></li>
+<li><a href="" rel="">旅游路线问题</a></li>
+</ul>
+</li>
+</ul>
+<p><code>数据结构</code>是相互之间存在一种或多种特定关系的数据元素的集合<br>
+<code>算法</code>对特定问题求解步骤的一种描述</p>
+<p><strong>三要素：</strong></p>
+<ol>
+<li>逻辑结构</li>
+<li>数据的运算</li>
+<li>储存结构(物理结构，储存不同，运算的实现方法不同)</li>
+</ol>
+<p><a href="" rel="">空间复杂度</a> 运行时有程序代码内存（大小固定，与问题规模无关)，数据内存，<br>
+<a href="" rel="">时间复杂度</a> 平均情况假设每个基本事件概率相等，然后取平均数。</p>
+<p><a href="" rel="">渐进分析</a> Asymptotic Analysis</p>
+<p><a href="" rel="">数据</a>是一个广义术语，代指各种类型信息</p>
+<p><a href="" rel="">常用算法</a></p>
+<ol>
+<li>分治Divide and Connquer</li>
+<li>递归Recursion Algorithm</li>
+<li>动态规划Dynamic Programmig</li>
+<li>贪心算法Greedy Technique</li>
+<li>回溯算法Back Tracking Method</li>
+<li>分支界限Branch and Bound Method</li>
+</ol>
+<p><a href="" rel="">存储方式</a></p>
+<ol>
+<li>顺序储存</li>
+<li>链式储存</li>
+<li>索引储存(静态链表)</li>
+<li>散列储存</li>
+</ol>
+<blockquote>
+<p>算法必须是有穷的，程序可以是无穷的。</p>
+</blockquote>
+<blockquote>
+<p>高效率，低储存量</p>
+</blockquote>
+<blockquote>
+<p>时间复杂度按步数计算<br>
+常数1&lt;对数logN&lt;线性N&lt;线性对数NlogN&lt;平方N^2&lt;立方N^3&lt;指数x^N&lt;阶乘N!&lt;幂指N^N</p>
+</blockquote>
+<blockquote>
+<p>尽管不能比较冒泡排序和选择排序，大 O 还是很重要的，因为它能够区分不同算法的长期增长率。<br>
+快速排序的每一轮处理其实就是将这一轮的基准数归位</p>
+</blockquote>
+<blockquote>
+<p>最坏情况O 、最好情况Ω、平均情况Θ</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="树--a-idtreea"><a href="" rel="">树</a>  <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">树</a> 具有层次关系的数据结构，是最小连通图<br>
+<a href="" rel="">二叉树</a> 子节点的最大个数是二<br>
+<a href="" rel="">树和二叉树的转换</a> 孩子兄弟表示法，firstchild作为左指针，nextsibling作为右指针。</p>
+<p><a href="" rel="">中序遍历</a> 指根中序遍历：左子树、根、右子树  <!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+<a href="" rel="">分支节点</a> 度不为零的结点，也称为非终端结点。<br>
+<a href="" rel="">前缀编码</a> 没有一个编码是另一个编码的前缀 <br>
+<a href="" rel="">哈夫曼树</a> 给定一组具有确定权值的叶子结点，WPL最小的二叉树,亦称<strong>最优二叉树</strong><br>
+<a href="" rel="">堆</a> heap 是最高效的优先级队列<br>
+<a href="" rel="">BST:binary sort tree</a> 二叉排序树，二叉搜索树<br>
+  它的中序遍历存在有序性<br>
+<a href="" rel="">binary balanced tree 平衡二叉树</a> AVL树，二叉平衡搜索树，<br>
+  左子树和右子树高度差不超过一。<br>
+  插入数据后调整最小的不平衡子树，利用左旋右旋   <br>
+  <a href="" rel="">平衡因子</a> 左右子树高度差</p>
+<blockquote>
+<p>所有结点都只有左子树的二叉树称为<strong>左斜树</strong></p>
+</blockquote>
+<blockquote>
+<p>层次遍历用队列</p>
+</blockquote>
+<blockquote>
+<p><strong>三叉链表</strong> 在二叉链表的基础上增加了一个指向亲代的指针域。</p>
+</blockquote>
+<blockquote>
+<p><strong>静态二叉链表</strong> 不用指针</p>
+</blockquote>
+<blockquote>
+<p><em><strong>优先队列</strong></em> 被出列的是优先级最高或低的元素的队列</p>
+</blockquote>
+<blockquote>
+<p><em><strong>选择树</strong></em> Selection Tree,包括Winnner Tree和Loser Tree</p>
+</blockquote>
+<blockquote>
+<p>并查集，Union-Find Disjoint Sets</p>
+</blockquote>
+<blockquote>
+<p>用随意打乱的数据创建出来的树才有可能是比较平衡的。</p>
+</blockquote>
+<p><a href="" rel="">红黑树</a> <a href="" rel="">2-3-4树</a></p>
+<hr>
+<h1 id="栈-a-id-2a"><a href="" rel="">栈</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">LIFO</a> last in,first out</p>
+<p><a href="" rel="">计算机调用栈</a> 是用来记录每个调用中的函数的栈</p>
+<p><a href="" rel="">共享栈</a> 两个Stack(数组实现)共用同一片空间，从数组两头开始使用<br>
+<a href="" rel="">后缀表达式</a> 利用栈来实现</p>
+<blockquote>
+<p>栈用来处理语法错误(括号错误)</p>
+</blockquote>
+<blockquote>
+<p><strong>卡特兰数</strong> Catalan number <img
+        class="lazyload"
+        src="/HopoZ/svg/loading.min.svg"
+        data-src="Snipaste_2022-11-23_20-31-42.png"
+        data-srcset="Snipaste_2022-11-23_20-31-42.png, Snipaste_2022-11-23_20-31-42.png 1.5x, Snipaste_2022-11-23_20-31-42.png 2x"
+        data-sizes="auto"
+        alt="Snipaste_2022-11-23_20-31-42.png"
+        title="50" /></p>
+</blockquote>
+<p><a href="" rel="">表达式求值</a></p>
+<hr>
+<h1 id="队列--a-id-3a"><a href="" rel="">队列</a>  <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">FIFO</a> fist in,first out</p>
+<blockquote>
+<p>队列（空一位区分队满队空状态）用取余判断是否满了，（加数组）或者给每一位设置状态参数 ，(加大小量)一个存size的int</p>
+</blockquote>
+<hr>
+<h1 id="最小生成树-a-id4a"><a href="" rel="">最小生成树</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">生成树(Spanning Tree)</a> 连接V中所有顶点的一棵开放树（Free Tree，无环路的无向图）。<br>
+<a href="" rel="">最小生成树(Minimum-cost Spanning Tree, MST)</a> 在图G所有生成树中，代价(各边权值之和)最小的生成树称之，即包含全部顶点的极小连通子图。<br>
+<a href="" rel="">prim算法</a> IMP:每次把到最小生成树的最短距离的点收入  时间复杂度O(V2),适用边稠密<br>
+<a href="" rel="">kruskal</a> IMP:每次加入一个最短边，并且保证不会形成回路。  时间复杂度O(ElogE)，适用边稀疏<br>
+<a href="" rel="">双连通图</a> 没有割点的图<br>
+<a href="" rel="">强连通图</a> 如果图中有一条有向回路，则任意两点间可互达，称之。<br>
+<a href="" rel="">dijkstra算法</a> 亦称SPF(shortest path first最短路径优先算法）<br>
+<a href="" rel="">floyd算法</a> 使任意两点间路径遍历一次，都尽量加入点缩短。</p>
+<p><a href="" rel="">拓扑排序</a> 偏序排序，IMP：每次取一个入度为零的点并删去关联的边，重复操作入队。</p>
+<p><a href="" rel="">AOV：activity on vertex</a> 在一个表示工程的有向图中，用顶点表示活动，用弧表示活动之间的优先关系，称这样的有向图为顶点表示活动的网，简称AOV网。<br>
+<a href="" rel="">AOE</a> 带权有向图中，顶点表示事件，边表示活动，边上权表示活动的开销（如持续时间），则称之 <br>
+  <a href="" rel="">源点、汇点</a> 仅有的一个入度为零的点，仅有的一个出度为零的点<br>
+  <a href="" rel="">关键活动</a> 从源点到汇点的WPL最大的路径称为<code>关键路径</code>，上边的活动称为<code>关键活动</code><br>
+  <a href="" rel="">最早发生时间</a>  从源点开始的最短路径时间<br>
+  <a href="" rel="">最迟发生时间</a> 在不推迟整个工程完成的前提下，最迟发生的时间，从汇点开始推理<br>
+  利用拓扑排序确定每个事件的最早最晚开始时间，如果相等，则是个关键活动，加入<strong>关键路径</strong>中。</p>
+<hr>
+<h1 id="矩阵的储存--a-id5a"><a href="" rel="">矩阵的储存</a>  <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">带状矩阵</a> 当|i-j|&gt;1时，aij=0.</p>
+<hr>
+<h1 id="图--a-id6a"><a href="" rel="">图</a>  <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">图</a> 是由顶点(vertex)的有穷非空集合和顶点之间边(edge)的集合组成的一种数据结构</p>
+<p><a href="" rel="">极小连通子图</a> <code>连通分量</code></p>
+<p><a href="" rel="">图的遍历</a></p>
+<ol>
+<li>BFS<br>
+  <a href="" rel="">广度优先生成树</a> BFS后路径形成的树</li>
+<li>DFS</li>
+</ol>
+<p><a href="" rel="">最短路径</a></p>
+<ol>
+<li><a href="" rel="">Dijkstra算法</a> 运行后找到的可能不是一条路径，而是分叉路径，但可以找到到任意点的最短路径。</li>
+<li><a href="" rel="">floyd算法</a>  对每条边都尝试加入各个点看能不能缩短路径</li>
+</ol>
+<p><a href="" rel="">有向无环图Directed Acyclic graph</a> 题如其名，以把一部分子树合并的方法进行优化储存</p>
+<p><a href="" rel="">邻接矩阵</a> adjacency matrix<br>
+  用一个二维数组（称为邻接矩阵）存储图中各顶点之间的邻接关系<br>
+<a href="" rel="">邻接表(链表表示)</a><br>
+  对于有向图的每个顶点vi，将从vi出发的弧到达的所有顶点链成一个单链表，称为顶点vi的<strong>出边表</strong>；<br>
+  再把所有出边表的指针和顶点信息的一维数组构成<strong>顶点表</strong>。<br>
+  <strong>入边表</strong>同理<br>
+<a href="" rel="">十字链表( Orthogonal List )</a> 横向上是正邻接表，纵向上是逆邻接表<br>
+<a href="" rel="">邻接多重表</a> 类似于十字链表，但储存无向图。</p>
+<hr>
+<h1 id="查找检索-a-id7a"><a href="" rel="">查找(检索)</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">Average Search Length 平均查找长度</a> ASL,比较次数的期望值</p>
+<p><a href="" rel="">静态查找表</a> 只需查找，无需插入、删除操作</p>
+<p><a href="" rel="">线性查找</a><br>
+<a href="" rel="">折半查找</a>  折半查找的判定树一定是平衡二叉树<br>
+<a href="" rel="">分块查找</a><br>
+  均匀分块，块间有序，块内无序<br>
+  索引表中记录每个分块的最大关键字、分块的区间<br>
+  每个分块的内容可采用链式储存。 <br>
+<a href="" rel="">B树 多路平衡查找树</a>  m-叉查找树<br>
+  除了根节点外任何非叶节点至少有 m/2上取整 个分叉，即至少有 m/2上取整-1 个关键字，B树的叶子必须在同一层上(对于任意节点，所有子树的高度都要
+  相同)<br>
+<a href="" rel="">B+树</a>  经分块查找思想改造的B树，非终端节点只是记录端点，叶节点才是数据 <br>
+<a href="" rel="">散列表hash table</a><br>
+  <a href="" rel="">装填因子</a>表中记录数/散列表长度</p>
+<p><a href="" rel="">拉链法、链地址法</a> 当散列函数的值有冲突时，把所有的同义词储存在一个链表中<br>
+<a href="" rel="">开放地址法</a> 当散列函数的值有冲突时,把空余的地址利用起来<br>
+  1. <code>线性探测法</code><br>
+  2. <code>平方探测法</code>散列表的长度必须是一个可以表示为4j+3的素数 <br>
+  3. <code>伪随机序列法</code><br>
+<a href="" rel="">再散列法</a> 当散列函数的值有冲突时,用下一个散列函数计算地址</p>
+<p><a href="" rel="">常见的散列函数</a></p>
+<ol>
+<li><code>取余法</code>用一个小于等于散列表长度的质数取余</li>
+<li><code>直接定址法</code>  哈希值设置为key的线性函数</li>
+<li><code>数字分析法</code> 取key的一部分作为散列地址</li>
+<li><code>平方取中法</code> 取key的平方的中间几位</li>
+</ol>
+<hr>
+<h1 id="排序-a-id8a"><a href="" rel="">排序</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
+<p><a href="" rel="">冒泡排序</a>  每次把待排序中最小的冒到前边<br>
+<a href="" rel="">快速排序</a>  任取一个元素做基准，利用双指针进行一次划分</p>
+<p><a href="" rel="">直接选择排序</a>  每一次在待排序元素中选取关键字最小的元素加入有序子序列<br>
+<a href="" rel="">锦标赛排序</a><br>
+<a href="" rel="">堆排序</a>  基于堆的排序，如基于大根堆进行下坠操作后取堆根入队列得到递增序列，</p>
+<p><a href="" rel="">直接插入排序</a>  每一次把待排序元素加入有序子数列的合适位置<br>
+<a href="" rel="">折半插入排序</a>  优化，插入时实现折半查找<br>
+<a href="" rel="">Shell排序</a>  将待排序表间隔d(逐渐减少到一) 的元素取到一起分为子表，对子表进行直接插入排序</p>
+<p><a href="" rel="">归并排序</a><br>
+  递归式地把数组不断二分进行归并，可以把一个数组有序化<br>
+  <a href="" rel="">归并</a>把多个有序数组合并成一个数组。    <br>
+<a href="" rel="">基数排序</a>  把关键字分为权重不同的关键字，所有的小关键字都在零到基数左范围内。小关键字组按权重从小到大利用队列对小关键字进行分配和搜集</p>
+<p><a href="" rel="">稳定性</a> 排序过程中尽量不改变原本相同元素的相对位置</p>
+<p><a href="" rel="">外部排序</a><br>
+  操作系统是以&quot;块&quot;为单位对磁盘储存空间进行管理的，</p>
+<ol>
+<li>构造归并段(从磁盘写入块并内部排序后写回磁盘)</li>
+<li>两两归并(递归)<br>
+<code>优化</code>多路归并<br>
+<code>优化</code>减少初始归并段数量</li>
+</ol>
+<p><a href="" rel="">败者树</a>  直接比较k个归并段选出最值元素需要对比k-1次，构建败者树使关键字对比次数减少到 log k上取整 次<br>
+<a href="" rel="">置换-选择排序</a> 利用内存工作区构建一个筛选法则，每次内存工作区满了就重新开辟一个归并段<br>
+<a href="" rel="">最佳归并树</a> 即Huffman-k叉树，构建的归并树的带权路径长度WPL(weighted path length)最小<br>
+  <a href="" rel="">虚段</a>对于k-叉归并，若(初始归并段数量-1)%(k-1)!=0,则无法构成严格的k-叉归并树，则需要补充几个长度为零的虚段</p>
+<hr>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-03-26</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" data-title="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" data-title="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" data-title="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}"><i data-svg-src="/HopoZ/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/HopoZ/posts/computer/notes/finished/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" data-title="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/HopoZ/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/HopoZ/posts/computer/notes/finished/%E8%BD%AF%E4%BB%B6%E6%9E%84%E9%80%A0/" class="prev" rel="prev" title="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>{{ replace .File.ContentBaseName "-" " " | title }}</a>
+            <a href="/HopoZ/posts/computer/notes/finished/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="next" rel="next" title="{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}">{{ replace .File.ContentBaseName "-" " " | title }}<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/HopoZ" target="_blank">HopoZ</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/HopoZ/lib/katex/katex.min.css"><script type="text/javascript" src="/HopoZ/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/HopoZ/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/HopoZ/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/HopoZ/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/HopoZ/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/katex.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/HopoZ/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50}};</script><script type="text/javascript" src="/HopoZ/js/theme.min.js"></script></body>
+</html>

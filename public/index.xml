@@ -6,5 +6,85 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>phmath41@gmail.com (HopoZ)</managingEditor>
             <webMaster>phmath41@gmail.com (HopoZ)</webMaster><lastBuildDate>Tue, 07 May 2024 14:55:58 &#43;0800</lastBuildDate>
             <atom:link href="http://localhost:1313/HopoZ/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/app/idea/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/app/idea/</guid>
+    <description><![CDATA[Plugin org.apache.maven.plugins:maven-jar-plugin:1.8.1 or one of its dependencies could not be resolved: Failure to find org.apache.maven.plugins:maven-jar-plugin:jar:1.8.1 in https://maven.aliyun.com/repository/public was cached in the local repository, resolution will not be reattempted until the update interval of aliyunmaven has elapsed or updates are forced -&gt; [Help 1] [ERROR] default settings，setting只是对当前项目进行]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/app/nvim/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/app/nvim/</guid>
+    <description><![CDATA[etc Language Server Protocol (LSP) 在 Neovim 中运行 :PackerSync 命令来安装或更新插件: 布局，搜索，点命令，寄存器，宏，撤销，折叠。。。一些有用的思想，当然，我觉得vim最本质的优点是]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/app/ubuntu/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/app/ubuntu/</guid>
+    <description><![CDATA[快照 CRLF Carriage Return Line Feed 回车换行符，*unix上是LF touch filename 生成新文件 ENOENT Error NO ENTity 挂载主机共享文件夹]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/app/vscode/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/app/vscode/</guid>
+    <description><![CDATA[已经实现： cpg生成C++常用结构snippets ctrl+j生成新空白行,ctrl+l相当于右箭头 弃用以上，还是用回了nvim，编程式移动]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/base/ai/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/base/ai/</guid>
+    <description><![CDATA[gpt原理 GPT（Generative Pre-trained Transformer）是一个基于Transformer架构的生成式预训练模型，广泛用于各种自然语言]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/base/c&#43;&#43;/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/base/c&#43;&#43;/</guid>
+    <description><![CDATA[C++ cs架构client-server模式 我把快捷方式里的alt加数字改成了ctl加数字 stl containers algorithms iterators freopen(&quot;1.out&quot;,&quot;w&quot;,stdout); 通常，编写清晰、容易理解的代码比使用语言的晦]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/base/c/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/base/c/</guid>
+    <description><![CDATA[&lt;unistd.h&gt; 的名字来源于“Unix standard”（Unix标准）的缩写。这个头文件定义了符合POSIX（Portable Operating System Interface，可]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/base/cmake/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/base/cmake/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/base/database/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/base/database/</guid>
+    <description><![CDATA[DBA Database Administrator数据库管理员]]></description>
+</item>
+<item>
+    <title>{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}</title>
+    <link>http://localhost:1313/HopoZ/posts/computer/base/front-end/</link>
+    <pubDate>Tue, 26 Mar 2024 14:55:58 &#43;0800</pubDate>
+    <author>HopoZ</author>
+    <guid>http://localhost:1313/HopoZ/posts/computer/base/front-end/</guid>
+    <description><![CDATA[Front-end/Web 开发 CGI common gateway interface 公共网关接口 script 脚本语言，是介于HTML和Java、C++和Visual Basic之类的编程语言之间的语言。 javascript 是一种基于对象(O]]></description>
+</item>
+</channel>
 </rss>
