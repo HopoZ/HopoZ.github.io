@@ -1,5 +1,5 @@
 +++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+title = '{{ java核心技术卷一 }}'
 date = 2024-03-26T14:55:58+08:00
 draft = false
 +++

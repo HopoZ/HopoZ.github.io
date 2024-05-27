@@ -1,5 +1,5 @@
 +++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+title = '{{ tmux }}'
 date = 2024-05-07T14:55:58+08:00
 draft = false
 +++
