@@ -1,5 +1,8 @@
 ---
 title: Python
+categories: base
+tags:
+  - python
 ---
 # python基础
 单引号和双引号一样

@@ -1,5 +1,8 @@
 ---
 title: neovim
+categories: tools
+tags:
+  - neovim
 ---
 
 # etc

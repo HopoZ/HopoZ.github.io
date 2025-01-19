@@ -1,5 +1,9 @@
 ---
 title: makefile
+categories: base
+tags:
+  - C++
+  - makefile
 ---
 
 makefile指定整个工程的编译规则

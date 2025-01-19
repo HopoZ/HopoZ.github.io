@@ -1,5 +1,8 @@
 ---
 title: Ubuntu
+categories: tools
+tags:
+  - Ubuntu
 ---
 
 # [快照]()

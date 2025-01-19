@@ -1,5 +1,8 @@
 ---
 title: 疯狂java讲义
+categories: daily
+tags:
+  - books
 ---
 
 # [1 java语言概述与开发环境]()

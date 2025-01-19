@@ -1,5 +1,8 @@
 ---
 title: C++
+categories: base
+tags:
+  - C++
 ---
 
 # [C++]()

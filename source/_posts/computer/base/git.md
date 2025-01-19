@@ -1,5 +1,8 @@
 ---
 title: git
+categories: base
+tags:
+  - git
 ---
 
 # info

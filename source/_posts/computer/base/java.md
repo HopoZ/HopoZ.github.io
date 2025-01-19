@@ -1,5 +1,8 @@
 ---
 title: java
+categories: base
+tags:
+  - java
 ---
 
 Unicode转义序列会在解析代码之前得到处理，如"\u0022+\u0022"只是一个空串。注释中的`\u`型符号也会被处理

@@ -1,5 +1,8 @@
 ---
 title: 软件开发
+categories: base
+tags:
+  - 软件开发
 ---
 
 # 技术债

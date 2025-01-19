@@ -1,5 +1,8 @@
 ---
 title: vscode
+categories: tools
+tags:
+  - vscode
 ---
 
 已经实现：

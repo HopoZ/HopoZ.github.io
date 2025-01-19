@@ -1,5 +1,8 @@
 ---
 title: C++ Primer Plus
+categories: daily
+tags:
+  - books
 ---
 
 >作为C++经典

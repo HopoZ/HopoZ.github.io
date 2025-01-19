@@ -1,5 +1,8 @@
 ---
 title: 前端语法
+categories: code
+tags:
+  - html
 ---
 
 # [标题heading]()

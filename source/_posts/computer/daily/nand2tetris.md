@@ -1,5 +1,8 @@
 ---
 title: nand2tetris
+categories: daily
+tags:
+  - courses
 ---
 
 # info

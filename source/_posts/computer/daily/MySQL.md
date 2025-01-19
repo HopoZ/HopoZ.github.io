@@ -1,5 +1,8 @@
 ---
 title: MySQL
+categories: tools
+tags:
+  - MySQL
 ---
 
 `Sql` `函数` `约束` `多表查询` `事务` `储存引擎` `索引` `Sql优化` `储存过程` `锁` `InnoDB核心` `MySql管理` `日志` `主从复制` `分库分表` `读写分离`

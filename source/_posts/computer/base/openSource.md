@@ -1,5 +1,8 @@
 ---
-title: openSouce
+title: open source
+categories: daily
+tags:
+  - 开源证书
 ---
 
 # 不同类型开源证书
