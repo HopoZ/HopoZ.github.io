@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>
+      
+        需求分析与系统设计 | HopoZ
+      
+    </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+      <link rel="apple-touch-icon"
+            sizes="180x180"
+            href="/images/apple-touch-icon.png" />
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon-32x32.png" />
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon-16x16.png" />
+    
+    
+      <link rel="mask-icon"
+            href="/images/logo.svg"
+            color="" />
+    
+    
+    
+      
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/normal.ttf);
+        font-weight: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/bold.ttf);
+        font-weight: bold;
+    }
+  </style>
+
+
+    
+    <link rel="stylesheet"
+          type="text/css"
+          href='/css/layout.css' />
+    
+    
+  <link rel="stylesheet" type="text/css" href="/css/post.css"/>
+  
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    
+      <div id="search-mask" style="display:none">
+  <div class="search-main" id="search-main">
+    <div class="search__head">
+      <div class="search-form">
+        <svg t="1706347533072"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             p-id="7828"
+             width="20"
+             height="20">
+          <path d="M685.6 660.336l155.152 155.168a16 16 0 0 1 0 22.624l-11.312 11.328a16 16 0 0 1-22.624 0l-158.528-158.544a289.792 289.792 0 0 1-165.152 51.36C322.336 742.256 192 611.904 192 451.12 192 290.336 322.336 160 483.136 160c160.784 0 291.12 130.336 291.12 291.136 0 82.112-33.984 156.272-88.672 209.2z m-202.464 33.92c134.272 0 243.12-108.848 243.12-243.12C726.256 316.848 617.408 208 483.136 208 348.848 208 240 316.848 240 451.136c0 134.272 108.848 243.12 243.136 243.12z" fill="#000000" p-id="7829">
+          </path>
+        </svg>
+        <input id="search-input" placeholder="搜索文章">
+        <svg t="1706361500528"
+             id="search-clear"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             p-id="4351"
+             width="20"
+             height="20">
+          <path d="M512 562.688l-264.2944 264.2944-50.688-50.688L461.312 512 197.0176 247.7056l50.688-50.688L512 461.312l264.2944-264.2944 50.688 50.688L562.688 512l264.2944 264.2944-50.688 50.688L512 562.688z" fill="#00" p-id="4352">
+          </path>
+        </svg>
+      </div>
+    </div>
+    <div class="search__body" id="search-result"></div>
+    <div class="search__foot"></div>
+  </div>
+</div>
+
+    
+    
+    <div class=head>
+      <div class="nav">
+        <a href='/' class="nav-logo">
+          <img alt="logo" height="60px" width="60px" src="/images/logo.svg" />
+        </a>
+        <input id="navBtn" type="checkbox" />
+        <div class="nav-right">
+          
+            <div class="search-outer">
+  <div class="search" id="search-btn">
+    <svg t="1706347533072"
+         class="icon"
+         viewBox="0 0 1024 1024"
+         version="1.1"
+         xmlns="http://www.w3.org/2000/svg"
+         p-id="7828"
+         width="20"
+         height="20">
+      <path d="M685.6 660.336l155.152 155.168a16 16 0 0 1 0 22.624l-11.312 11.328a16 16 0 0 1-22.624 0l-158.528-158.544a289.792 289.792 0 0 1-165.152 51.36C322.336 742.256 192 611.904 192 451.12 192 290.336 322.336 160 483.136 160c160.784 0 291.12 130.336 291.12 291.136 0 82.112-33.984 156.272-88.672 209.2z m-202.464 33.92c134.272 0 243.12-108.848 243.12-243.12C726.256 316.848 617.408 208 483.136 208 348.848 208 240 316.848 240 451.136c0 134.272 108.848 243.12 243.136 243.12z" fill="#000000" p-id="7829">
+      </path>
+    </svg>
+    <span>搜索</span>
+    <span class="search-shortcut-key">Ctrl K</span>
+  </div>
+</div>
+
+          
+          <div class="nav-menu">
+            
+              
+                <a class="nav-menu-item" href="/feat">Java</a>
+              
+                <a class="nav-menu-item" href="/base">Python</a>
+              
+            
+            <a class="nav-menu-item" href='/cv/'>简历</a>
+          </div>
+        </div>
+        <label class="nav-btn" for="navBtn"></label>
+      </div>
+    </div>
+    <div class="body">
+      
+  <article class="post-content">
+    <div class="post-inner">
+      <div class="post-content__head">
+        <div class="post-title">需求分析与系统设计</div>
+        <div class="post-info">
+          
+  
+
+
+          <span class="post-date">2025-01-19</span>
+        </div>
+      </div>
+      
+      <div class="post-content__body">
+        
+          <div class="post-gallery">
+            
+          </div>
+        
+        <p><font>目录</font></p>
+<ul>
+<li><a href="#sdpm">系统开发过程管理</a></li>
+<li><a href="#v">views</a></li>
+<li><a href="#uml">UML</a><ul>
+<li><a href="#staruml">starUML</a></li>
+</ul>
+</li>
+<li><a href="#sr">Software Requirements</a></li>
+<li><a href="#model">模型和建模</a></li>
+<li><a href="#usecase">用例图</a></li>
+<li><a href="#sysana">系统分析-结构化</a></li>
+<li><a href="#obor">系统分析-对象化</a></li>
+<li><a href="#sds">系统设计-结构化</a></li>
+</ul>
+<h1 id="需求分析与系统设计"><a href="#需求分析与系统设计" class="headerlink" title="需求分析与系统设计"></a><a href="">需求分析与系统设计</a></h1><blockquote>
+<p><a href="">erp</a><code>Enterprise Resource Planning</code><br>联合应用设计会议(Joint Application Design, JAD)</p>
+</blockquote>
+<p>列表框，组合框</p>
+<hr>
+<hr>
+<h1 id="系统开发过程管理"><a href="#系统开发过程管理" class="headerlink" title="系统开发过程管理  "></a><a href="">系统开发过程管理</a>  <a id="sdpm"></a></h1><ol>
+<li><strong>RUP</strong> rational unified process 统一软件开发过程</li>
+<li><strong>RAD</strong> rapid application development 快速软件开发</li>
+<li><strong>MSF</strong> microsoft sync framework 微软解决方案框架</li>
+<li><strong>JAD</strong> joint application development 联合应用软件开发</li>
+<li><strong>Agile</strong> XP、scrum等</li>
+</ol>
+<hr>
+<h1 id="views"><a href="#views" class="headerlink" title="views "></a><a href="">views</a> <a id="v"></a></h1><p>是表达系统某一方面特征的 UML 建模元素的子集，它是由一个或者多个图组成的对系统某个角度的抽象</p>
+<ol>
+<li>Usecase View<br>&emsp;&emsp;描述系统应该具备的功能，即被称为参与者（执行者）的外部用户所能观察到的功能</li>
+<li>Logical View<br>&emsp;&emsp;描述<code>用例视图</code>中提出的系统功能的实现</li>
+<li>Process View<br>&emsp;&emsp;考虑资源的有效利用、代码的并行执行以及系统环境中异步事件的处理</li>
+<li>Implementation View<br>&emsp;&emsp;描述系统的实现模块以及它们之间的依赖关系</li>
+<li>Deployment View<br>&emsp;&emsp;显示系统的物理部署，并描述位于节点实例上的运行组件实例的部署情况</li>
+</ol>
+<hr>
+<h1 id="UML"><a href="#UML" class="headerlink" title="UML "></a><a href="">UML</a> <a id="uml"></a></h1><p>unified modeling language 对软件系统实现visualizing,specifying,constructing,documenting<br>关系： 关联、依赖、泛化、实现、聚合</p>
+<ul>
+<li>用例图 UseCaseDiagram</li>
+<li>类图  &ensp;&ensp;ClassDiagram<br>&emsp;&emsp;描述类的内部结构和类与类之间的关系</li>
+<li>状态图 StatechartDiagram<br>&emsp;&emsp;来描述类的对象所有可能的状态以及时间发生时状态的转移条件</li>
+<li>活动图 ActivityDiagram <code>是状态图的一种特殊情况</code><br>&emsp;&emsp;描述了活动到活动的控制流</li>
+<li>时序图 SequenceDiagram<br>&emsp;&emsp;描述了对象之间消息发送的先后顺序</li>
+<li>协作图 CollaborationDiagram<br>&emsp;&emsp;描述了收发消息的对象的组织关系</li>
+<li>组件图 ComponentDiagram<br>&emsp;&emsp;表示系统中组件与组件之间，类或接口与组件之间的关系</li>
+<li>部署图 DeploymentDiagram<br>&emsp;&emsp;描述了系统运行时进行处理的结点以及在结点上活动的构件的配置。</li>
+</ul>
+<hr>
+<h1 id="StarUML"><a href="#StarUML" class="headerlink" title="StarUML  "></a><a href="">StarUML</a>  <a id="staruml"></a></h1><hr>
+<h1 id="Software-Requirements"><a href="#Software-Requirements" class="headerlink" title="Software Requirements  "></a><a href="">Software Requirements</a>  <a id="sr"></a></h1><p>以一种清晰、简洁、一致且无二义性的方式，描述用户对目标软件系统在功能、行为、性能、设计约束等方面的期望，是在开发过程中对未来系统的约束<br><a href="">业务需求Business Requirements</a>  客户对于系统的高层次目标要求<code>high-level objectives</code> ，定义了项目的远景和范畴<code>vision and scope</code>  <br><a href="">用户需求(User Requirements)</a>  从用户角度描述的系统功能需求与非功能需求，通常只涉及系统的外部行为而不涉及内部特性<br><a href="">功能需求Functional Requirements</a>  系统应该提供的功能或服务，通常涉及用户或外部系统与该系统之间的交互<br><a href="">非功能需求Non-Functional Requirements</a><br>&emsp;&emsp;从各个角度对系统的约束和限制,即质量和性能(quality and performance):<br>&emsp;&emsp;<code>安全性、可靠性、互操作性、健壮性、易使用性、可维护性、可移植性、可重用性、可扩充性等</code><br><a href="">业务规则Business Rule</a> 对某些功能的可执行性或内部执行逻辑的一些限定条件<br><a href="">数据定义</a> 当客户描述一个数据项或一个复杂的业务数据结构的格式、允许值或缺省值时，他们正在进行数据定义。<br><a href="">约束条件Constraints</a> 系统设计和实现时必须满足的限制条件<br><a href="">外部接口需求External Interface Requirement</a> 描述系统与其所处的外部环境之间如何进行交互</p>
+<p><a href="">需求获取Requirement Elicitation</a> 通过与用户的交流，对现有系统的观察及对任务进行分析，从而开发、捕获和修订用户的需求<br><a href="">需求分析Requirement Analysis</a> 对收集到的需求进行提炼、分析和审查，为最终用户所看到的系统建立概念化的分析模型<br><a href="">需求规格说明Software Requirement Specification</a> 精确的、形式化的阐述一个软件系统必须提供的功能、非功能、所要考虑的限制条件<br><a href="">需求验证Requirement Verification</a>  以需求规格说明为输入，通过评审、模拟或快速原型等途径，分析需求规格的正确性和可行性<br><a href="">需求管理Requirement Management</a> 在整个项目过程中跟踪需求状态及其变更情况<br><a href="">需求获取的方法</a> 一般以开放式问题开始谈话，发现问题；以选择式问题引导；以封闭式问题确认事实；以探究式问题(probing，除了….还有….吗？)发现真实想法</p>
+<hr>
+<h1 id="模型和建模"><a href="#模型和建模" class="headerlink" title="模型和建模 "></a><a href="">模型和建模</a> <a id="model"></a></h1><p><a href="">模型</a></p>
+<ul>
+<li><code>数学模型</code>描述系统技术方面的一系列数学公式</li>
+<li><code>描述模型</code>描述系统某些方面的叙述性的备忘录、报表、列表、文字等</li>
+<li><code>图形模型</code>描述系统的图表或系统某些方面的示意性表示</li>
+</ul>
+<p><a href="">事件</a> 发生在某一特定的时间和地点、可描述并且系统应该记录下来的事情(系统应该响应)</p>
+<ul>
+<li><a href="">外部事件</a> 系统之外发生的事件</li>
+<li><a href="">临时事件</a> 由于到达某一时刻所发生的事件</li>
+<li><a href="">状态事件</a> 当系统内部发生了需要处理的情况时所引发的事件<br><a href="">事件列表</a><br> <img src="/../../picture/Snipaste_2022-11-28_23-53-25.png"></li>
+</ul>
+<p><a href="">事物</a> 传统开发中<code>是构成系统存储信息的相关数据</code>(数据实体) 面向对象开发中<code>是在系统中相互交互的对象</code>(对象)<br>  <a href="">事物的属性</a> 有关事物的一条特定信息<br><a href="">实体关系图EntityRelationshipModel</a><code>ERD</code> 类IDEF1X图<br>  <a href="">乌鸦脚</a> <img src="/../../picture/Snipaste_2023-02-19_09-10-09.png"><br><a href="">IDEF1X图</a> IDEF是ICAM DEFinition method 的缩写,是美国空军在70年代末80年代初ICAM(Integrated Computer Aided Manufacturing)工程在结构化分析和设计方法基础上发展的一套系统分析和设计方法。是比较经典的系统分析理论与方法。<br>IDEF1X是IDEF系列方法中IDEF1的扩展版本,是在E-R(实体联系)法的原则基础上,增加了一些规则, 使语义更为丰富的一种方法。用于建立系统信息模型。</p>
+<p><a href="">类图</a></p>
+<ul>
+<li><p>抽象类</p>
+</li>
+<li><p>具体类</p>
+</li>
+<li><p>关联类</p>
+<p> <a href="">泛化&#x2F;具体层次图</a> 把类按照从最概括的父类到最具体的子类的顺序进行排列的层次图，有时也被称作<code>继承层次图</code></p>
+</li>
+</ul>
+<blockquote>
+<p>相比于<code>聚合</code>(空心菱形)，<code>组成</code>(实心菱形)是对象与部分不可分割的关系。</p>
+</blockquote>
+<hr>
+<h1 id="用例图"><a href="#用例图" class="headerlink" title="用例图  "></a><a href="">用例图</a>  <a id="usecase"></a></h1><p><a href="">用户故事Use Story</a><br><img src="/../../picture/Snipaste_2023-02-19_09-28-59.png"><br>好的用户故事应具备的特征：INVEST:Independent,Negotiable,Valuable,Estimatable,Small,Testable</p>
+<p><a href="">用例Use Case</a> 表示系统所提供的服务或可执行的某种行为，是actor与系统的交互<br>  官方定义：一个用例定义了一组用例实例，其中每个实例都是系统所执行的一系列操作，这些操作生成特定主角可以观测的值<br>$$ 四大特征\left{<br>\begin{array}{lcl}<br>行为序列(sequences of actions)\<br>系统执行(system performs)\<br>可观测到的、有价值的结果(observable result of value)\<br>特定的角色(particular actor)<br>\end{array} \right.$$</p>
+<p>$$ 用例\left{<br>\begin{array}{lcl}<br>业务用例\<br>概念用例\<br>系统用例<br>\end{array} \right.$$<br>不能以步骤作为用例<br>$$ 用例模型\left{<br>\begin{array}{lcl}<br>参与者(Actor)\<br>用例(Use Case)\<br>通讯关联(Communication Association)<br>\end{array} \right.$$<br>特殊的参与者：系统时钟:<br><img src="/../../picture/Snipaste_2023-02-19_09-47-01.png"><br><a href="">用例粒度</a> 用例内涵的大小<br><a href="">边界</a> 用例分析工作的范围(组织&#x2F;系统&#x2F;领域)</p>
+<p><a href="">泛化(generalization)</a> 用户共有的基用户 或 用例共有的基用例(空心三角形箭头指向基用户&#x2F;基用例)<br><a href="">包含(include)</a> 用例1会用到用例2(箭头属性&lt;&lt; include &gt;&gt;)<br><a href="">扩展(extend)</a> 用例2在某些特定情况下会用到用例1(箭头属性&lt;&lt; extend &gt;&gt;)</p>
+<p><a href="">泳道图swim-lane diagram</a> 侧重于描述多个参与者的活动之间的交互关系</p>
+<hr>
+<h1 id="系统分析-结构化"><a href="#系统分析-结构化" class="headerlink" title="系统分析-结构化 "></a><a href="">系统分析-结构化</a> <a id="sysana"></a></h1><p><a href="">结构化方法</a>  面向过程，分析-&gt;设计-&gt;编程<br>&emsp;&emsp;结构化、模块化、层次化<br><a href="">结构化分析方法(SA)</a> 将待解决的问题看作一个系统，从而用系统科学的思想方法(抽象、分解、模块化)来分析和解决问题<br>&emsp;&emsp;<code>核心思想:</code>自顶而下的分解(top-down)<br>&emsp;&emsp;<code>定义</code>帮助开发人员定义系统需要做什么（处理需求），系统需要存储和使用哪些数据（数据需求），系统需要什么样的输入和<br>&emsp;&emsp;输出以及如何把这些功能结合在一起来完成任务<br>$$ 图\left{<br>    \begin{array}{lcl}<br>    数据流图 DFD\<br>    实体-关系图 ERD<br>\end{array} \right.$$</p>
+<p><a href="">DFD数据流图DataFlowDiagram</a> 用处理、外部实体、数据流以及数据存储来表示系统需求的图表,可以逐步细化(关联、零层、一层…)<br>&emsp;&emsp;要最小化复杂度，避免信息超量<br><img src="/../../picture/Snipaste_2022-12-06_22-40-53.png"><br><img src="/../../picture/Snipaste_2022-12-06_22-46-58.png"><br><img src="/../../picture/Snipaste_2022-12-06_22-47-46.png"><br><img src="/../../picture/Snipaste_2022-12-06_22-48-42.png"><br><img src="/../../picture/Snipaste_2022-12-06_22-49-19.png"><br><a href="">关联图</a> 在单个处理符号中概括系统内所有处理活动的DFD,数据存储不放在这里<br><a href="">零层图</a> 将一个系统或子系统的所有DFD片段组合到一个单个的DFD图中，这样的DFD图称为事件分离的系统模型&#x2F;0层图<br>&emsp;&emsp;<a href="">黑洞</a> 带有输入数据的但并不用其产生输出数据的处理或数据存储<br>&emsp;&emsp;<a href="">奇迹</a> 没有足够数据元素作为输入或产生来源的一个处理或数据存储<br><a href="">结构化语言</a></p>
+<ul>
+<li>使用短句</li>
+<li>多层缩进</li>
+<li>将结构化编程技术和叙述性语言结合</li>
+<li>无确定语法</li>
+<li>可分层、嵌套</li>
+</ul>
+<p><a href="">决策表</a> “处理”逻辑的一种表格形式的表示方法，其中包括决策变量、决策变量值、行为或公式<br><a href="">决策树</a> 用树形结构组织起来的线条对“处理”逻辑进行图形化的描述</p>
+<p><a href="">数据字典</a> 是数据分析的描述模型，包括：数据项定义，数据结构定义，数据流描述，数据存储描述</p>
+<hr>
+<h1 id="系统分析-对象化"><a href="#系统分析-对象化" class="headerlink" title="系统分析-对象化 "></a><a href="">系统分析-对象化</a> <a id="obor"></a></h1><p>$$ 图\left{<br>    \begin{array}{lcl}<br>    用例图\<br>    类图\<br>    时序图\<br>    协作图\<br>    状态图<br>\end{array} \right.$$</p>
+<p>$$ 分析模型\left{<br>    \begin{array}{lcl}<br>    功能模型\<br>    静态结构模型\<br>    动态行为模型<br>\end{array} \right.$$</p>
+<p>OOA<code>-&gt;</code>OOD<code>-&gt;</code>OOP<code>-&gt;</code>Testing</p>
+<p><a href="">分析类BCE</a> 是概念层次上的内容，用于描述系统中较高层次的对象，直接与应用逻辑相关，而不关注于技术实现的问题<br>   <a href="">边界类</a> 表示参与者与系统之间的交互  <img src="/../../picture/Snipaste_2022-12-07_11-04-24.png" alt="50"><br>   <a href="">控制类</a> 表示系统在运行过程中的业务控制逻辑<img src="/../../picture/Snipaste_2022-12-07_11-06-38.png" alt="50"><br>  <a href="">实体类</a> 表示系统存储和管理的持久性信息<img src="/../../picture/Snipaste_2022-12-07_11-07-19.png" alt="50"></p>
+<p><code>~</code> 除非系统需要在各用例中管理和维护该角色的信息(不是指ID和密码)，否则只需将其作为actor，无需作为实体类(就是不需要存储这个角色的相关信息)</p>
+<p><a href="">边界类、控制类分析</a> UI、API;接收和发送的信息<br><a href="">实体类的属性分析</a> 常识、问题域、系统责任、保存信息、为实现功能增设的属性、需要区分的状态、与其他实例的关系</p>
+<p>$$ 类之间的关系\left{<br>    \begin{array}{lcl}<br>    泛化generalization\<br>    关联association\<br>    组合composition\<br>    聚合aggregation\<br>    依赖dependency<br>\end{array} \right.$$</p>
+<p><a href="">时序图</a> 是强调时间顺序的交互图。将用户与分析类结合在一起，实现将用户的行为分配到所识别的分析类中<br>&emsp;&emsp;纵轴是时间轴，时间沿竖线向下延伸；横轴代表了在协作中各独立的对象<br><img src="/../../picture/Snipaste_2022-12-07_23-40-19.png"></p>
+<p><a href="">消息</a> 是对象之间某种形式的通信.它可以激发某个操作、唤起信号或导致目标对象的创建或撤销<br><img src="/../../picture/Snipaste_2022-12-07_23-43-32.png"></p>
+<p><a href="">时序图(顺序图)绘制</a> 六种箭头:Create、Call、Return、Self-call、Send、Destroy</p>
+<hr>
+<h1 id="系统设计-结构化"><a href="#系统设计-结构化" class="headerlink" title="系统设计-结构化 "></a><a href="">系统设计-结构化</a> <a id="sds"></a></h1><p><a href="">自动化系统边界划分（Automation System Boundary）</a></p>
+<p><a href="">结构图structure chart</a> 以模块为基础、以模块间的调用为关联所构成的图称<code>模块结构图</code>，简称之<br><img src="/../../picture/Snipaste_2023-02-19_13-01-09.png" alt="200"> <img src="/../../picture/Snipaste_2023-02-19_13-02-23.png" alt="200"> <img src="/../../picture/Snipaste_2023-02-19_13-03-13.png" alt="200"> <img src="/../../picture/Snipaste_2023-02-19_13-04-39.png" alt="200"> <img src="/../../picture/Snipaste_2023-02-19_13-05-06.png" alt="200"> <img src="/../../picture/Snipaste_2023-02-19_13-05-35.png" alt="200"></p>
+<hr>
+<h1 id="系统设计-面向对象"><a href="#系统设计-面向对象" class="headerlink" title="系统设计-面向对象"></a><a href="">系统设计-面向对象</a></h1><p>系统设计-&gt;对象设计-&gt;审评设计模型</p>
+<p><a href="">包package</a> 为了系统实现与维护过程中的方便性，将多个设计类按照彼此关联的紧密程度聚合到一起，形成大粒度的<code>包</code><br>包<code>-&gt;</code>子系统<code>-&gt;</code>系统<br><a href="">包图</a> 是在 UML 中用类似于文件夹的符号表示的模型元素的组合</p>
+<p><img src="/../../picture/Snipaste_2023-02-19_13-31-53.png"></p>
+<p><a href="">检查系统</a> 正确性、一致性、完整性、可行性</p>
+<p><a href="">面向对象设计的基本步骤</a></p>
+<ol>
+<li>创建初始的设计类</li>
+<li>细化属性</li>
+<li>细化操作</li>
+<li>定义状态</li>
+<li>细化依赖关系</li>
+<li>细化关联关系</li>
+<li>细化泛化关系</li>
+</ol>
+<p><a href="">设计类图</a> 更新分析阶段的类图，对各个类给出详细的设计说明</p>
+<p><a href="">系统拓扑结构设计 – 网络拓扑图</a></p>
+<p><a href="">功能结构图</a></p>
+<hr>
+<h1 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a><a href="">数据库设计</a></h1><p>数据库系统&#x3D;数据库(DB)＋数据库管理系统(DBMS)</p>
+<p><a href="">关系型数据库管理系统</a>将数据存储成表<code>table</code>和关系的结构<br>数据库的表（Table）之间的关系通过Key Fields来建立<br>– 主键（Primary Key）：本表中的关键属性<br>– 外键（Foreign Key）：存储在本表中的其他表的关键属性，用来与其他表建立关联关系(相当于指针)</p>
+<p><a href="">参照完整性</a><br>&emsp;&emsp;当建立一个包含外键的记录时，DBMS 确保该外键同时作为主键出现在另一个相关表的记录中<br>&emsp;&emsp;当删除一个记录时，DBMS 确保在其它相关的表中不会出现和该记录主键值相同的外键<br>&emsp;&emsp;当主键值改变时，DBMS保证相关表中没有外键与该主键具有相同的值</p>
+<p><a href="">对象关系映射（Object Relational Mapping，ORM）</a></p>
+<p><a href="">ERD</a>物理ERD需要数据类型，逻辑ERD不需要。</p>
+<hr>
+<h1 id="用户界面设计"><a href="#用户界面设计" class="headerlink" title="用户界面设计"></a><a href="">用户界面设计</a></h1><p><a href="">缺省设计</a><br>（1）经验值（固定常用值）作为缺省值；<br>（2）学习得到动态缺省值；<br>（3）最近输入内容作为缺省值；<br>（4）用户设置缺省值；<br>（5）输入数据的上下文关联缺省值；</p>
+<p><a href="">输入验证设计</a><br>&emsp;&emsp;<a href="">错误处理机制</a></p>
+<ol>
+<li>选择性确认(拦截性提示)</li>
+<li>操作中断允许(在任务执行过程中有”取消”选项)</li>
+<li>回滚(在任务被中断的情况下回退到操作发生之前的状态)</li>
+<li>Undo(随时可以回退到操作发生之前的状态)</li>
+</ol>
+<p><a href="">系统响应及信息反馈</a></p>
+<hr>
+<h1 id="赞美"><a href="#赞美" class="headerlink" title="赞美"></a><a href="">赞美</a></h1><p>减少输入数据量，或者减少操作过程、降低复杂性，提高数据输入或操作的效率，从而提高可用性，改善用户体验</p>
+
+      </div>
+    </div>
+    
+      <script src='https://unpkg.com/mermaid@latest/dist/mermaid.min.js'></script>
+      <script>
+        if (window.mermaid) {
+          mermaid.initialize({"startOnload":true});
+        }
+      </script>
+    
+  </article>
+  <div class="post__foot">
+    
+      <div class="like-author">
+  <input type="checkbox" id="likeCode" />
+  <div class="author-face">
+    <img height="100px"
+         width="100px"
+         id="front-face"
+         alt="author face"
+         src="/assets/author-face.jpg" />
+    <img height="100px"
+         width="100px"
+         id="back-face"
+         alt="like code"
+         src="/assets/pay-code.jpg" />
+  </div>
+  <div class="like-text">“给作者倒杯卡布奇诺”</div>
+  <label for="likeCode" class="like-btn">
+    <svg viewBox="0 0 1024 1024"
+         width="20px"
+         style="margin-right: 10px"
+         height="20px">
+      <path d="M466.88 908.96L113.824 563.296a270.08 270.08 0 0 1 0-387.392c108.8-106.56 284.896-106.56 393.696 0 1.504 1.472 2.976 2.944 4.448 4.48 1.472-1.536 2.944-3.008 4.448-4.48 108.8-106.56 284.896-106.56 393.696 0a269.952 269.952 0 0 1 34.016 347.072l-387.392 385.6a64 64 0 0 1-89.92 0.384z" p-id="13650" fill="#ee4242" />
+    </svg>
+    喜欢作者
+  </label>
+</div>
+
+    
+    <div class="post-nav">
+  
+    <a class="post-nav-item-left" href="/2025/01/19/computer/sample/FrontEnd/">
+      <div class="text-align">
+        <svg t="1670570876164"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             width="16"
+             height="16">
+          <path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="14596" />
+        </svg>
+        <span class="text-small">上一篇</span>
+      </div>
+      <div>前端语法</div>
+    </a>
+  
+  <div class="vhr"></div>
+  
+    <a class="post-nav-item-right" href="/2025/01/19/computer/notes/Finished/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
+      <div class="text-align">
+        <span class="text-small">下一篇</span>
+        <svg t="1670570876164"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             transform="scale(-1,-1)"
+             width="16"
+             height="16">
+          <path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="14596" />
+        </svg>
+      </div>
+      软件过程与项目管理
+    </a>
+  
+</div>
+
+    
+      <div class="related-post">
+  <div class="related__head">
+  
+
+</div>
+  <div class="realated__body">
+    
+      DEBUG: 请安装插件 <a target="_blank" rel="noopener" href="https://github.com/tea3/hexo-related-popular-posts">hexo-related-popular-posts</a> 或关闭 related_post 配置!
+    
+  </div>
+</div>
+
+    
+    
+  </div>
+
+    </div>
+    <div class="foot">
+  <div class="foot-inner">
+    <div class="foot__head">
+      
+        <div class="foot-line">
+          <div class="matts">海</div><div class="matts">内</div><div class="matts">存</div><div class="matts">知</div><div class="matts">己</div>
+        </div>
+      
+        <div class="foot-line">
+          <div class="matts">天</div><div class="matts">涯</div><div class="matts">若</div><div class="matts">比</div><div class="matts">邻</div>
+        </div>
+      
+    </div>
+    <div class="foot__body">
+      
+        <div class="foot-item">
+          <div class="foot-item__head">朋友</div>
+          <div class="foot-item__body">
+            
+            
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-link.svg" />
+            <a class="foot-link" target="_blank" rel="noopener" href="https://stuliming.github.io/">SYU</a>
+          </div>
+        
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-link+.svg" />
+            <a class="foot-link" href="mailto:example@email.com?subject=申请http://example.com的友链">申请友链</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+          </div>
+        </div>
+      
+      
+        <div class="foot-item">
+          <div class="foot-item__head">账号</div>
+          <div class="foot-item__body">
+            
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/logo-github.svg" />
+            <a class="foot-link" target="_blank" rel="noopener" href="https://github.com/HopoZ">HopoZ</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+          </div>
+        </div>
+      
+      <div class="foot-item">
+        <div class="foot-item__head">联系</div>
+        <div class="foot-item__body">
+          
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-email.svg" />
+            <a class="foot-link" href="2166632799@qq.com">2166632799@qq.com</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <a href="http://example.com">HopoZ</a> &nbsp;|&nbsp;由&nbsp;<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>&nbsp;及&nbsp;
+      <svg width="20" height="20" viewBox="0 0 725 725">
+        <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M145.870,236.632 L396.955,103.578 L431.292,419.44 L156.600,522.53 L145.870,236.632 Z" />
+        <path fill-rule="evenodd" fill="rgb(159, 159, 159)" d="M396.955,103.578 L564.345,234.486 L611.558,513.469 L431.292,419.44 L396.955,103.578 Z" />
+        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M431.292,419.44 L611.558,513.469 L358.327,595.18 L156.600,522.53 L431.292,419.44 Z" />
+      </svg>
+      <a target="_blank" rel="noopener" href="https://github.com/hooozen/hexo-theme-tranquility">致远</a>&nbsp;驱动
+    </div>
+  </div>
+</div>
+
+    
+    
+      <script src="/js/search.js"></script>
+      <script>searchInitialize("/search.json")</script>
+    
+    <script src="/js/copy-code.js"></script>
+    
+  
+
+  </body>
+</html>
