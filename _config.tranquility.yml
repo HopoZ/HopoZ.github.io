@@ -145,7 +145,7 @@ timeline:
 
 # 标签云
 tagcloud:
-  fancy: false
+  fancy: true
   min_font: 14
   max_font: 30
 
@@ -156,7 +156,7 @@ mermaid:
     startOnload: true
 
 cv:
-  enable: true
+  enable: false
   showInNav: true
   iconPrefix: fas
   keywords: 简历,李白
