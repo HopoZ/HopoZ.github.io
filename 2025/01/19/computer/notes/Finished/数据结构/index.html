@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>
+      
+        数据结构 | HopoZ
+      
+    </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+      <link rel="apple-touch-icon"
+            sizes="180x180"
+            href="/images/apple-touch-icon.png" />
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon-32x32.png" />
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon-16x16.png" />
+    
+    
+      <link rel="mask-icon"
+            href="/images/logo.svg"
+            color="" />
+    
+    
+    
+      
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/normal.ttf);
+        font-weight: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/bold.ttf);
+        font-weight: bold;
+    }
+  </style>
+
+
+    
+    <link rel="stylesheet"
+          type="text/css"
+          href='/css/layout.css' />
+    
+    
+  <link rel="stylesheet" type="text/css" href="/css/post.css"/>
+  
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    
+      <div id="search-mask" style="display:none">
+  <div class="search-main" id="search-main">
+    <div class="search__head">
+      <div class="search-form">
+        <svg t="1706347533072"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             p-id="7828"
+             width="20"
+             height="20">
+          <path d="M685.6 660.336l155.152 155.168a16 16 0 0 1 0 22.624l-11.312 11.328a16 16 0 0 1-22.624 0l-158.528-158.544a289.792 289.792 0 0 1-165.152 51.36C322.336 742.256 192 611.904 192 451.12 192 290.336 322.336 160 483.136 160c160.784 0 291.12 130.336 291.12 291.136 0 82.112-33.984 156.272-88.672 209.2z m-202.464 33.92c134.272 0 243.12-108.848 243.12-243.12C726.256 316.848 617.408 208 483.136 208 348.848 208 240 316.848 240 451.136c0 134.272 108.848 243.12 243.136 243.12z" fill="#000000" p-id="7829">
+          </path>
+        </svg>
+        <input id="search-input" placeholder="搜索文章">
+        <svg t="1706361500528"
+             id="search-clear"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             p-id="4351"
+             width="20"
+             height="20">
+          <path d="M512 562.688l-264.2944 264.2944-50.688-50.688L461.312 512 197.0176 247.7056l50.688-50.688L512 461.312l264.2944-264.2944 50.688 50.688L562.688 512l264.2944 264.2944-50.688 50.688L512 562.688z" fill="#00" p-id="4352">
+          </path>
+        </svg>
+      </div>
+    </div>
+    <div class="search__body" id="search-result"></div>
+    <div class="search__foot"></div>
+  </div>
+</div>
+
+    
+    
+    <div class=head>
+      <div class="nav">
+        <a href='/' class="nav-logo">
+          <img alt="logo" height="60px" width="60px" src="/images/logo.svg" />
+        </a>
+        <input id="navBtn" type="checkbox" />
+        <div class="nav-right">
+          
+            <div class="search-outer">
+  <div class="search" id="search-btn">
+    <svg t="1706347533072"
+         class="icon"
+         viewBox="0 0 1024 1024"
+         version="1.1"
+         xmlns="http://www.w3.org/2000/svg"
+         p-id="7828"
+         width="20"
+         height="20">
+      <path d="M685.6 660.336l155.152 155.168a16 16 0 0 1 0 22.624l-11.312 11.328a16 16 0 0 1-22.624 0l-158.528-158.544a289.792 289.792 0 0 1-165.152 51.36C322.336 742.256 192 611.904 192 451.12 192 290.336 322.336 160 483.136 160c160.784 0 291.12 130.336 291.12 291.136 0 82.112-33.984 156.272-88.672 209.2z m-202.464 33.92c134.272 0 243.12-108.848 243.12-243.12C726.256 316.848 617.408 208 483.136 208 348.848 208 240 316.848 240 451.136c0 134.272 108.848 243.12 243.136 243.12z" fill="#000000" p-id="7829">
+      </path>
+    </svg>
+    <span>搜索</span>
+    <span class="search-shortcut-key">Ctrl K</span>
+  </div>
+</div>
+
+          
+          <div class="nav-menu">
+            
+              
+                <a class="nav-menu-item" href="/feat">Java</a>
+              
+                <a class="nav-menu-item" href="/base">Python</a>
+              
+            
+            <a class="nav-menu-item" href='/cv/'>简历</a>
+          </div>
+        </div>
+        <label class="nav-btn" for="navBtn"></label>
+      </div>
+    </div>
+    <div class="body">
+      
+  <article class="post-content">
+    <div class="post-inner">
+      <div class="post-content__head">
+        <div class="post-title">数据结构</div>
+        <div class="post-info">
+          
+  
+
+
+          <span class="post-date">2025-01-19</span>
+        </div>
+      </div>
+      
+      <div class="post-content__body">
+        
+          <div class="post-gallery">
+            
+          </div>
+        
+        <p><font size =6> 目录</font></p>
+<ul>
+<li><a href="#start">前记</a></li>
+<li><a href="#tree">树</a><ul>
+<li><a href="#1.">树的遍历</a></li>
+</ul>
+</li>
+<li><a href="#2">栈</a></li>
+<li><a href="#3">队列</a></li>
+<li><a href="#4">最小生成树</a></li>
+<li><a href="#5">矩阵的储存</a></li>
+<li><a href="#6">图</a></li>
+<li><a href="#7">查找</a></li>
+<li><a href="#8">排序</a></li>
+<li><a href="">贪心算法</a><ul>
+<li><a href="">最优装载问题</a></li>
+<li><a href="">背包问题</a></li>
+<li><a href="">会议安排</a></li>
+<li><a href="">最短路径</a></li>
+<li><a href="">哈夫曼编码</a></li>
+<li><a href="">最小生成树</a></li>
+</ul>
+</li>
+<li><a href="">分治法</a><ul>
+<li><a href="">二分搜索</a></li>
+<li><a href="">合并排序</a></li>
+<li><a href="">快速排序</a></li>
+<li><a href="">大数整乘法</a></li>
+</ul>
+</li>
+<li><a href="">动态规划</a><ul>
+<li><a href="">最长公共子序列</a></li>
+<li><a href="">编辑距离</a></li>
+<li><a href="">游艇租赁</a></li>
+<li><a href="">矩阵连乘</a></li>
+<li><a href="">最优三角剖分</a></li>
+<li><a href="">石子合并</a></li>
+<li><a href="">0-1背包</a></li>
+<li><a href="">最优二叉搜索树</a></li>
+</ul>
+</li>
+<li><a href="">回溯法</a><ul>
+<li><a href="">0-1背包</a></li>
+<li><a href="">最大团</a></li>
+<li><a href="">地图着色</a></li>
+<li><a href="">n皇后问题</a></li>
+<li><a href="">最优加工序列</a></li>
+<li><a href="">旅行商问题</a></li>
+</ul>
+</li>
+<li><a href="">分支限界法</a><ul>
+<li><a href="">广度优先</a></li>
+<li><a href="">0-1背包</a></li>
+<li><a href="">旅行商问题</a></li>
+<li><a href="">最优工程布线</a></li>
+</ul>
+</li>
+<li><a href="">线性规划</a><ul>
+<li><a href="">单纯形算法</a></li>
+<li><a href="">最短增广路算法</a></li>
+<li><a href="">最小费用路算法</a></li>
+<li><a href="">配对方案法</a></li>
+<li><a href="">圆桌问题</a></li>
+<li><a href="">试题库问题</a></li>
+<li><a href="">最大收益问题</a></li>
+<li><a href="">方格取数问题</a></li>
+<li><a href="">旅游路线问题</a></li>
+</ul>
+</li>
+</ul>
+<p><code>数据结构</code>是相互之间存在一种或多种特定关系的数据元素的集合<br><code>算法</code>对特定问题求解步骤的一种描述</p>
+<p><strong>三要素：</strong></p>
+<ol>
+<li>逻辑结构</li>
+<li>数据的运算</li>
+<li>储存结构(物理结构，储存不同，运算的实现方法不同)</li>
+</ol>
+<p><a href="">空间复杂度</a> 运行时有程序代码内存（大小固定，与问题规模无关)，数据内存，<br><a href="">时间复杂度</a> 平均情况假设每个基本事件概率相等，然后取平均数。</p>
+<p><a href="">渐进分析</a> Asymptotic Analysis</p>
+<p><a href="">数据</a>是一个广义术语，代指各种类型信息</p>
+<p><a href="">常用算法</a></p>
+<ol>
+<li>分治Divide and Connquer</li>
+<li>递归Recursion Algorithm</li>
+<li>动态规划Dynamic Programmig</li>
+<li>贪心算法Greedy Technique</li>
+<li>回溯算法Back Tracking Method</li>
+<li>分支界限Branch and Bound Method</li>
+</ol>
+<p><a href="">存储方式</a></p>
+<ol>
+<li>顺序储存</li>
+<li>链式储存</li>
+<li>索引储存(静态链表)</li>
+<li>散列储存</li>
+</ol>
+<blockquote>
+<p>算法必须是有穷的，程序可以是无穷的。</p>
+</blockquote>
+<blockquote>
+<p>高效率，低储存量</p>
+</blockquote>
+<blockquote>
+<p>时间复杂度按步数计算<br>常数1&lt;对数logN&lt;线性N&lt;线性对数NlogN&lt;平方N^2&lt;立方N^3&lt;指数x^N&lt;阶乘N!&lt;幂指N^N</p>
+</blockquote>
+<blockquote>
+<p>尽管不能比较冒泡排序和选择排序，大 O 还是很重要的，因为它能够区分不同算法的长期增长率。<br>快速排序的每一轮处理其实就是将这一轮的基准数归位</p>
+</blockquote>
+<blockquote>
+<p>最坏情况O 、最好情况Ω、平均情况Θ</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="树"><a href="#树" class="headerlink" title="树  "></a><a href="">树</a>  <a id="tree"></a></h1><p><a href="">树</a> 具有层次关系的数据结构，是最小连通图<br><a href="">二叉树</a> 子节点的最大个数是二<br><a href="">树和二叉树的转换</a> 孩子兄弟表示法，firstchild作为左指针，nextsibling作为右指针。</p>
+<p><a href="">中序遍历</a> 指根中序遍历：左子树、根、右子树  <a id="1."></a><br><a href="">分支节点</a> 度不为零的结点，也称为非终端结点。<br><a href="">前缀编码</a> 没有一个编码是另一个编码的前缀<br><a href="">哈夫曼树</a> 给定一组具有确定权值的叶子结点，WPL最小的二叉树,亦称<strong>最优二叉树</strong><br><a href="">堆</a> heap 是最高效的优先级队列<br><a href="">BST:binary sort tree</a> 二叉排序树，二叉搜索树<br>&emsp;&emsp;它的中序遍历存在有序性<br><a href="">binary balanced tree 平衡二叉树</a> AVL树，二叉平衡搜索树，<br>&emsp;&emsp;左子树和右子树高度差不超过一。<br>&emsp;&emsp;插入数据后调整最小的不平衡子树，利用左旋右旋<br>&emsp;&emsp;<a href="">平衡因子</a> 左右子树高度差</p>
+<blockquote>
+<p>所有结点都只有左子树的二叉树称为<strong>左斜树</strong></p>
+</blockquote>
+<blockquote>
+<p>层次遍历用队列</p>
+</blockquote>
+<blockquote>
+<p><strong>三叉链表</strong> 在二叉链表的基础上增加了一个指向亲代的指针域。</p>
+</blockquote>
+<blockquote>
+<p><strong>静态二叉链表</strong> 不用指针</p>
+</blockquote>
+<blockquote>
+<p><em><strong>优先队列</strong></em> 被出列的是优先级最高或低的元素的队列</p>
+</blockquote>
+<blockquote>
+<p><em><strong>选择树</strong></em> Selection Tree,包括Winnner Tree和Loser Tree</p>
+</blockquote>
+<blockquote>
+<p>并查集，Union-Find Disjoint Sets</p>
+</blockquote>
+<blockquote>
+<p>用随意打乱的数据创建出来的树才有可能是比较平衡的。</p>
+</blockquote>
+<p><a href="">红黑树</a> <a href="">2-3-4树</a></p>
+<hr>
+<h1 id="栈"><a href="#栈" class="headerlink" title="栈 "></a><a href="">栈</a> <a id ="2"></a></h1><p><a href="">LIFO</a> last in,first out</p>
+<p><a href="">计算机调用栈</a> 是用来记录每个调用中的函数的栈</p>
+<p><a href="">共享栈</a> 两个Stack(数组实现)共用同一片空间，从数组两头开始使用<br><a href="">后缀表达式</a> 利用栈来实现</p>
+<blockquote>
+<p>栈用来处理语法错误(括号错误)</p>
+</blockquote>
+<blockquote>
+<p><strong>卡特兰数</strong> Catalan number <img src="/Snipaste_2022-11-23_20-31-42.png" alt="50"></p>
+</blockquote>
+<p><a href="">表达式求值</a></p>
+<hr>
+<h1 id="队列"><a href="#队列" class="headerlink" title="队列  "></a><a href="">队列</a>  <a id =3></a></h1><p><a href="">FIFO</a> fist in,first out</p>
+<blockquote>
+<p>队列（空一位区分队满队空状态）用取余判断是否满了，（加数组）或者给每一位设置状态参数 ，(加大小量)一个存size的int</p>
+</blockquote>
+<hr>
+<h1 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树 "></a><a href="">最小生成树</a> <a id="4"></a></h1><p><a href="">生成树(Spanning Tree)</a> 连接V中所有顶点的一棵开放树（Free Tree，无环路的无向图）。<br><a href="">最小生成树(Minimum-cost Spanning Tree, MST)</a> 在图G所有生成树中，代价(各边权值之和)最小的生成树称之，即包含全部顶点的极小连通子图。<br><a href="">prim算法</a> IMP:每次把到最小生成树的最短距离的点收入  时间复杂度O(V2),适用边稠密<br><a href="">kruskal</a> IMP:每次加入一个最短边，并且保证不会形成回路。  时间复杂度O(ElogE)，适用边稀疏<br><a href="">双连通图</a> 没有割点的图<br><a href="">强连通图</a> 如果图中有一条有向回路，则任意两点间可互达，称之。<br><a href="">dijkstra算法</a> 亦称SPF(shortest path first最短路径优先算法）<br><a href="">floyd算法</a> 使任意两点间路径遍历一次，都尽量加入点缩短。</p>
+<p><a href="">拓扑排序</a> 偏序排序，IMP：每次取一个入度为零的点并删去关联的边，重复操作入队。</p>
+<p><a href="">AOV：activity on vertex</a> 在一个表示工程的有向图中，用顶点表示活动，用弧表示活动之间的优先关系，称这样的有向图为顶点表示活动的网，简称AOV网。<br><a href="">AOE</a> 带权有向图中，顶点表示事件，边表示活动，边上权表示活动的开销（如持续时间），则称之<br>&emsp;&emsp;<a href="">源点、汇点</a> 仅有的一个入度为零的点，仅有的一个出度为零的点<br>&emsp;&emsp;<a href="">关键活动</a> 从源点到汇点的WPL最大的路径称为<code>关键路径</code>，上边的活动称为<code>关键活动</code><br>&emsp;&emsp;<a href="">最早发生时间</a>  从源点开始的最短路径时间<br>&emsp;&emsp;<a href="">最迟发生时间</a> 在不推迟整个工程完成的前提下，最迟发生的时间，从汇点开始推理<br>&emsp;&emsp;利用拓扑排序确定每个事件的最早最晚开始时间，如果相等，则是个关键活动，加入<strong>关键路径</strong>中。</p>
+<hr>
+<h1 id="矩阵的储存"><a href="#矩阵的储存" class="headerlink" title="矩阵的储存  "></a><a href="">矩阵的储存</a>  <a id="5"></a></h1><p><a href="">带状矩阵</a> 当|i-j|&gt;1时，aij&#x3D;0.</p>
+<hr>
+<h1 id="图"><a href="#图" class="headerlink" title="图  "></a><a href="">图</a>  <a id="6"></a></h1><p><a href="">图</a> 是由顶点(vertex)的有穷非空集合和顶点之间边(edge)的集合组成的一种数据结构</p>
+<p><a href="">极小连通子图</a> <code>连通分量</code></p>
+<p><a href="">图的遍历</a></p>
+<ol>
+<li>BFS<br>&emsp;&emsp;<a href="">广度优先生成树</a> BFS后路径形成的树</li>
+<li>DFS</li>
+</ol>
+<p><a href="">最短路径</a></p>
+<ol>
+<li><a href="">Dijkstra算法</a> 运行后找到的可能不是一条路径，而是分叉路径，但可以找到到任意点的最短路径。</li>
+<li><a href="">floyd算法</a>  对每条边都尝试加入各个点看能不能缩短路径</li>
+</ol>
+<p><a href="">有向无环图Directed Acyclic graph</a> 题如其名，以把一部分子树合并的方法进行优化储存</p>
+<p><a href="">邻接矩阵</a> adjacency matrix<br>&ensp;&ensp;用一个二维数组（称为邻接矩阵）存储图中各顶点之间的邻接关系<br><a href="">邻接表(链表表示)</a><br>&emsp;&emsp;对于有向图的每个顶点vi，将从vi出发的弧到达的所有顶点链成一个单链表，称为顶点vi的<strong>出边表</strong>；<br>&emsp;&emsp;再把所有出边表的指针和顶点信息的一维数组构成<strong>顶点表</strong>。<br>&emsp;&emsp;<strong>入边表</strong>同理<br><a href="">十字链表( Orthogonal List )</a> 横向上是正邻接表，纵向上是逆邻接表<br><a href="">邻接多重表</a> 类似于十字链表，但储存无向图。</p>
+<hr>
+<h1 id="查找-检索"><a href="#查找-检索" class="headerlink" title="查找(检索) "></a><a href="">查找(检索)</a> <a id="7"></a></h1><p><a href="">Average Search Length 平均查找长度</a> ASL,比较次数的期望值</p>
+<p><a href="">静态查找表</a> 只需查找，无需插入、删除操作</p>
+<p><a href="">线性查找</a><br><a href="">折半查找</a>  折半查找的判定树一定是平衡二叉树<br><a href="">分块查找</a><br>&emsp;&emsp;均匀分块，块间有序，块内无序<br>&emsp;&emsp;索引表中记录每个分块的最大关键字、分块的区间<br>&emsp;&emsp;每个分块的内容可采用链式储存。<br><a href="">B树 多路平衡查找树</a>  m-叉查找树<br>&emsp;&emsp;除了根节点外任何非叶节点至少有 m&#x2F;2上取整 个分叉，即至少有 m&#x2F;2上取整-1 个关键字，B树的叶子必须在同一层上(对于任意节点，所有子树的高度都要<br>&emsp;&emsp;相同)<br><a href="">B+树</a>  经分块查找思想改造的B树，非终端节点只是记录端点，叶节点才是数据<br><a href="">散列表hash table</a><br>&emsp;&emsp;<a href="">装填因子</a>表中记录数&#x2F;散列表长度</p>
+<p><a href="">拉链法、链地址法</a> 当散列函数的值有冲突时，把所有的同义词储存在一个链表中<br><a href="">开放地址法</a> 当散列函数的值有冲突时,把空余的地址利用起来<br>&emsp;&emsp;1. <code>线性探测法</code><br>&emsp;&emsp;2. <code>平方探测法</code>散列表的长度必须是一个可以表示为4j+3的素数<br>&emsp;&emsp;3. <code>伪随机序列法</code><br><a href="">再散列法</a> 当散列函数的值有冲突时,用下一个散列函数计算地址</p>
+<p><a href="">常见的散列函数</a></p>
+<ol>
+<li><code>取余法</code>用一个小于等于散列表长度的质数取余</li>
+<li><code>直接定址法</code>  哈希值设置为key的线性函数</li>
+<li><code>数字分析法</code> 取key的一部分作为散列地址</li>
+<li><code>平方取中法</code> 取key的平方的中间几位</li>
+</ol>
+<hr>
+<h1 id="排序"><a href="#排序" class="headerlink" title="排序 "></a><a href="">排序</a> <a id="8"></a></h1><p><a href="">冒泡排序</a>  每次把待排序中最小的冒到前边<br><a href="">快速排序</a>  任取一个元素做基准，利用双指针进行一次划分</p>
+<p><a href="">直接选择排序</a>  每一次在待排序元素中选取关键字最小的元素加入有序子序列<br><a href="">锦标赛排序</a><br><a href="">堆排序</a>  基于堆的排序，如基于大根堆进行下坠操作后取堆根入队列得到递增序列，</p>
+<p><a href="">直接插入排序</a>  每一次把待排序元素加入有序子数列的合适位置<br><a href="">折半插入排序</a>  优化，插入时实现折半查找<br><a href="">Shell排序</a>  将待排序表间隔d(逐渐减少到一) 的元素取到一起分为子表，对子表进行直接插入排序</p>
+<p><a href="">归并排序</a><br>&emsp;&emsp;递归式地把数组不断二分进行归并，可以把一个数组有序化<br>&emsp;&emsp;<a href="">归并</a>把多个有序数组合并成一个数组。<br><a href="">基数排序</a>  把关键字分为权重不同的关键字，所有的小关键字都在零到基数左范围内。小关键字组按权重从小到大利用队列对小关键字进行分配和搜集</p>
+<p><a href="">稳定性</a> 排序过程中尽量不改变原本相同元素的相对位置</p>
+<p><a href="">外部排序</a><br>&emsp;&emsp;操作系统是以”块”为单位对磁盘储存空间进行管理的，</p>
+<ol>
+<li>构造归并段(从磁盘写入块并内部排序后写回磁盘)</li>
+<li>两两归并(递归)<br><code>优化</code>多路归并<br><code>优化</code>减少初始归并段数量</li>
+</ol>
+<p><a href="">败者树</a>  直接比较k个归并段选出最值元素需要对比k-1次，构建败者树使关键字对比次数减少到 log k上取整 次<br><a href="">置换-选择排序</a> 利用内存工作区构建一个筛选法则，每次内存工作区满了就重新开辟一个归并段<br><a href="">最佳归并树</a> 即Huffman-k叉树，构建的归并树的带权路径长度WPL(weighted path length)最小<br>&emsp;&emsp;<a href="">虚段</a>对于k-叉归并，若(初始归并段数量-1)%(k-1)!&#x3D;0,则无法构成严格的k-叉归并树，则需要补充几个长度为零的虚段</p>
+<hr>
+
+      </div>
+    </div>
+    
+      <script src='https://unpkg.com/mermaid@latest/dist/mermaid.min.js'></script>
+      <script>
+        if (window.mermaid) {
+          mermaid.initialize({"startOnload":true});
+        }
+      </script>
+    
+  </article>
+  <div class="post__foot">
+    
+      <div class="like-author">
+  <input type="checkbox" id="likeCode" />
+  <div class="author-face">
+    <img height="100px"
+         width="100px"
+         id="front-face"
+         alt="author face"
+         src="/assets/author-face.jpg" />
+    <img height="100px"
+         width="100px"
+         id="back-face"
+         alt="like code"
+         src="/assets/pay-code.jpg" />
+  </div>
+  <div class="like-text">“给作者倒杯卡布奇诺”</div>
+  <label for="likeCode" class="like-btn">
+    <svg viewBox="0 0 1024 1024"
+         width="20px"
+         style="margin-right: 10px"
+         height="20px">
+      <path d="M466.88 908.96L113.824 563.296a270.08 270.08 0 0 1 0-387.392c108.8-106.56 284.896-106.56 393.696 0 1.504 1.472 2.976 2.944 4.448 4.48 1.472-1.536 2.944-3.008 4.448-4.48 108.8-106.56 284.896-106.56 393.696 0a269.952 269.952 0 0 1 34.016 347.072l-387.392 385.6a64 64 0 0 1-89.92 0.384z" p-id="13650" fill="#ee4242" />
+    </svg>
+    喜欢作者
+  </label>
+</div>
+
+    
+    <div class="post-nav">
+  
+    <a class="post-nav-item-left" href="/2025/01/19/computer/notes/Finished/%E8%BD%AF%E4%BB%B6%E6%9E%84%E9%80%A0/">
+      <div class="text-align">
+        <svg t="1670570876164"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             width="16"
+             height="16">
+          <path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="14596" />
+        </svg>
+        <span class="text-small">上一篇</span>
+      </div>
+      <div>软件架构</div>
+    </a>
+  
+  <div class="vhr"></div>
+  
+    <a class="post-nav-item-right" href="/2025/01/19/computer/notes/Finished/ComputerNetworking/">
+      <div class="text-align">
+        <span class="text-small">下一篇</span>
+        <svg t="1670570876164"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             transform="scale(-1,-1)"
+             width="16"
+             height="16">
+          <path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="14596" />
+        </svg>
+      </div>
+      ComputerNetworking
+    </a>
+  
+</div>
+
+    
+      <div class="related-post">
+  <div class="related__head">
+  
+
+</div>
+  <div class="realated__body">
+    
+      DEBUG: 请安装插件 <a target="_blank" rel="noopener" href="https://github.com/tea3/hexo-related-popular-posts">hexo-related-popular-posts</a> 或关闭 related_post 配置!
+    
+  </div>
+</div>
+
+    
+    
+  </div>
+
+    </div>
+    <div class="foot">
+  <div class="foot-inner">
+    <div class="foot__head">
+      
+        <div class="foot-line">
+          <div class="matts">海</div><div class="matts">内</div><div class="matts">存</div><div class="matts">知</div><div class="matts">己</div>
+        </div>
+      
+        <div class="foot-line">
+          <div class="matts">天</div><div class="matts">涯</div><div class="matts">若</div><div class="matts">比</div><div class="matts">邻</div>
+        </div>
+      
+    </div>
+    <div class="foot__body">
+      
+        <div class="foot-item">
+          <div class="foot-item__head">朋友</div>
+          <div class="foot-item__body">
+            
+            
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-link.svg" />
+            <a class="foot-link" target="_blank" rel="noopener" href="https://stuliming.github.io/">SYU</a>
+          </div>
+        
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-link+.svg" />
+            <a class="foot-link" href="mailto:example@email.com?subject=申请http://example.com的友链">申请友链</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+          </div>
+        </div>
+      
+      
+        <div class="foot-item">
+          <div class="foot-item__head">账号</div>
+          <div class="foot-item__body">
+            
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/logo-github.svg" />
+            <a class="foot-link" target="_blank" rel="noopener" href="https://github.com/HopoZ">HopoZ</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+          </div>
+        </div>
+      
+      <div class="foot-item">
+        <div class="foot-item__head">联系</div>
+        <div class="foot-item__body">
+          
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-email.svg" />
+            <a class="foot-link" href="2166632799@qq.com">2166632799@qq.com</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <a href="http://example.com">HopoZ</a> &nbsp;|&nbsp;由&nbsp;<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>&nbsp;及&nbsp;
+      <svg width="20" height="20" viewBox="0 0 725 725">
+        <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M145.870,236.632 L396.955,103.578 L431.292,419.44 L156.600,522.53 L145.870,236.632 Z" />
+        <path fill-rule="evenodd" fill="rgb(159, 159, 159)" d="M396.955,103.578 L564.345,234.486 L611.558,513.469 L431.292,419.44 L396.955,103.578 Z" />
+        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M431.292,419.44 L611.558,513.469 L358.327,595.18 L156.600,522.53 L431.292,419.44 Z" />
+      </svg>
+      <a target="_blank" rel="noopener" href="https://github.com/hooozen/hexo-theme-tranquility">致远</a>&nbsp;驱动
+    </div>
+  </div>
+</div>
+
+    
+    
+      <script src="/js/search.js"></script>
+      <script>searchInitialize("/search.json")</script>
+    
+    <script src="/js/copy-code.js"></script>
+    
+  
+
+  </body>
+</html>

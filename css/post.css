@@ -1,0 +1,277 @@
+/*
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #f7f7f7;
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+/* prettylights-syntax-keyword */
+  color: #d73a49;
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+/* prettylights-syntax-entity */
+  color: #6f42c1;
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+/* prettylights-syntax-constant */
+  color: #005cc5;
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+/* prettylights-syntax-string */
+  color: #032f62;
+}
+.hljs-built_in,
+.hljs-symbol {
+/* prettylights-syntax-variable */
+  color: #e36209;
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+/* prettylights-syntax-comment */
+  color: #6a737d;
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+/* prettylights-syntax-entity-tag */
+  color: #22863a;
+}
+.hljs-subst {
+/* prettylights-syntax-storage-modifier-import */
+  color: #24292e;
+}
+.hljs-section {
+/* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold;
+}
+.hljs-bullet {
+/* prettylights-syntax-markup-list */
+  color: #735c0f;
+}
+.hljs-emphasis {
+/* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic;
+}
+.hljs-strong {
+/* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold;
+}
+.hljs-addition {
+/* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4;
+}
+.hljs-deletion {
+/* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+.body {
+  line-height: 2em;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.post-inner,
+.post-inner--toc {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.post-inner--toc,
+.post-inner--toc--toc {
+  max-width: 760px;
+  padding-right: 230px;
+}
+.post-inner--toc .post-content__body,
+.post-inner--toc--toc .post-content__body {
+  max-width: 760px;
+}
+.post-inner .video-container,
+.post-inner--toc .video-container {
+  height: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+.post-inner .video-container iframe,
+.post-inner--toc .video-container iframe {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.post-content {
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.post-gallery {
+  align-items: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+.post-title {
+  font-size: 30px;
+}
+.post-content__head {
+  margin: 40px 0;
+}
+.toc-outer {
+  opacity: 0.9;
+  position: sticky;
+  top: 60px;
+  float: right;
+  margin-right: -230px;
+  max-height: calc(100vh - 250px);
+  min-height: 400px;
+  padding-left: 30px;
+  overflow-y: auto;
+  width: 200px;
+  color: #666;
+}
+.toc-outer .toc-title,
+.toc-outer .toc-top {
+  display: inline-block;
+  padding: 8px 0;
+  color: #555;
+  font-size: 0.875em;
+  height: 30px;
+  line-height: 30px;
+}
+.toc-outer .toc-title {
+  border-top: 2px solid #eff2f3;
+}
+.toc-outer a {
+  text-decoration: none;
+}
+.toc-outer ol,
+.toc-outer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.toc-outer .toc-number {
+  font-size: 80%;
+}
+.toc-outer .post-toc {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+  box-sizing: border-box;
+  line-height: 1.25em;
+}
+.toc-outer .post-toc-level-2 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+.toc-outer .post-toc-level-3 {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.post__foot {
+  max-width: 900px;
+  margin: 100px auto;
+}
+.post-nav {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.post-nav .vhr {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #f5f5f5;
+  width: 1px;
+}
+.post-nav-item,
+.post-nav-item-left,
+.post-nav-item-right,
+.post-nav-item-left-right {
+  text-decoration: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.post-nav-item-left,
+.post-nav-item-left-left,
+.post-nav-item-right-left,
+.post-nav-item-left-right-left {
+  align-items: flex-start;
+  padding-right: 15px;
+}
+.post-nav-item-right,
+.post-nav-item-left-right,
+.post-nav-item-right-right,
+.post-nav-item-left-right-right {
+  align-items: flex-end;
+  padding-left: 15px;
+}
+.related-post {
+  margin: 40px 0;
+}
+@media screen and (max-width: 760px) {
+  .post-inner--toc {
+    padding: 0;
+  }
+  .post-inner--toc .post-content__body {
+    max-width: 100%;
+  }
+  .toc-outer {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .post-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
