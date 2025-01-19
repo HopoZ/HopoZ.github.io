@@ -3,6 +3,7 @@ title: AI
 categories: base
 tags:
   - AI
+toc: true
 ---
 # gpt原理
 GPT（Generative Pre-trained Transformer）是一个基于Transformer架构的生成式预训练模型，广泛用于各种自然语言处理（NLP）任务，如文本生成、翻译、摘要等。GPT的核心原理包括预训练和微调两个阶段，通过在大规模文本数据上预训练模型，然后针对特定任务进行微调，以达到较好的性能。以下是GPT原理的详细解释：

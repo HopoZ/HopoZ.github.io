@@ -3,6 +3,7 @@ title: tmux
 categories: tools
 tags:
   - tmux
+toc: true
 ---
 
 tmux是一个流行的终端复用器，它允许用户在一个终端窗口中运行多个终端会话，并且可以不间断地在它们之间切换。tmux对于远程工作、长期运行的任务以及终端环境的组织管理非常有帮助。

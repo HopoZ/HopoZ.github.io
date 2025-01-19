@@ -3,6 +3,7 @@ title: Linux
 categories: base
 tags:
   - linux
+toc: true
 ---
 
 sudo chmod 600 ××× （只有所有者有读和写的权限）

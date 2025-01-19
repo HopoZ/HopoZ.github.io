@@ -3,6 +3,7 @@ title: vscode
 categories: tools
 tags:
   - vscode
+toc: true
 ---
 
 已经实现：

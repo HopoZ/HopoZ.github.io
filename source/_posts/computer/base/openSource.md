@@ -3,6 +3,7 @@ title: open source
 categories: daily
 tags:
   - 开源证书
+toc: true
 ---
 
 # 不同类型开源证书

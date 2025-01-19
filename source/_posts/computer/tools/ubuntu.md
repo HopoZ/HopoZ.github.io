@@ -3,6 +3,7 @@ title: Ubuntu
 categories: tools
 tags:
   - Ubuntu
+toc: true
 ---
 
 # [快照]()

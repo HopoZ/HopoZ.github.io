@@ -4,6 +4,7 @@ categories: base
 tags:
   - C++
   - makefile
+toc: true
 ---
 
 makefile指定整个工程的编译规则

@@ -3,6 +3,7 @@ title: neovim
 categories: tools
 tags:
   - neovim
+toc: true
 ---
 
 # etc

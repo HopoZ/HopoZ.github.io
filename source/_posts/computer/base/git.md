@@ -3,6 +3,7 @@ title: git
 categories: base
 tags:
   - git
+toc: true
 ---
 
 # info

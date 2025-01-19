@@ -3,6 +3,7 @@ title: Python
 categories: base
 tags:
   - python
+toc: true
 ---
 # python基础
 单引号和双引号一样

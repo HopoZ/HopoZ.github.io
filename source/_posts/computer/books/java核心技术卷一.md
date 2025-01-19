@@ -3,6 +3,7 @@ title: java核心技术卷一
 categories: daily
 tags:
   - books
+toc: true
 ---
 
 java中数组没有指针运算

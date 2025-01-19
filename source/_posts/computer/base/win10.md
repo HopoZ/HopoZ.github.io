@@ -3,6 +3,7 @@ title: win10
 categories: daily
 tags:
   - win10
+toc: true
 ---
 
 >`Win+Shift+S`就可以快速截图了

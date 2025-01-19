@@ -3,6 +3,7 @@ title: md语法
 categories: code
 tags:
   - markdown
+toc: true
 ---
 
 [超链接显示名](超链接地址 "超链接title")

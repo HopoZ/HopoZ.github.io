@@ -3,6 +3,7 @@ title: hexo部署时遇到的问题
 categories: daily
 tags:
   - hexo
+toc: true
 ---
 
 hexo generate报错，百思不得其解

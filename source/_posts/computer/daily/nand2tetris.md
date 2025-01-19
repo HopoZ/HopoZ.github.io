@@ -3,6 +3,7 @@ title: nand2tetris
 categories: daily
 tags:
   - courses
+toc: true
 ---
 
 # info

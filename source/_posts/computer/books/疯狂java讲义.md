@@ -3,6 +3,7 @@ title: 疯狂java讲义
 categories: daily
 tags:
   - books
+toc: true
 ---
 
 # [1 java语言概述与开发环境]()

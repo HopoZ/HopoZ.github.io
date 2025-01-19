@@ -3,6 +3,7 @@ title: C++ Primer Plus
 categories: daily
 tags:
   - books
+toc: true
 ---
 
 >作为C++经典
