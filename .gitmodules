@@ -1,0 +1,3 @@
+[submodule "themes/tranquility"]
+    path = themes/tranquility
+    url = https://github.com/hooozen/hexo-theme-tranquility
