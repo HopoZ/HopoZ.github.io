@@ -133,15 +133,15 @@ timeline:
     - name: article
       color: "#ee936c"
       icon: /images/icon/icon-article.svg
-      checked: false
-    - name: app
+      checked: true
+    - name:
       color: "#60a465"
       icon: /images/icon/icon-app.svg
       checked: true
     - name: event
       color: "#568dc4"
       icon: /images/icon/icon-event.svg
-      checked: false
+      checked: true
 
 # 标签云
 tagcloud:

@@ -1,6 +1,6 @@
 ---
 date: 2025-01-20 23:12:09
-title: Python
+title: Python杂记
 categories: base
 tags:
   - python
