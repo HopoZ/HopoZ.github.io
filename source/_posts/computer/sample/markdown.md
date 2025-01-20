@@ -7,8 +7,8 @@ toc: true
 ---
 
 [超链接显示名](超链接地址 "超链接title")
-图片![图片alt](../picture/Snipaste_2022-11-23_20-31-42.png "完美")
-另一种图片 <img width="50" height="30" src="../picture/Snipaste_2022-11-23_20-31-42.png" />
+图片![图片alt](/picture/Snipaste_2022-11-23_20-31-42.png "完美")
+另一种图片 <img width="50" height="30" src="/picture/Snipaste_2022-11-23_20-31-42.png" />
 
 一般用>的都是指随意移动位置，与上下文无关联的说明,~才是有关联的
 

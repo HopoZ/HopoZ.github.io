@@ -102,7 +102,7 @@ test
 [wine]() Windows Emulator,之后解释为Wine Is Not an Emulator
 [GNU]() 许可证`GPL`: General Public License; 编译器`GCC`: General C Compiler,加入其他语言后改为Compilor Collection; 则GNU可能是General Not Unix.
 [NTFS]() New Technology File System,以`簇`为最小读写单元
-<img width="1200" height="100" src="../picture/1675944543421.jpeg.png">
+<img width="1200" height="100" src="/picture/1675944543421.jpeg.png">
 
 `typeid().name()`输出所属类型的首字母
 

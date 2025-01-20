@@ -37,7 +37,7 @@ toc: true
 # [超链接anchor]()
 <a href="vim.ipynb">vim指南</a>
 
-<center> <img src="../picture/Snipaste_2023-03-03_17-04-40.png" height="300" width="600"></center>
+<center> <img src="/picture/Snipaste_2023-03-03_17-04-40.png" height="300" width="600"></center>
 <!-- TODO 修改所有图片路径错误 -->
 # [表格table]()
 <table border="1">
