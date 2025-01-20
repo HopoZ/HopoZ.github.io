@@ -1,9 +1,11 @@
 ---
+date: 2025-01-20 23:12:09
 title: Python
 categories: base
 tags:
   - python
 toc: true
+timeline: article
 ---
 # python基础
 单引号和双引号一样
