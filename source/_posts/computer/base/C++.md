@@ -1,8 +1,8 @@
 ---
-title: C++
+title: cpp
 categories: base
 tags:
-  - C++
+  - cpp
 toc: true
 ---
 
