@@ -47,7 +47,7 @@ syntax_highlighter: highlight.js
 highlight:
   enable: false
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: true
