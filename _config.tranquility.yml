@@ -35,7 +35,7 @@ subpage: # 开启“子页”功能，详见 README
       description: 代码IDE或相关工具 # 描述
 
 index: # 配置首页个性化内容
-  motto: "他年我若为青帝，报与桃花一处开"
+  motto: "长风破浪会有时！"
   poem:
     - 君不见高堂明镜悲白发
     - 朝如青丝暮成雪
