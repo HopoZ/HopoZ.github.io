@@ -2,7 +2,7 @@
 title: makefile
 categories: base
 tags:
-  - C++
+  - cpp
   - makefile
 toc: true
 ---

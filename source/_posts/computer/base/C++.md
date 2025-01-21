@@ -1,9 +1,10 @@
 ---
-title: cpp
+title: c++
 categories: base
 tags:
   - cpp
 toc: true
+abstract: "该文章测试隐藏式摘要功能，此文本只会在文章列表展示，文章正文中不再出现。"
 ---
 
 # [C++]()
