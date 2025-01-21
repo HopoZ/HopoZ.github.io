@@ -37,8 +37,8 @@ subpage: # 开启“子页”功能，详见 README
 index: # 配置首页个性化内容
   motto: "长风破浪会有时！"
   poem:
-    - 所以生命啊
-    - 它苦涩如歌
+    - 君不见高堂明镜悲白发
+    - 朝如青丝暮成雪
   photo: /images/about.jpg
   about:
     title: 艺术家
