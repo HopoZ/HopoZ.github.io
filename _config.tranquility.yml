@@ -226,4 +226,4 @@ search:
   content: true
 
 nav:
-  sticky: false
+  sticky: true
