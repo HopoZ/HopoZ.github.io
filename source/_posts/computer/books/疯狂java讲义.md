@@ -1,4 +1,6 @@
 ---
+date: 2024-01-20 23:18:26
+timeline: article
 title: 疯狂java讲义
 categories: daily
 tags:

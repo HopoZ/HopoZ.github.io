@@ -1,4 +1,6 @@
 ---
+date: 2025-01-20 23:18:26
+timeline: article
 title: hexo部署时遇到的问题
 categories: daily
 tags:
