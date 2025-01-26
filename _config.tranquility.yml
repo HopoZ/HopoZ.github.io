@@ -33,6 +33,11 @@ subpage: # 开启“子页”功能，详见 README
       title: 工具 # 菜单名，如 开发者
       icon: /images/icon/icon-pi.svg # 图标的路径
       description: 代码IDE或相关工具 # 描述
+    - name: algo # 文章的分类（category）名，如 developer
+      path: algo # 若不设置则默认使用 name
+      title: 算法题解 # 菜单名，如 开发者
+      icon: /images/icon/icon-pi.svg # 图标的路径
+      description: 对于算法题的解题记录 # 描述
 
 index: # 配置首页个性化内容
   motto: "他年我若为青帝，报与桃花一处开"
