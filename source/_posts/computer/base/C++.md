@@ -1,12 +1,12 @@
 ---
-date: 2024-01-20 23:18:26
+date: 2025-01-26 18:08:41
 timeline: article
 title: c++
 categories: base
 tags:
   - cpp
 toc: true
-abstract: "该文章测试隐藏式摘要功能，此文本只会在文章列表展示，文章正文中不再出现。"
+abstract: "C++基础内容和C++杂记"
 ---
 
 # [C++]()
@@ -111,3 +111,9 @@ test
 
 ---
 [pure virtual function]() 纯虚函数，表示抽象类，在函数末由`=0`标记
+
+
+---
+# 杂记
+
+C++中NULL是未定义的，在#include <cstddef>后被定义为__null，__null我没找到进一步定义，查看资料说是被编译器实现，成为空指针类型，这么复杂地搞。那为什么C++不继承这个__null实现，而是实现了一个特殊的 字面值常量nullptr，与所有指针类型的 0 值等效呢。有趣。
