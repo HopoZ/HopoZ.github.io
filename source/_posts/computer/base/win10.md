@@ -22,7 +22,7 @@ toc: true
 ctrl+win+`->` 切换虚拟桌面
 
 >win+tab 弹出窗口总览
-
+```
 `f11`调整网页全屏
 `F1`帮助
 `F2`改名
@@ -37,10 +37,11 @@ ctrl+win+`->` 切换虚拟桌面
 `win+a`电脑通知栏
 `win+q`全局搜索界面
 `win+h`语音输入
+```
 
 机器开机出现标志的时候按`F10`进入BIOS(不同品牌不一样，我的是`F2`)
 
-[修改任务栏图标颜色]()
+# [修改任务栏图标颜色]()
 ```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize
 ```
@@ -95,7 +96,7 @@ sc config i8042prt start=auto是恢复不了的，要用sc config i8042prt start
 服务类型：手动"Start"=dword:00000004
 // 对应start= disabled，服务类型：禁用
 
-[环境变量]()
+# [环境变量]()
 当前执行的程序如果在当前目录不存在，win10会自动去名为path的环境变量中查找。
 环境变量没有区分大小写，例如path跟PATH是一样的
 如果系统变量和用户变量的PATH中同时包含了同一个命令，则优先执行系统变量PATH中的命令
@@ -158,55 +159,55 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 ...
 ```
 
-在 Windows 中，要实现右键菜单中包含“在此处打开命令提示符”选项，您可以使用注册表编辑器添加一个注册表项。请注意，修改注册表可能会对系统产生影响，因此在进行此类更改之前，请确保备份您的注册表。
+# 在 Windows 中，要实现右键菜单中包含“在此处打开命令提示符”选项，您可以使用注册表编辑器添加一个注册表项。请注意，修改注册表可能会对系统产生影响，因此在进行此类更改之前，请确保备份您的注册表。
 
-以下是通过注册表编辑器添加右键菜单选项的步骤：
+   以下是通过注册表编辑器添加右键菜单选项的步骤：
 
-1. **打开注册表编辑器：**
-   - 按下 `Win + R` 打开“运行”对话框。
-   - 输入 `regedit` 并按下 Enter。
+   1. **打开注册表编辑器：**
+      - 按下 `Win + R` 打开“运行”对话框。
+      - 输入 `regedit` 并按下 Enter。
 
-2. **导航到适当的注册表路径：**
-   - 转到以下注册表路径：
-     ```
-     HKEY_CLASSES_ROOT\Directory\Background\shell
-     ```
+   2. **导航到适当的注册表路径：**
+      - 转到以下注册表路径：
+      ```
+      HKEY_CLASSES_ROOT\Directory\Background\shell
+      ```
 
-3. **在“shell”键下创建一个新的项：**
-   - 在 "shell" 键下右键单击，选择“新建” > “项”。
-   - 将新项命名为你想要显示在右键菜单中的名称，比如 "OpenCmdHere"。
+   3. **在“shell”键下创建一个新的项：**
+      - 在 "shell" 键下右键单击，选择“新建” > “项”。
+      - 将新项命名为你想要显示在右键菜单中的名称，比如 "OpenCmdHere"。
 
-4. **在新项下创建子项 “command”：**
-   - 在新创建的项下右键单击，选择“新建” > “项”。
-   - 将新项命名为 "command"。
+   4. **在新项下创建子项 “command”：**
+      - 在新创建的项下右键单击，选择“新建” > “项”。
+      - 将新项命名为 "command"。
 
-5. **设置默认值：**
-   - 在右侧窗格中，双击 "Default" 项。
-   - 在弹出的编辑字符串对话框中，将数值数据设置为：
-     ```
-     cmd.exe /s /k pushd "%V"
-     ```
+   5. **设置默认值：**
+      - 在右侧窗格中，双击 "Default" 项。
+      - 在弹出的编辑字符串对话框中，将数值数据设置为：
+      ```
+      cmd.exe /s /k pushd "%V"
+      ```
 
-   这个值将打开一个新的命令提示符窗口，并将当前目录设置为资源管理器中右键单击的目录。
+      这个值将打开一个新的命令提示符窗口，并将当前目录设置为资源管理器中右键单击的目录。
 
-6. **关闭注册表编辑器：**
-   - 保存更改并关闭注册表编辑器。
+   6. **关闭注册表编辑器：**
+      - 保存更改并关闭注册表编辑器。
 
-之后，您在资源管理器中右键单击文件夹时应该会看到新添加的 "OpenCmdHere" 选项。请注意，修改注册表可能对系统产生影响，因此在进行此类更改之前，请确保备份您的注册表。
-我发现如果直接重命名一项(只改变某个字母大小写)会报错，说已经存在这项，解决方法是先随意改名，再改成你想要的版本
+   之后，您在资源管理器中右键单击文件夹时应该会看到新添加的 "OpenCmdHere" 选项。请注意，修改注册表可能对系统产生影响，因此在进行此类更改之前，请确保备份您的注册表。
+  我发现如果直接重命名一项(只改变某个字母大小写)会报错，说已经存在这项，解决方法是先随意改名，再改成你想要的版本
 
 # 禁用笔记本自带键盘
 
-1. 管理员运行cmd
+   1. 管理员运行cmd
 
-2. sc config i8042prt start=disabled
+   2. sc config i8042prt start=disabled
 
-3. 重启
+   3. 重启
 
-sc config i8042prt start=demand 恢复
+   sc config i8042prt start=demand 恢复
 
-注册表位置:[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt]
-"Start"=dword:00000003 // 对应start= demand，服务类型：手动
+   注册表位置:[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt]
+   "Start"=dword:00000003 // 对应start= demand，服务类型：手动
 
-"Start"=dword:00000004 // 对应start= disabled，服务类型：禁用
+   "Start"=dword:00000004 // 对应start= disabled，服务类型：禁用
 
