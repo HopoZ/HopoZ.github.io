@@ -2,7 +2,7 @@
 date: 2025-01-27 11:18:38
 timeline: article
 title: md语法
-categories: code
+categories: base
 tags:
   - markdown
 toc: true

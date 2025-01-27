@@ -2,7 +2,7 @@
 date: 2024-01-20 23:18:26
 timeline: article
 title: 前端语法
-categories: code
+categories: base
 tags:
   - html
 toc: true

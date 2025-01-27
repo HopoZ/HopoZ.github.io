@@ -17,17 +17,17 @@ subpage: # 开启“子页”功能，详见 README
       path: base # 若不设置则默认使用 name
       title: 理论 # 菜单名，如 开发者
       icon: /images/icon/icon-code.svg # 图标的路径
-      description: 基础内容 # 描述
+      description: 计算机，编程语言，IDE基础内容 # 描述
     - name: code # 文章的分类（category）名，如 developer
       path: code # 若不设置则默认使用 name
       title: 代码 # 菜单名，如 开发者
       icon: /images/icon/icon-pi.svg # 图标的路径
-      description: 一些示例代码 # 描述
+      description: 一些示例项目代码 # 描述
     - name: daily # 文章的分类（category）名，如 developer
       path: daily # 若不设置则默认使用 name
       title: 日常 # 菜单名，如 开发者
       icon: /images/icon/icon-pi.svg # 图标的路径
-      description: 杂记 # 描述
+      description: 日常杂记 # 描述
     - name: tools # 文章的分类（category）名，如 developer
       path: tools # 若不设置则默认使用 name
       title: 工具 # 菜单名，如 开发者
