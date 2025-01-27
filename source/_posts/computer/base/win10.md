@@ -1,5 +1,5 @@
 ---
-date: 2024-01-20 23:18:26
+date: 2025-01-27 17:05:23
 timeline: article
 title: win10
 categories: daily
@@ -48,20 +48,24 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize
 
 [系统文件]() LocalLow 文件夹与Local 文件夹基本相同，区别在于前者用于优先级较低的应用程序（运行时安全设置受限）
 
-2023-0616  Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management这里把Large System Cache改成了1
+2023-0616  Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
+这里把Large System Cache改成了1
+
+
 如果是针对某款游戏或程序要禁用全屏优化，可以直接点击游戏exe文件右键[属性-兼容性-禁用全面优化]勾上就行。
 
 ```
 netstat -ano
 //查询后门程序连接
 ```
+
 ```
 rename *.* ?????-original.*
 ```
+   `*.*`表示此文件夹中任何文件
+   `？？？？？`表示保留原始文件名的前五个字符
+   `-original`在每个文件名末尾加上这些字符
 
-`*.*`表示此文件夹中任何文件
-`？？？？？`表示保留原始文件名的前五个字符
-`-original`在每个文件名末尾加上这些字符
 `netsh wlan show profile HIT-WLAN key=clear`  显示已保存的互联网`HIT-WLAN`密码
 `osk`打开on-screen keyboard
 `telnet towel.blinkenlights.nl`观看星球大战
@@ -75,7 +79,14 @@ echo. > filename 会使文件添加一个 (空格)
 
 
 # windows下禁用笔记本自带键盘
-管理员运行cmd2. sc config i8042prt start=disabled3. 重启win10 1803亲测可用。但是注意这里有个坑，网上能搜到的教你恢复的方法都是不管用的，最起码win10下不管用，sc config i8042prt start=auto是恢复不了的，要用sc config i8042prt start=demand才行。对应的注册表位置：[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt]"Start"=dword:00000003     // 对应start= demand，服务类型：手动"Start"=dword:00000004     // 对应start= disabled，服务类型：禁用
+管理员运行cmd2. sc config i8042prt start=disabled3. 重启win10 1803亲测可用。
+但是注意这里有个坑，网上能搜到的教你恢复的方法都是不管用的，最起码win10下不管用，
+sc config i8042prt start=auto是恢复不了的，要用sc config i8042prt start=demand才行。
+对应的注册表位置：
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt]"Start"=dword:00000003
+// 对应start= demand，
+服务类型：手动"Start"=dword:00000004
+// 对应start= disabled，服务类型：禁用
 
 [环境变量]()
 当前执行的程序如果在当前目录不存在，win10会自动去名为path的环境变量中查找。
@@ -88,49 +99,58 @@ netsh winsock reset //修复网络LSP
 # 注册表
 
 [鼠标右键功能键]()
+```
 HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers
 HKEY_CLASSES_ROOT\Directory\shell
 HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers
 HKEY_CLASSES_ROOT\Folder\shell
 HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers
+```
+
 [资源管理器左侧功能]()
 ;取消文件资源管理器左侧 下载 文件夹
-
+```
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
-
+```
 ;取消文件资源管理器左侧 3D对象 文件夹
-
+```
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
-
+```
 ;取消文件资源管理器左侧 图片 文件夹
-
+```
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
-
+```
 ;取消文件资源管理器左侧 音乐 文件夹
-
+```
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
-
+```
 ;取消文件资源管理器左侧 桌面 文件夹
-
+```
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-
+```
 ;取消文件资源管理器左侧 文档 文件夹
-
+```
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
-
+```
 ;取消文件资源管理器左侧 视频 文件夹
-
+```
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+```
+
 [改paint为默认照片查看器]()
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations,这里新建字符串值，名字为.png或.jpg，值设为PhotoViewer.FileAssoc.Tiff，即可出现原来的图片查看器。(发现都不好用)
 [隐藏右下角图标]()
 在注册表中寻找以下路径：HKEY_CURRENT_USER\Software\\(你的应用)，右键它——新建——DWORD (32 位) 值，将新建的注册表命名为：hideTrayIcon,将值赋为1.
+
 [启动项]()
+```
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 ...
+```
+
 在 Windows 中，要实现右键菜单中包含“在此处打开命令提示符”选项，您可以使用注册表编辑器添加一个注册表项。请注意，修改注册表可能会对系统产生影响，因此在进行此类更改之前，请确保备份您的注册表。
 
 以下是通过注册表编辑器添加右键菜单选项的步骤：
