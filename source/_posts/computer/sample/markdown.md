@@ -1,5 +1,5 @@
 ---
-date: 2024-01-20 23:18:26
+date: 2025-01-27 11:18:38
 timeline: article
 title: md语法
 categories: code
@@ -7,7 +7,16 @@ tags:
   - markdown
 toc: true
 ---
+# 缩进的影响范围
 
+  缩进规则在 Markdown 中有以下区别：
+
+      少量缩进：部分解析器会容忍 2 个空格的缩进，并正确解析标题。
+      大量缩进（超过 4 个空格或 1 个 Tab）：会被解析为代码块。
+
+  你的第一个例子中使用了 1 个 Tab 缩进，而第二个例子中是 2 个空格缩进。Markdown 渲染器更倾向于将 1 个 Tab 的内容识别为代码块。
+  如果想要用空格缩进，可以用`ctl+]`来进行多行空格缩进
+# 杂记
 [超链接显示名](超链接地址 "超链接title")
 图片![图片alt](/picture/Snipaste_2022-11-23_20-31-42.png "完美")
 另一种图片 <img width="50" height="30" src="/picture/Snipaste_2022-11-23_20-31-42.png" />

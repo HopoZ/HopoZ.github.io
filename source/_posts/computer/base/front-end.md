@@ -9,6 +9,7 @@ toc: true
 ---
 
 # [Front-end/Web 开发]()
+  ## 未分类
   [CGI]() common gateway interface 公共网关接口
   [script]() 脚本语言，是介于HTML和Java、C++和Visual Basic之类的编程语言之间的语言。
   [javascript]() 是一种基于对象(Object)和事件驱动(Event Driven)并具有安全性能的脚本语言。

@@ -8,128 +8,128 @@ toc: true
 timeline: article
 ---
 # python基础
-单引号和双引号一样
-![符号简介](/picture/2022-09-18-15-44-32.png)
-`def` 定义函数
-`*arg `可变参数
-`from .py import function`
-`import .py as name` 起别名
-`__name__`是Python中一个隐含的变量它代表了模块的名字
- 只有被Python解释器直接执行的模块的名字才是`__main__`
-如果我们导入的模块除了定义函数之外还有可以执行代码，那么Python解释器在导入这个模块时就会执行这些代码
-`global`关键字来指示函数中的变量来自于全局作用域
-***The Law of Demeter (LoD) or principle of least knowledge***
-> is a design guideline for developing software, particularly object-oriented programs. In its general form, the LoD is a specific case of loose coupling. The guideline was proposed by Ian Holland at Northeastern University towards the end of 1987, and can be succinctly summarized in each of the following ways:
+  单引号和双引号一样
+  ![符号简介](/picture/2022-09-18-15-44-32.png)
+  `def` 定义函数
+  `*arg `可变参数
+  `from .py import function`
+  `import .py as name` 起别名
+  `__name__`是Python中一个隐含的变量它代表了模块的名字
+  只有被Python解释器直接执行的模块的名字才是`__main__`
+  如果我们导入的模块除了定义函数之外还有可以执行代码，那么Python解释器在导入这个模块时就会执行这些代码
+  `global`关键字来指示函数中的变量来自于全局作用域
+  ***The Law of Demeter (LoD) or principle of least knowledge***
+  > is a design guideline for developing software, particularly object-oriented programs. In its general form, the LoD is a specific case of loose coupling. The guideline was proposed by Ian Holland at Northeastern University towards the end of 1987, and can be succinctly summarized in each of the following ways:
 
->1. Each unit should have only limited knowledge about other units: only units "closely" related to the current unit.
->2. Each unit should only talk to its friends; don't talk to strangers.
->3. Only talk to your immediate friends.
-```
-def main():
-    # Todo: Add your code here
-    pass
-
-
-if __name__ == '__main__':
-    main()
-```
-从现在开始我们可以将Python代码按照上面的格式进行书写，这一点点的改进其实就是在我们理解了函数和作用域的基础上跨出的巨大的一步。
-在\后面还可以跟一个八进制或者十六进制数来表示字符，例如\141和\x61都代表小写字母a
-`sys.getsizeof()`相当于C++的sizeof()
-`yield` 相当于return(默认为iter类型)
-
-元组（定义方式为（，，）），默认无法修改
-
-集合{}
-```
-print(f'{a} * {b} = {a * b}')
-print('{0} * {1} = {2}'.format(a,b,a*b))
-print('%d * %d = %d'%(a,b,a*b))
-```
-`add()` 添加元素
-`update()`添加元素或集合
-```
-str1 = 'hello, world!'
-# 通过内置函数len计算字符串的长度
-print(len(str1)) # 13
-# 获得字符串首字母大写的拷贝
-print(str1.capitalize()) # Hello, world!
-# 获得字符串每个单词首字母大写的拷贝
-print(str1.title()) # Hello, World!
-# 获得字符串变大写后的拷贝
-print(str1.upper()) # HELLO, WORLD!
-# 从字符串中查找子串所在位置
-print(str1.find('or')) # 8
-print(str1.find('shit')) # -1
-# 与find类似但找不到子串时会引发异常
-# print(str1.index('or'))
-# print(str1.index('shit'))
-# 检查字符串是否以指定的字符串开头
-print(str1.startswith('He')) # False
-print(str1.startswith('hel')) # True
-# 检查字符串是否以指定的字符串结尾
-print(str1.endswith('!')) # True
-# 将字符串以指定的宽度居中并在两侧填充指定的字符
-print(str1.center(50, '*'))
-# 将字符串以指定的宽度靠右放置左侧填充指定的字符
-print(str1.rjust(50, ' '))
-str2 = 'abc123456'
-# 检查字符串是否由数字构成
-print(str2.isdigit())  # False
-# 检查字符串是否以字母构成
-print(str2.isalpha())  # False
-# 检查字符串是否以数字和字母构成
-print(str2.isalnum())  # True
-str3 = '  jackfrued@126.com '
-print(str3)
-# 获得字符串修剪左右两侧空格之后的拷贝
-print(str3.strip())
-```
-## 函数 lambda表达式
-
-可以单独引入一个py文件中的某个函数
-
-`**kw` 表示接受任意数量的关键字参数（关键字参数是指以键值对形式传入的参数）。
-
-`*`解包运算符
-
-## 输入输出IO
+  >1. Each unit should have only limited knowledge about other units: only units "closely" related to the current unit.
+  >2. Each unit should only talk to its friends; don't talk to strangers.
+  >3. Only talk to your immediate friends.
+  ```
+  def main():
+      # Todo: Add your code here
+      pass
 
 
-## 语法
+  if __name__ == '__main__':
+      main()
+  ```
+  从现在开始我们可以将Python代码按照上面的格式进行书写，这一点点的改进其实就是在我们理解了函数和作用域的基础上跨出的巨大的一步。
+  在\后面还可以跟一个八进制或者十六进制数来表示字符，例如\141和\x61都代表小写字母a
+  `sys.getsizeof()`相当于C++的sizeof()
+  `yield` 相当于return(默认为iter类型)
 
-With
-```
-The with statement
-The with statement is used to wrap the execution of a block
-with methods defined by a context manager (see section With
-Statement Context Managers). This allows common try...
-except...finally usage patterns to be encapsulated for
-convenient reuse
-```
+  元组（定义方式为（，，）），默认无法修改
+
+  集合{}
+  ```
+  print(f'{a} * {b} = {a * b}')
+  print('{0} * {1} = {2}'.format(a,b,a*b))
+  print('%d * %d = %d'%(a,b,a*b))
+  ```
+  `add()` 添加元素
+  `update()`添加元素或集合
+  ```
+  str1 = 'hello, world!'
+  # 通过内置函数len计算字符串的长度
+  print(len(str1)) # 13
+  # 获得字符串首字母大写的拷贝
+  print(str1.capitalize()) # Hello, world!
+  # 获得字符串每个单词首字母大写的拷贝
+  print(str1.title()) # Hello, World!
+  # 获得字符串变大写后的拷贝
+  print(str1.upper()) # HELLO, WORLD!
+  # 从字符串中查找子串所在位置
+  print(str1.find('or')) # 8
+  print(str1.find('shit')) # -1
+  # 与find类似但找不到子串时会引发异常
+  # print(str1.index('or'))
+  # print(str1.index('shit'))
+  # 检查字符串是否以指定的字符串开头
+  print(str1.startswith('He')) # False
+  print(str1.startswith('hel')) # True
+  # 检查字符串是否以指定的字符串结尾
+  print(str1.endswith('!')) # True
+  # 将字符串以指定的宽度居中并在两侧填充指定的字符
+  print(str1.center(50, '*'))
+  # 将字符串以指定的宽度靠右放置左侧填充指定的字符
+  print(str1.rjust(50, ' '))
+  str2 = 'abc123456'
+  # 检查字符串是否由数字构成
+  print(str2.isdigit())  # False
+  # 检查字符串是否以字母构成
+  print(str2.isalpha())  # False
+  # 检查字符串是否以数字和字母构成
+  print(str2.isalnum())  # True
+  str3 = '  jackfrued@126.com '
+  print(str3)
+  # 获得字符串修剪左右两侧空格之后的拷贝
+  print(str3.strip())
+  ```
+  ## 函数 lambda表达式
+
+  可以单独引入一个py文件中的某个函数
+
+  `**kw` 表示接受任意数量的关键字参数（关键字参数是指以键值对形式传入的参数）。
+
+  `*`解包运算符
+
+  ## 输入输出IO
+
+
+  ## 语法
+
+  With
+  ```
+  The with statement
+  The with statement is used to wrap the execution of a block
+  with methods defined by a context manager (see section With
+  Statement Context Managers). This allows common try...
+  except...finally usage patterns to be encapsulated for
+  convenient reuse
+  ```
 
 
 
 
-## 数学
+  ## 数学
 
-[start:stop:step]python的数组全参数
+  [start:stop:step]python的数组全参数
 
-区间中，正数是移，负数是本身
+  区间中，正数是移，负数是本身
 
-python中的区间大部分是左闭右开，有趣，念作不到(自己想的)
+  python中的区间大部分是左闭右开，有趣，念作不到(自己想的)
 
-python的整数占内存这么多啊，一个PyObject_VAR_HEAD就24B，常规28B
+  python的整数占内存这么多啊，一个PyObject_VAR_HEAD就24B，常规28B
 
-HARD ~a，a是正负数什么东西啊，这个取反符号看不懂
+  HARD ~a，a是正负数什么东西啊，这个取反符号看不懂
 
-/是除，//是整除
+  /是除，//是整除
 
-两种风格输出
-```
-name="张三"; age=20
-print("%s的年龄是%d"%(name,age))   #输出结果：张三的年龄是20
-print("{}的年龄是{}".format(name,age))   #输出结果：张三的年龄是20
+  两种风格输出
+  ```
+  name="张三"; age=20
+  print("%s的年龄是%d"%(name,age))   #输出结果：张三的年龄是20
+  print("{}的年龄是{}".format(name,age))   #输出结果：张三的年龄是20
 ```
 
 # CONDA
