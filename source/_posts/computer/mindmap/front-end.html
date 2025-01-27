@@ -1,0 +1,86 @@
+---
+date: 2025-01-27 10:45:28
+timeline: mindmap
+title: front-end
+categories: base
+tags:
+- front-end
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Markmap</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #mindmap {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+
+<body>
+  <svg id="mindmap"></svg>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script>
+  <script>((getMarkmap) => {
+      window.WebFontConfig = {
+        custom: {
+          families: [
+            "KaTeX_AMS",
+            "KaTeX_Caligraphic:n4,n7",
+            "KaTeX_Fraktur:n4,n7",
+            "KaTeX_Main:n4,n7,i4,i7",
+            "KaTeX_Math:i4,i7",
+            "KaTeX_Script",
+            "KaTeX_SansSerif:n4,n7,i4",
+            "KaTeX_Size1",
+            "KaTeX_Size2",
+            "KaTeX_Size3",
+            "KaTeX_Size4",
+            "KaTeX_Typewriter"
+          ]
+        },
+        active: () => {
+          getMarkmap().refreshHook.call();
+        }
+      };
+    })(() => window.markmap)</script>
+  <script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" defer></script>
+  <script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+              const {
+                markmap,
+                mm
+              } = window;
+              const {
+                el
+              } = markmap.Toolbar.create(mm);
+              el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+              document.body.append(el);
+            })</script>
+  <script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap, null, { "content": "front-end", "children": [{ "content": "<a href=\"\">Front-end/Web 开发</a>", "children": [{ "content": "<a href=\"\">HTML</a> HyperText Markup Language超文本标记语言", "children": [], "payload": { "tag": "h2", "lines": "71,72" } }, { "content": "六层嵌套", "children": [{ "content": "<pre data-lines=\"73,85\"><code>md的#和html的h标签都是只能嵌套六层，但可以用嵌套列表来规避\ndocument.write() 方法仅用于测试。\n[子元素 后代元素]()\n子元素是指一个元素内部的第一层子元素，也就是直接作为该元素子节点的元素。\n后代元素是指一个元素内部包含的所有嵌套元素\n\n[渲染Render]() 浏览器将HTML,CSS,JS展示在页面的过程称之\n[嵌套元素]() 将一个元素置于其他元素之中\n[空元素(自闭和标签)]() 不含任何内容的元素，如`&lt;img&gt;`\n&lt;center&gt; &lt;img width=\"600\" height=\"300\" src=\"/picture/Snipaste_2023-03-01_16-25-45.png\"&gt;\n  &lt;img width=\"600\" height=\"300\" src=\"/picture/Snipaste_2023-03-01_16-28-25.png\"&gt;\n  &lt;img width=\"600\" height=\"300\" src=\"/picture/Snipaste_2023-03-01_16-38-30.png\"&gt;\n</code></pre>", "children": [], "payload": { "tag": "pre", "lines": "73,85" } }], "payload": { "tag": "h2", "lines": "72,73" } }, { "content": "<a href=\"\">CSS</a> 层叠样式表（Cascading Style Sheets", "children": [{ "content": "", "children": [{ "content": "内部CSS 在<code>&lt;head&gt;</code>区用<code>&lt;style&gt;</code>标签定义", "children": [], "payload": { "tag": "li", "lines": "106,107" } }, { "content": "外部CSS 用<code>&lt;link&gt;</code>以外部文件方式引入", "children": [], "payload": { "tag": "li", "lines": "107,108" } }, { "content": "行内CSS 以<code>style=\"\"</code>方式定义", "children": [], "payload": { "tag": "li", "lines": "108,110" } }], "payload": { "tag": "ul", "lines": "106,110" } }, { "content": "", "children": [{ "content": "弹性布局<code>Flex Box</code>", "children": [], "payload": { "tag": "li", "lines": "112,113" } }, { "content": "网格布局<code>Grid</code>", "children": [], "payload": { "tag": "li", "lines": "113,114" } }, { "content": "响应式布局<code>自适应布局</code>", "children": [], "payload": { "tag": "li", "lines": "114,115" } }], "payload": { "tag": "ul", "lines": "112,115" } }], "payload": { "tag": "h2", "lines": "86,87" } }, { "content": "<a href=\"\">JavaScript</a> 运行在浏览器中的Web前端脚本语言", "children": [{ "content": "<pre data-lines=\"117,122\"><code data-lines=\"117,122\"><span class=\"hljs-keyword\">var</span> x = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">String</span>();\n<span class=\"hljs-keyword\">var</span> y = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Number</span>();\n<span class=\"hljs-keyword\">var</span> z = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Boolean</span>();\n</code></pre>", "children": [], "payload": { "tag": "pre", "lines": "117,122" } }], "payload": { "tag": "h2", "lines": "115,116" } }, { "content": "<a href=\"\">DOM</a> <code>Document Object Model</code>  文档对象模型", "children": [], "payload": { "tag": "h2", "lines": "125,126" } }, { "content": "<a href=\"\">AJAX</a> <code>Asynchronous Javascript And Xml</code> 不刷新页面更新网页", "children": [{ "content": "<pre data-lines=\"129,139\"><code data-lines=\"129,139\">const xhr = <span class=\"hljs-keyword\">new</span> XMLHttpRequest();\nxhr.onreadystatechange = <span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>) {\n  <span class=\"hljs-keyword\">if</span> (xhr.readyState === <span class=\"hljs-number\">4</span> &amp;&amp; xhr.status === <span class=\"hljs-number\">200</span>) {\n    <span class=\"hljs-built_in\">console</span>.<span class=\"hljs-built_in\">log</span>(xhr.responseText);\n  }\n};\nxhr.open(<span class=\"hljs-string\">\"GET\"</span>, <span class=\"hljs-string\">\"https://example.com/data.json\"</span>);\nxhr.send();\n</code></pre>", "children": [], "payload": { "tag": "pre", "lines": "129,139" } }, { "content": "<pre data-lines=\"140,151\"><code data-lines=\"140,151\"><span class=\"hljs-keyword\">const</span> xhr = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">XMLHttpRequest</span>();\nxhr.<span class=\"hljs-property\">onreadystatechange</span> = <span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>) {\n  <span class=\"hljs-keyword\">if</span> (xhr.<span class=\"hljs-property\">readyState</span> === <span class=\"hljs-number\">4</span> &amp;&amp; xhr.<span class=\"hljs-property\">status</span> === <span class=\"hljs-number\">200</span>) {\n    <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(xhr.<span class=\"hljs-property\">responseText</span>);\n  }\n};\nxhr.<span class=\"hljs-title function_\">open</span>(<span class=\"hljs-string\">\"POST\"</span>, <span class=\"hljs-string\">\"https://example.com/data\"</span>);\nxhr.<span class=\"hljs-title function_\">setRequestHeader</span>(<span class=\"hljs-string\">\"Content-Type\"</span>, <span class=\"hljs-string\">\"application/json\"</span>);\nxhr.<span class=\"hljs-title function_\">send</span>(<span class=\"hljs-title class_\">JSON</span>.<span class=\"hljs-title function_\">stringify</span>({<span class=\"hljs-attr\">key</span>: <span class=\"hljs-string\">\"value\"</span>}));\n</code></pre>", "children": [], "payload": { "tag": "pre", "lines": "140,151" } }], "payload": { "tag": "h2", "lines": "127,128" } }, { "content": "<a href=\"\">JSON</a> <code>JavaScript Object Notation</code> 一种储存和交换数据的语法规范", "children": [], "payload": { "tag": "h2", "lines": "151,152" } }, { "content": "<a href=\"\">jQuery</a> 最受欢迎的JavaScript库，是一套封装好的操作DOM的语法", "children": [], "payload": { "tag": "h2", "lines": "156,157" } }, { "content": "<a href=\"\"><strong>JS语法规则</strong></a>", "children": [], "payload": { "tag": "h2", "lines": "157,158" } }, { "content": "<a href=\"\">异步操作</a>", "children": [{ "content": "<pre data-lines=\"171,179\"><code data-lines=\"171,179\"><span class=\"hljs-keyword\">var</span> a =<span class=\"hljs-number\">5</span>;<span class=\"hljs-comment\">//非块作用域(全局变量)</span>\n{<span class=\"hljs-keyword\">let</span> b =<span class=\"hljs-number\">2</span>;}<span class=\"hljs-comment\">//b无法在这块作用域以外使用</span>\n<span class=\"hljs-keyword\">let</span> a =[];<span class=\"hljs-comment\">//数组</span>\n<span class=\"hljs-keyword\">let</span> f =<span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>){};<span class=\"hljs-comment\">//函数</span>\n<span class=\"hljs-keyword\">let</span> g ={};<span class=\"hljs-comment\">//对象</span>\n<span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(a);<span class=\"hljs-comment\">//输出a</span>\n</code></pre>", "children": [], "payload": { "tag": "pre", "lines": "171,179" } }, { "content": "<pre data-lines=\"180,183\"><code data-lines=\"180,183\"><span class=\"hljs-attribute\">let</span>[a,b] =[<span class=\"hljs-number\">5</span>,<span class=\"hljs-number\">7</span>];//let a =<span class=\"hljs-number\">5</span>,b =<span class=\"hljs-number\">7</span>;\n</code></pre>", "children": [], "payload": { "tag": "pre", "lines": "180,183" } }], "payload": { "tag": "h2", "lines": "167,168" } }], "payload": { "tag": "h1", "lines": "10,11" } }, { "content": "<a href=\"\">node</a>", "children": [], "payload": { "tag": "h1", "lines": "190,191" } }, { "content": "<a href=\"\">Vue</a>", "children": [], "payload": { "tag": "h1", "lines": "196,197" } }] }, {})</script>
+</body>
+
+</html>
