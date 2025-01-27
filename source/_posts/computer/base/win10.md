@@ -41,14 +41,19 @@ ctrl+win+`->` 切换虚拟桌面
 机器开机出现标志的时候按`F10`进入BIOS(不同品牌不一样，我的是`F2`)
 
 [修改任务栏图标颜色]()
+```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize
+```
 
 修改的ColorPrevalence值为1  # 值=0 黑色；值=1或2 白色
 修改SystemUsesLightTheme的值为0  # 值=0 白色；值=1 黑色
 
 [系统文件]() LocalLow 文件夹与Local 文件夹基本相同，区别在于前者用于优先级较低的应用程序（运行时安全设置受限）
 
-2023-0616  Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
+2023-0616
+```
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
+```
 这里把Large System Cache改成了1
 
 
@@ -83,7 +88,9 @@ echo. > filename 会使文件添加一个 (空格)
 但是注意这里有个坑，网上能搜到的教你恢复的方法都是不管用的，最起码win10下不管用，
 sc config i8042prt start=auto是恢复不了的，要用sc config i8042prt start=demand才行。
 对应的注册表位置：
+```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt]"Start"=dword:00000003
+```
 // 对应start= demand，
 服务类型：手动"Start"=dword:00000004
 // 对应start= disabled，服务类型：禁用
