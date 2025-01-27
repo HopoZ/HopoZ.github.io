@@ -135,7 +135,7 @@ print("{}的年龄是{}".format(name,age))   #输出结果：张三的年龄是2
 # CONDA
 ## `miniconda`常用指令
 创建一个新的环境：
-
+```
 conda create --name <环境名称>
 可以使用 -n 或 --name 参数指定环境名称。可以加上 python=<版本号> 来指定安装的Python版本。
 
@@ -202,6 +202,7 @@ conda clean --all
 conda env remove --name <环境名称>
 conda remove -n  <需要删除的环境名> --all
 这将移除指定的环境。
+```
 
 复制虚拟环境到另外一台设备：
 在Miniconda的安装路径下，找到envs文件夹，该文件夹中包含了所有的虚拟环境。找到你要拷贝的虚拟环境的文件夹，并将该文件夹复制到目标电脑Miniconda的安装路径下的envs文件夹
