@@ -2,7 +2,7 @@ slogan: 假作真时真亦假,无为有处有还无
 email: 2166632799@qq.com
 logo: "/images/logo.svg"
 
-mathjax: true # 加载 LateX 数学公式库
+mathjax: false # 加载 LateX 数学公式库
 
 favicon: # 配置网页图标
   small: /images/favicon-16x16.png
