@@ -5,6 +5,7 @@ title: 疯狂java讲义
 categories: daily
 tags:
   - books
+  - java
 toc: true
 ---
 

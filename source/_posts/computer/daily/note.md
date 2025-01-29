@@ -22,7 +22,7 @@ hexo generate报错，百思不得其解
 
 ![image-20250120002947031](/picture/image-20250120002947031.png)
 
-结果是多个git仓库包含的问题，加上了.gitmodules文件就好了
+结果是多个git仓库包含的问题，加上了.gitmodules文件再写入以下内容就好了
 
 ```
 [submodule "themes/tranquility"]

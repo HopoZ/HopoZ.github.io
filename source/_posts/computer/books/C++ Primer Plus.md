@@ -5,6 +5,7 @@ title: C++ Primer Plus
 categories: daily
 tags:
   - books
+  - C++
 toc: true
 ---
 
