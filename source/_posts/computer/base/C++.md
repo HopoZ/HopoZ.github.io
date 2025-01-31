@@ -11,8 +11,7 @@ abstract: "C++基础内容和C++杂记"
 
 # main()
 推荐网站:
-  - [](https://cppreference.com)
-  -
+  [](https://cppreference.com)
 # 代码片段
 把打开的文件作为输出流的对象
 ```
