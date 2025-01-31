@@ -1,4 +1,4 @@
-
+---
 date: 2025-01-29 19:09:57
 timeline: article
 title: c++
@@ -7,6 +7,8 @@ tags:
   - cpp
 toc: true
 abstract: "C++基础内容和C++杂记"
+---
+
 # main()
 推荐网站:
   - [](https://cppreference.com)
