@@ -17,5 +17,6 @@ toc: true
 # 挂载主机共享文件夹
 
 # 安装中文输入法
-![](https://zhuanlan.zhihu.com/p/529892064)
+[ubuntu安装中文输入法](https://zhuanlan.zhihu.com/p/529892064)
+
 匪夷所思，bash能输入中文,vscode里输入不了...
