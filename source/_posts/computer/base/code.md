@@ -10,5 +10,6 @@ tags:
 toc: true
 ---
 
-![java代码基础](https://github.com/HopoZ/Java-BaseShow)
-![python代码基础](https://github.com/HopoZ/Python-BaseShow)
+[java代码基础](https://github.com/HopoZ/Java-BaseShow)
+
+[python代码基础](https://github.com/HopoZ/Python-BaseShow)
