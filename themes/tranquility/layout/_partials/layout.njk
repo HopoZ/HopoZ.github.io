@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>
+      {% if is_home() %}
+        {{ config.title }}
+      {% elif is_post() %}
+        {{ page.title }} | {{ config.title }}
+      {% elif is_tag() %}
+        {{ page.tag }} | {{ config.title }}
+      {% else %}
+        {{ page.title }} | {{ config.title }}
+      {% endif %}
+    </title>
+    <meta name="description" content="{{ config.description }}" />
+    <meta name="keywords" content="{{ config.keywords }}" />
+    {% if theme.favicon.apple_touch_icon %}
+      <link rel="apple-touch-icon"
+            sizes="180x180"
+            href="{{ url_for(theme.favicon.apple_touch_icon) }}" />
+    {% endif %}
+    {% if theme.favicon.medium %}
+      <link rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="{{ url_for(theme.favicon.medium) }}" />
+    {% endif %}
+    {% if theme.favicon.small %}
+      <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="{{ url_for(theme.favicon.small) }}" />
+    {% endif %}
+    {% if theme.favicon.safari_pinned_tab %}
+      <link rel="mask-icon"
+            href="{{ url_for(theme.favicon.safari_pinned_tab) }}"
+            color="{{ theme.android_chrome_color }}" />
+    {% endif %}
+    {% if theme.favicon.android_manifest %}
+      <link rel="manifest" href="{{ url_for(theme.favicon.android_manifest) }}" />
+    {% endif %}
+    {% if theme.zh_font.enable %}
+      {% include('./components/font.njk') %}
+    {% endif %}
+    <link rel="stylesheet"
+          type="text/css"
+          href='{{ url_for("/css/layout.css") }}' />
+    {% if theme.baidu_analytics %}
+      <script>
+        var _hmt = _hmt || [];
+        (function () {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?{{theme.baidu_analytics}}";
+          var s = document.getElementsByTagName("script")[0];
+          s
+            .parentNode
+            .insertBefore(hm, s);
+        })();
+      </script>
+    {% endif %}
+    {% block link %}
+    {% endblock link %}
+  </head>
+  <body>
+    {% if theme.search.enable %}
+      {% include("./components/search-main.njk") %}
+    {% endif %}
+    {% set headClass = 'head--sticky'if theme.nav and theme.nav.sticky else 'head' %}
+    <div class={{ headClass }}>
+      <div class="nav">
+        <a href='{{ url_for("/") }}' class="nav-logo">
+          <img alt="logo" height="60px" width="60px" src="{{ url_for(theme.logo) }}" />
+        </a>
+        <input id="navBtn" type="checkbox" />
+        <div class="nav-right">
+          {% if theme.search.enable %}
+            {% include("./components/search-btn.njk") %}
+          {% endif %}
+          <div class="nav-menu">
+            {% if theme.subpage.enable %}
+              {% for nav in theme.subpage.pages %}
+                <a class="nav-menu-item" href="{{ url_for(nav.path or nav.name) }}">{{ nav.title }}</a>
+              {% endfor %}
+            {% else %}
+              <a class="nav-menu-item" href='{{ url_for("/blog/") }}'>博客</a>
+            {% endif %}
+            {% if theme.cv.enable and theme.cv.showInNav %}<a class="nav-menu-item" href='{{ url_for("/cv/") }}'>简历</a>{% endif %}
+          </div>
+        </div>
+        <label class="nav-btn" for="navBtn"></label>
+      </div>
+    </div>
+    <div class="body">
+      {% block body %}
+      {% endblock body %}
+    </div>
+    {% include "./components/foot.njk" %}
+    {% if theme.mathjax %}
+      <script src="https://unpkg.com/js-polyfills@0.1.43/es6.js"></script>
+      <script id="MathJax-script"
+              async
+              src="https://www.unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    {% endif %}
+    {% if theme.search.enable %}
+      <script src="{{url_for('js/search.js')}}"></script>
+      <script>searchInitialize("{{url_for(theme.search.path)}}")</script>
+    {% endif %}
+    <script src="{{url_for('js/copy-code.js')}}"></script>
+    {% block script %}
+    {% endblock script %}
+  </body>
+</html>

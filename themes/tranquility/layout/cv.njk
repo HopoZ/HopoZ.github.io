@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <meta charset="utf-8" />
+  <meta name="keywords" content="{{ page.keywords }}" />
+  <meta name="description" content="{{ page.description }}" />
+  <head>
+    {% if theme.zh_font.enable %}
+      {% include('./_partials/components/font.njk') %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for("/css/cv.css") }}" />
+    <title>{{ page.title or site.author + "'s CV" }}</title>
+    <style>{{fa_css()}}</style>
+  </head>
+  {% set info = page.content %}
+  <body>
+    <div class="paper">
+      <header>
+        <div class="title">{{ info.title }}</div>
+        <div class="base-info">
+          {% for item in info.baseInfo %}<div class="info-item">{{ item }}</div>{% endfor %}
+        </div>
+        <div class="links">
+          {% if info.tel %}
+            <a href="tel:{{ info.tel }}" class="text-link">
+              {{ fa_inline('mobile', {prefix: 'fas'}) }}
+            {{ info.tel }}</a>
+          {% endif %}
+          {% if info.email %}
+            <a href="mailto:{{ info.email }}" class="text-link">
+              {{ fa_inline('envelope', {prefix: 'fas'}) }}
+              {{ info.email }}
+            </a>
+          {% endif %}
+          {% if info.github %}
+            <a href="https://github.com/{{ info.github }}" class="text-link">
+              {{ fa_inline('github', {prefix: 'fab'}) }}
+              {{ info.github }}
+            </a>
+          {% endif %}
+          {% if info.blogHref %}
+            <a href="{{ info.blogHref }}" class="text-link">
+              {{ fa_inline('blog', {prefix: 'fas'}) }}
+              {{ info.blog }}
+            </a>
+          {% endif %}
+        </div>
+      </header>
+      <article>
+        {% set edu = info.edu %}
+        <div class="chapter">
+          <div class="chapter-title">
+            {{ fa_inline('graduation-cap', {prefix: 'fas'}) }}
+            {{ edu.title }}
+          </div>
+          <div class="section">
+            {% for p in edu.content %}<p>{{ p }}</p>{% endfor %}
+          </div>
+        </div>
+        {% for chp in info.chapters %}
+          <div class="chapter">
+            <div class="chapter-title">
+              {% if chp.icon %}
+                {% if chp.icon.name %}
+                  {{ fa_inline(chp.icon.name, {prefix: chp.icon.type}) }}
+                {% else %}
+                  {{ fa_inline(chp.icon, {prefix: page.iconPrefix}) }}
+                {% endif %}
+              {% endif %}
+              {{ chp.title }}
+              {% if chp.tips %}<div class="tips">{{ chp.tips }}</div>{% endif %}
+            </div>
+            {% if chp.sections %}
+              {% for sec in chp.sections %}
+                <a href="{{ sec.link or '#' }}" class="section__head">
+                  <div class="section-title">{{ sec.title }}</div>
+                  <div class="section-title-des">{{ sec.description }}</div>
+                </a>
+                {% for p in sec.content %}<p>{{ p }}</p>{% endfor %}
+              {% endfor %}
+            {% elif chp.content %}
+              {% if chp.list %}
+                <ul class="section">
+                  {% for p in chp.content %}<li>{{ p }}</li>{% endfor %}
+                </ul>
+              {% else %}
+                <div class="section">
+                  {% for p in chp.content %}<p>{{ p }}</p>{% endfor %}
+                </div>
+              {% endif %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </article>
+      <footer>
+        <a class="online-link" href="{{ full_url_for("/cv") }}">查看在线简历获得实时更新</a>
+        <a class="enginer"
+           href="https://github.com/hooozen/hexo-theme-tranquility">Generate by Tranquility</a>
+      </footer>
+    </div>
+  </body>
+</html>

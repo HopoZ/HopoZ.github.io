@@ -1,0 +1,13 @@
+{% extends "_partials/layout.njk" %}
+{% block link %}
+  <link rel="stylesheet"
+        type="text/css"
+        href="{{ url_for("/css/category.css") }}" />
+{% endblock link %}
+{% block body %}
+  <div class="tag-page-title">#{{ page.tag }}</div>
+  <div class="post-list">
+    {{ partial("_partials/macros/post-list.njk", {posts: page.posts}) }}
+    {% if page.prev or page.next %}<div class="paginator">{{ paginator({"prev_next": false}) }}</div>{% endif %}
+  </div>
+{% endblock body %}

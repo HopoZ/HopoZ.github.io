@@ -1,0 +1,60 @@
+{% set fancy = theme.tagcloud.fancy %}
+{% extends "_partials/layout.njk" %}
+{% block link %}
+  <link rel="stylesheet" type="text/css" href="{{ url_for("/css/category.css") }}" />
+{% endblock link %}
+{% block body %}
+  <div class="wall wall-category{{ '--plain' if not fancy else '' }}">
+    <div class="wall-main">
+      <div class="wall-category-title">
+        <div class="title-icon"
+             style="background-image: url({{ url_for(page.icon) }})"></div>
+        {{ page.title or page.name }}
+      </div>
+      <div class="wall-category-description">{{ page.description }}</div>
+      <div class="wall-category-tags">
+        <div id="tags-outer">{{ trqlt_tagcloud(page.tags, theme.tagcloud) }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="post-list">
+    {% if not page.posts %}
+      DEBUG: 该子页分类下没有文章！在指定文章头部中添加 category: {{ page.name }} 字段，即可将该文章添加至此页。
+    {% else %}
+      {{ partial("_partials/macros/post-list.njk", {posts: page.posts}) }}
+    {% endif %}
+    {% if page.prev or page.next %}<div class="paginator">{{ paginator({"prev_next": false}) }}</div>{% endif %}
+  </div>
+{% endblock body %}
+{% block script %}
+  {% if fancy %}
+    <script type="text/javascript"
+            charset="utf-8"
+            src="{{ url_for('/js/tagcanvas.min.js') }}"></script>
+    <script type = "text/javascript">
+        window.onload = function() {
+            try {
+                TagCanvas.Start('tagCanvas', '', {
+                    outlineThickness: 1,
+                    maxSpeed: 0.03,
+                    // freezeActive: true,
+                    // freezeDecel: true,
+                    textColour: null,
+                    textColour: null,
+                    outlineColour: "#aaa",
+                    weight: true,
+                    padding: 4,
+                    // clickToFront: 200,
+                    fadIn: 200,
+                    // pinchZoom: true,
+                    wheelZoom: false,
+                    initial: [0.1, -0.03]
+                });
+            } catch (e) {
+                // something went wrong, hide the canvas container
+                document.getElementById('tags-outer').style.display = 'none';
+            }
+        };
+    </script>
+  {% endif %}
+{% endblock script %}
