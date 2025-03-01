@@ -1,5 +1,5 @@
 ---
-date: 2025-02-26 11:13:18
+date: 2025-02-28 10:55:41
 timeline: article
 title: docker使用bug
 categories: daily
@@ -9,6 +9,7 @@ tags:
 toc: true
 ---
 
+# 2025-02-26
 ![](/picture/Snipaste_2025-02-28_10-41-14.png)
 这是frontend部署的代码
 ![](/picture/Snipaste_2025-02-28_10-44-55.png)
