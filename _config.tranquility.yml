@@ -145,7 +145,7 @@ timeline:
       color: "#60a465"
       icon: /images/icon/icon-app.svg
       checked: true
-    - name: mindmap
+    - name: order
       color: "#568dc4"
       icon: /images/icon/icon-event.svg
       checked: true
