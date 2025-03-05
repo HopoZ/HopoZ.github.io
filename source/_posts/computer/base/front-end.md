@@ -9,13 +9,13 @@ toc: true
 ---
 # 学习路线
 看下[w3schools](https://www.w3schools.com)的教程
-![](/images/picture/Snipaste_2025-01-29_20-10-30.png)
+![](/picture/Snipaste_2025-01-29_20-10-30.png)
 
 ，然后看下[MDN](https://developer.mozilla.org/zh-CN/)的教程，
-![](/images/picture/Snipaste_2025-01-29_20-13-05)
+![](/picture/Snipaste_2025-01-29_20-13-05)
 
 最后看下[菜鸟教程](https://www.runoob.com)的教程，这样基础就差不多了，做一些项目吧。
-![](/images/picture/Snipaste_2025-01-29_20-14-38.png)
+![](/picture/Snipaste_2025-01-29_20-14-38.png)
 
 # [Front-end/Web 开发]()
 ## [网络搜索]()

@@ -10,17 +10,17 @@ toc: true
 
 hexo generate报错，百思不得其解
 
-![image-20250120002640355](/images/picture/image-20250120002640355.png)
+![image-20250120002640355](/picture/image-20250120002640355.png)
 
 排查了一个小时，以为是格式错误什么的，结果是这个
 
-![image-20250120002849817](/images/picture/image-20250120002849817.png)
+![image-20250120002849817](/picture/image-20250120002849817.png)
 
 
 
 解决后又遇到了build错误
 
-![image-20250120002947031](/images/picture/image-20250120002947031.png)
+![image-20250120002947031](/picture/image-20250120002947031.png)
 
 结果是多个git仓库包含的问题，加上了.gitmodules文件再写入以下内容就好了
 

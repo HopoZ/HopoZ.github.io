@@ -45,5 +45,5 @@ docker network create --subnet=<new_ip>/24 my-custom-network
 
 # 整整一天一天vmware没网络
 还以为是docker或者nginx代理的问题，各种改，后来才发现和是vmware更新的问题，删除下面
-![](/images/picture/Snipaste_2025-02-16_20-22-24.png)
+![](/picture/Snipaste_2025-02-16_20-22-24.png)
 重新安装即可解决问题
