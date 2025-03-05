@@ -36,7 +36,7 @@ ios::base::sync_with_stdio(false);
 ```
 typeid().name()
 ```
-![](/picture/Snipaste_2025-01-29_19-09-18.png)
+![](/images/picture/Snipaste_2025-01-29_19-09-18.png)
 
 # 杂记
 [兼容]()

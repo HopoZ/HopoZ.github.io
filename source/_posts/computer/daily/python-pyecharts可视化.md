@@ -29,7 +29,7 @@ line.render(path="./out/render.html") #渲染对象并保存为html文件
 
 
 这是效果：
-![image-20250121231446914](/picture/image-20250121231446914.png)
+![image-20250121231446914](/images/picture/image-20250121231446914.png)
 
 
 
@@ -37,15 +37,15 @@ line.render(path="./out/render.html") #渲染对象并保存为html文件
 
 看到原数据为txt文档
 
-![image-20250121234809661](/picture/image-20250121234809661.png)
+![image-20250121234809661](/images/picture/image-20250121234809661.png)
 
 我们先手动把json提取出来存为json文件看看格式
 
-![](/picture/Snipaste_2025-01-21_23-50-13.png)
+![](/images/picture/Snipaste_2025-01-21_23-50-13.png)
 
 可以在左下角outline看到格式为status,msg,data[],点击展开看到更细致的格式
 
-![](/picture/Snipaste_2025-01-21_23-52-43.png)
+![](/images/picture/Snipaste_2025-01-21_23-52-43.png)
 
 那么就进行代码处理：
 
@@ -96,7 +96,7 @@ line.render(path="./out/JSONrender.html")
 
 可视化结果如下：
 
-![](/picture/Snipaste_2025-01-22_00-31-14.png)
+![](/images/picture/Snipaste_2025-01-22_00-31-14.png)
 
 
 
