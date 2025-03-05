@@ -1,0 +1,61 @@
+---
+date: 2025-03-05 14:35:35
+title: 意识流SQL
+categories: daily
+tags:
+    -SQl
+toc: true
+timeline: daily
+
+---
+
+# 必知必会
+SELECT
+FROM
+WHERE
+IN
+BETWEEN
+IS NULL
+UNION
+GROUP BY
+HAVING
+ORDER BY
+DESC ASC
+LIMIT
+(INNER) JOIN
+LEFT/RIGHT（OUTER）JOIN
+嵌套查询
+DISTINCT
+COUNT()
+AND
+OR
+ON
+LIKE
+%
+_
+[charList]
+[^charList] [!charList]
+AS
+
+# CRUD
+INSERT INTO
+REPLACE INTO
+VALUES
+UPDATE
+SET
+TRUNCATE
+DELETE
+ALTER
+ADD
+MODIFY
+DROP
+IF EXISTS
+索引:B-Tree,唯一,主键，全文，空间
+约束:主键，外键，唯一，非空，检查，默认
+WITH
+CASE　WHEN THEN ELSE END
+窗口函数
+OVER
+PARTITION BY
+...
+CAST
