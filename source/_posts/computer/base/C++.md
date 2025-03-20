@@ -1,5 +1,5 @@
 ---
-date: 2025-01-29 19:09:57
+date: 2025-03-20 16:04:22
 timeline: article
 title: c++
 categories: base
@@ -57,3 +57,5 @@ typeid().name()
 负无穷 0xc0c0c0c0`-1061109568` 或 -0x3f3f3f3f
 
 C++中NULL是未定义的，在`#include <cstddef>`后被定义为__null，__null我没找到进一步定义，查看资料说是被编译器实现，成为空指针类型，这么复杂地搞。那为什么C++不继承这个__null实现，而是实现了一个特殊的字面值常量nullptr，与所有指针类型的 0 值等效呢。有趣。
+# 杂记
+工作电脑上怎么也配置不好clangd，原来是缺少MSVC库，windows下的clangd需要MSVC的库。下载后就没头文件爆红的问题了。
