@@ -5,7 +5,7 @@ categories: daily
 tags:
     -SQl
 toc: true
-timeline: daily
+timeline: article
 
 ---
 
