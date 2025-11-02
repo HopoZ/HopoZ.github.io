@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>HopoZ</title>
+  
+  
+  <link href="https://hopoz.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://hopoz.github.io/"/>
+  <updated>2025-06-29T02:56:34.000Z</updated>
+  <id>https://hopoz.github.io/</id>
+  
+  <author>
+    <name>HopoZ</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://hopoz.github.io/Typora/"/>
+    <id>https://hopoz.github.io/Typora/</id>
+    <published>2025-11-02T09:43:07.224Z</published>
+    <updated>2025-06-29T02:56:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>Typora 2025 最新版 1.10.8 破解教程</p><p>一个经典的破解方法直接用在新版本 1.10 上会导致闪退，但是略加修改即可成功破解。</p><p>本教程参考：Typora2025最新版破解教程1.10.8_typora 1.10.8-CSDN博客，对其方法进行了简化。<br>第一步：安装</p><p>从官网（typora.io 或 typoraio.cn）下载并安装最新版本，建议安装时选择“为所有用户安装”并且安装在默认位置，否则你需要自行寻找后文所提到的文件。</p><p>安装完成后要先运行一次，并选择开始试用。<br>第二步：修改激活信息</p><p>使用文本编辑器以管理员身份打开 “C:\Program Files\Typora\resources\page-dist\static\js\LicenseIndex.180dd4c7.bffb5802.chunk.js”，把 e.hasactivated 赋值为 “true”（含英文引号），即将 e.hasActivated=”true”==e.hasActivated 替换为 e.hasActivated=”true”。<br>第三步：设置弹窗自动关闭</p><p>使用文本编辑器以管理员身份打开 “C:\Program Files\Typora\resources\page-dist\static\js\0.99879679.chunk.js”，在文件开头添加代码：</p><p>setTimeout(function() { document.querySelector(‘.default-btn.secondary-btn’).click(); }, 256);</p><p>选中区域为要添加的代码</p><p>功能是在弹窗出现 256 毫秒后自动点击关闭按钮。注意，时间不能设置得太短，否则会报错。<br>第四步：隐藏“未激活”标签</p><p>使用文本编辑器以管理员身份打开 “C:\Program Files\Typora\resources\window.html”，在  后添加代码：</p><style>body>div[role="button"]{visibility:hidden;}</style><p>选中区域为要添加的代码</p><p>现在打开 Typora 时，你会看到一个弹窗一闪而过，然后就可以正常使用啦！<br>补充</p><p>使用一段时间后可能出现只出现弹窗不出现主窗口的情况，这时候只能重置设置，在终端运行命令</p><p>DEL /F /Q “C:\Users%USERNAME%\AppData\Roaming\Typora\profile.data”<br>REG delete HKEY_CURRENT_USER\SOFTWARE\Typora /f</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://hopoz.github.io/sandboxies-plus/"/>
+    <id>https://hopoz.github.io/sandboxies-plus/</id>
+    <published>2025-11-02T09:43:07.224Z</published>
+    <updated>2025-09-25T12:42:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>NAME: 52pojie  // Any name<br>DATE: 01.04.2099  // Optional<br>TYPE: CONTRIBUTOR  // or PERSONAL-HUGE<br>SOFTWARE: Sandboxie-Plus<br>UPDATEKEY: 123456789  // Optional<br>SIGNATURE: <a href="http://www.52pojie.cn/">www.52pojie.cn</a>  // Any value here</p><p>NAME: 52pojie<br>DATE: 01.04.2099<br>TYPE: CONTRIBUTOR<br>SOFTWARE: Sandboxie-Plus<br>UPDATEKEY: 123456789<br>SIGNATURE: <a href="http://www.52pojie.cn/">www.52pojie.cn</a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CS 61A学习笔记</title>
+    <link href="https://hopoz.github.io/note/"/>
+    <id>https://hopoz.github.io/note/</id>
+    <published>2025-09-24T06:19:56.000Z</published>
+    <updated>2025-09-25T12:42:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="DAY1-python简介-Lab00-Lab01-Homework1"><a href="#DAY1-python简介-Lab00-Lab01-Homework1" class="headerlink" title="DAY1: python简介 Lab00 Lab01 Homework1"></a>DAY1: python简介 Lab00 Lab01 Homework1</h1><p>python的函数名如max其实就相当于一个指针，如果说让另一个变量f指向这个函数名max的话，然后再把这个函数名max改成另外的东西的话不会影响f继续指向原本函数的。</p><p>环境变量表不多说，vscode之类的现代IDE的debug模式就可以看了，也不用去他的说在线网站，我猜老师习惯用裸妆vim了吧（</p><p>print(print(1),print(2))这个例子很好的解释了一个函数的side effect，很棒的例子</p><p>python3有几个有趣的参数, -i a.py表示interactive，相当于进入了a这个python的环境中， -m表示module，可以直接运行一个模块，-m doctest -v module.py 就是运行module.py这个模块里面的doctest，且是verbose（详细模式），会打印每个测试是否通过。</p><p>又介绍了默认参数值，不多赘述了。</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="base" scheme="https://hopoz.github.io/categories/base/"/>
+    
+    
+    <category term="AI" scheme="https://hopoz.github.io/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++</title>
+    <link href="https://hopoz.github.io/cpp/"/>
+    <id>https://hopoz.github.io/cpp/</id>
+    <published>2025-09-16T12:22:22.000Z</published>
+    <updated>2025-09-16T12:22:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="main"><a href="#main" class="headerlink" title="main()"></a>main()</h1><h2 id="推荐网站-https-cppreference-com"><a href="#推荐网站-https-cppreference-com" class="headerlink" title="推荐网站:  - https://cppreference.com"></a>推荐网站:<br>  - <a href="https://cppreference.com/">https://cppreference.com</a></h2><h1 id="vscode"><a href="#vscode" class="headerlink" title="vscode"></a>vscode</h1><h2 id="使用clangd拓展作为lsp"><a href="#使用clangd拓展作为lsp" class="headerlink" title="使用clangd拓展作为lsp"></a>使用clangd拓展作为lsp</h2><p>终于搞定，我一直搞vscode clangd拓展报错找不到头文件，很是头疼，终于，添加了一个fake”compile_commands.json”</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    {</span><br><span class="line">        "directory": "C:/Cpp/src",</span><br><span class="line">        "file": "dummy.cpp",</span><br><span class="line">        "command": "g++ -std=c++23 -Wall -g -static-libgcc -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/include\" -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/x86_64-w64-mingw32\" -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/include/c++\" -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/include/c++/14.2.0\" dummy.cpp"</span><br><span class="line">    }</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure><p>和在vscode里指定了clangd的include路径</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"clangd.arguments": [</span><br><span class="line">  "--compile-commands-dir=${workspaceFolder}",</span><br><span class="line">  "--query-driver=C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/bin/g++.exe"</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure><p>不再报任何错误了，可以放心的使用clangd的智能提示来写cpp23代码了,爽</p><h1 id="cpp杂记"><a href="#cpp杂记" class="headerlink" title="cpp杂记"></a>cpp杂记</h1><p><a href="/cpp-etc">cpp杂记</a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="base" scheme="https://hopoz.github.io/categories/base/"/>
+    
+    
+    <category term="cpp" scheme="https://hopoz.github.io/tags/cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++杂记</title>
+    <link href="https://hopoz.github.io/cpp-etc/"/>
+    <id>https://hopoz.github.io/cpp-etc/</id>
+    <published>2025-09-16T12:22:10.000Z</published>
+    <updated>2025-09-25T12:42:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="代码片段"><a href="#代码片段" class="headerlink" title="代码片段"></a>代码片段</h1><p>把打开的文件作为输出流的对象</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">freopen("1.out","w",stdout);</span><br></pre></td></tr></tbody></table></figure><p>降低cin,cout时耗，如代码所见，第一句取消cin绑定cout,第二局取消cin/cout绑定stdio(绑定就是同步关系)</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cin.tie(0);</span><br><span class="line">ios::base::sync_with_stdio(false);</span><br></pre></td></tr></tbody></table></figure><p>测试时用来注释掉代码</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#if 0</span><br><span class="line">#endif</span><br></pre></td></tr></tbody></table></figure><p>输出所属类型的首字母</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typeid().name()</span><br></pre></td></tr></tbody></table></figure><p><a href="/images/Snipaste_2025-01-29_19-09-18.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-01-29_19-09-18.png"></a></p><h1 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h1><p><a href="">兼容</a><br>直译有一个问题, 英语的”前后”在时间和空间上统一, 而汉语却是相反. 比如forward在空间上指前进, 在时间上指未来. 但是汉语中的”前”在空间上指前进, 在时间上却指过去.<br><strong>向前兼容</strong>前进兼容<br><strong>向后兼容</strong>后退兼容<br>这么想这两个词应该没问题了</p><p><a href="">vsode终端</a> 输入chcp (change code page)后，显示936 对应 GB 2312，65001 对应 UTF-8，windows 中文系统默认是 936。</p><p>转义用的是右斜<code>\</code>,因此建议复制粘贴win路径时要小心</p><p><code>shift+tab</code>反向缩进</p><p><a href="">无穷</a><br>随便用大点的树表示一下<br>正无穷 0x3f3f3f3f<code>1061109567</code><br>负无穷 0xc0c0c0c0<code>-1061109568</code> 或 -0x3f3f3f3f</p><p>C++中NULL是未定义的，在<code>#include &lt;cstddef&gt;</code>后被定义为__null，__null我没找到进一步定义，查看资料说是被编译器实现，成为空指针类型，这么复杂地搞。那为什么C++不继承这个__null实现，而是实现了一个特殊的字面值常量nullptr，与所有指针类型的 0 值等效呢。有趣。</p><h1 id="string-view"><a href="#string-view" class="headerlink" title="string_view"></a>string_view</h1><p>std::string喜欢在堆上分配内存，显然这对性能提升是灾难的表现。所以可以使用string_view来解决这个问题</p><h1 id="友元函数"><a href="#友元函数" class="headerlink" title="友元函数"></a>友元函数</h1><p>这个功能是提供类以外的函数访问类的私有成员。友元函数可以访问类的私有和保护成员，而不需要通过公共接口。</p><figure class="highlight cpp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Box</span> {</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">double</span> width;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Box</span>(<span class="type">double</span> w) : <span class="built_in">width</span>(w) {}</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 声明友元函数</span></span><br><span class="line">    <span class="function"><span class="keyword">friend</span> <span class="type">void</span> <span class="title">printWidth</span><span class="params">(<span class="type">const</span> Box&amp; b)</span></span>;</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义友元函数</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">printWidth</span><span class="params">(<span class="type">const</span> Box&amp; b)</span> </span>{</span><br><span class="line">    cout &lt;&lt; <span class="string">"Width: "</span> &lt;&lt; b.width &lt;&lt; endl;  <span class="comment">// 可以访问私有成员</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="function">Box <span class="title">box</span><span class="params">(<span class="number">10.5</span>)</span></span>;</span><br><span class="line">    <span class="built_in">printWidth</span>(box);  <span class="comment">// OK</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h1 id="右值引用"><a href="#右值引用" class="headerlink" title="右值引用"></a>右值引用</h1><p>右值引用（rvalue reference） 是一种允许你绑定到 临时对象（右值） 的引用类型，它是现代 C++ 中实现 移动语义（move semantics） 和 完美转发（perfect forwarding） 的关键技术。<br>语法：T&amp;&amp;</p><table><thead><tr><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>左值</td><td>变量、表达式</td></tr><tr><td>右值</td><td>临时值、字面量</td></tr></tbody></table><h1 id="线程间传递数据"><a href="#线程间传递数据" class="headerlink" title="线程间传递数据"></a>线程间传递数据</h1><figure class="highlight cpp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;thread&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;future&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;chrono&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">compute</span><span class="params">(std::promise&lt;<span class="type">int</span>&gt; prom)</span> </span>{</span><br><span class="line">    std::this_thread::<span class="built_in">sleep_for</span>(std::chrono::<span class="built_in">seconds</span>(<span class="number">2</span>)); <span class="comment">// 模拟耗时计算</span></span><br><span class="line">    <span class="type">int</span> result = <span class="number">42</span>;</span><br><span class="line">    prom.<span class="built_in">set_value</span>(result);  <span class="comment">// 设置结果，传递给 future</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    std::promise&lt;<span class="type">int</span>&gt; prom;           <span class="comment">// 创建 promise</span></span><br><span class="line">    std::future&lt;<span class="type">int</span>&gt; fut = prom.<span class="built_in">get_future</span>(); <span class="comment">// 获取 future</span></span><br><span class="line"></span><br><span class="line">    <span class="function">std::thread <span class="title">t</span><span class="params">(compute, std::move(prom))</span></span>; <span class="comment">// 启动线程，传递 promise</span></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">"Waiting for result...\n"</span>;</span><br><span class="line">    <span class="type">int</span> value = fut.<span class="built_in">get</span>();  <span class="comment">// 阻塞等待，直到 promise 设置值</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">"Result: "</span> &lt;&lt; value &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">    t.<span class="built_in">join</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h1 id="5-循环和关系表达式"><a href="#5-循环和关系表达式" class="headerlink" title="5 循环和关系表达式"></a><a href="">5 循环和关系表达式</a></h1><p><code>int x=(1,024);</code>值为二十</p><h1 id="6-分支语句和逻辑运算符"><a href="#6-分支语句和逻辑运算符" class="headerlink" title="6 分支语句和逻辑运算符"></a><a href="">6 分支语句和逻辑运算符</a></h1><p><code>and or not</code>都是C++中的保留字，如果C想用，包含头文件<code>&lt;ios646.h&gt;</code><br><code>ofstream</code>对象，格式类似于<code>cout</code>，实现文件输入与输出。有子函数<code>open(),close()</code></p><h1 id="7-函数-C-的编程模块"><a href="#7-函数-C-的编程模块" class="headerlink" title="7 函数 C++的编程模块"></a><a href="">7 函数 C++的编程模块</a></h1><p>函数原型中不必提供变量名，只需有数据类型就行<br>(…) 表示不指定参数<br>在编译阶段进行的原型化被称为<u>静态类型检查</u><br>arguement 表示实参，parameter表示形参<br>指针和<code>const</code>,这两个一结合就麻烦起来了<br>与C不同，C++不允许main()调用自己<br>递归，分治思想 divide-and-conquer strategy<br>获取函数地址的方法很简单，只需要使用函数名（后边不加括号）即可。<br><code>double pm(int);</code><br><code>double (*pf)(int)</code><br><code>pf =pam;</code><br>则定义出一个指向pm()的函数指针,这个函数指针可以这么用<code>pf(4)</code>,等价于<code>(*pf)(4)</code><br>忍受逻辑上无法自圆其说的观点正是人类思维活动的特点。</p><h1 id="8-函数探幽"><a href="#8-函数探幽" class="headerlink" title="8 函数探幽"></a><a href="">8 函数探幽</a></h1><p>如果实参与引用参数不匹配，C++将生成临时变量。当前，仅当参数为const引用时，C++才允许这样做，但以前不是这样。<br><strong>左值</strong> 可被引用的数据对象。<br><code>long edge =5L;</code>5L代表long类型的5<br>如果接受引用参数的函数的意图是修改作为参数传递的变量，则创建临时变量将阻止这种意图的实现。解决方法是，禁止创建临时变量，现在的C++标准正是这样做的（然而，在默认情况下，有些编译器仍将发出警告，而不是错误消息，因此如果看到了有关临时变量的警告，请不要忽略）。</p><p><code>&amp;&amp;</code>表示右值引用。右值，不能通过地址访问的值。<br><code>NULL</code>在C中是(void*)0,C++中为整数0.c++中当一个指针的值为0时，认为指针为空指针<br><code>void*</code>无类型指针<br><a href="">返回引用</a>主要是为了更高的效率，减少拷贝。<br>要为某个参数设置默认值，则必须为他右边的所有参数提供默认值。<br><a href="">函数重载</a> 关键是函数特征标(function signature),即函数参数列表。<br><a href="">函数模板</a><br><code>template&lt;typename AnyType&gt;</code>定义了一种无类型变量<code>AnyType</code></p><blockquote><p>实例化和具体化</p></blockquote><p><code>decltype(x) y</code>make y the same type as x</p><h1 id="9-内存模型和名称空间"><a href="#9-内存模型和名称空间" class="headerlink" title="9 内存模型和名称空间"></a><a href="">9 内存模型和名称空间</a></h1><p>不要使用#include来包含源代码文件，这样做将导致多重声明。</p><p><code>#ifndef</code> if not define</p><p><code>register int x;</code><br>指出程序员想使用一个自动变量，在C++11中，这种提示作用也失去了，保留关键字register的重要原因是，避免使用了该关键字的现有代码非法。</p><p><a href="">cv限制符</a> const和volatile<br><code>const</code>表明内存被初始化后程序便不能再对它进行修改<br><code>volatile</code>表明，即使程序代码没有对内存单位进行修改，其值也可能发生变化</p><p><a href="">mutable</a> 指出某个变量可以被修改</p><p>对函数使用static修饰表明该函数只在这个文件中可见</p><h1 id="10-对象和类"><a href="#10-对象和类" class="headerlink" title="10 对象和类"></a><a href="">10 对象和类</a></h1><p><a href="">接口</a> 一个共享框架，供两个系统交互时使用。</p><h1 id="杂记-1"><a href="#杂记-1" class="headerlink" title="杂记"></a>杂记</h1><p>实习电脑上怎么也配置不好clangd，原来是缺少MSVC库，windows下的clangd需要MSVC的库。下载后就没头文件爆红的问题了。(现在来看不是这个问题，凑巧解决对了而已)</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="base" scheme="https://hopoz.github.io/categories/base/"/>
+    
+    
+    <category term="cpp" scheme="https://hopoz.github.io/tags/cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2025-08</title>
+    <link href="https://hopoz.github.io/2508/"/>
+    <id>https://hopoz.github.io/2508/</id>
+    <published>2025-09-06T05:20:19.000Z</published>
+    <updated>2025-09-14T10:22:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p><a href="/images/Snipaste_2025-08-24_17-19-42.png"></a><br>无穷与震荡</p><h1 id="vscode-的cpp-lsp-clangd完善"><a href="#vscode-的cpp-lsp-clangd完善" class="headerlink" title="vscode 的cpp lsp:clangd完善"></a>vscode 的cpp lsp:clangd完善</h1><p>终于搞定，我一直搞vscode clangd拓展报错找不到头文件，很是头疼，终于，添加了一个fake”compile_commands.json”</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    {</span><br><span class="line">        "directory": "C:/Cpp/src",</span><br><span class="line">        "file": "dummy.cpp",</span><br><span class="line">        "command": "g++ -std=c++23 -Wall -g -static-libgcc -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/include\" -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/x86_64-w64-mingw32\" -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/include/c++\" -I\"C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/include/c++/14.2.0\" dummy.cpp"</span><br><span class="line">    }</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure><p>和在vscode里指定了clangd的include路径</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"clangd.arguments": [</span><br><span class="line">  "--compile-commands-dir=${workspaceFolder}",</span><br><span class="line">  "--query-driver=C:/Users/Simple/Cpp/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3/mingw64/bin/g++.exe"</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure><p>不再报任何错误了，可以放心的使用clangd的智能提示来写cpp23代码了,爽</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="daily" scheme="https://hopoz.github.io/categories/daily/"/>
+    
+    
+    <category term="code" scheme="https://hopoz.github.io/tags/code/"/>
+    
+    <category term="computer" scheme="https://hopoz.github.io/tags/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>437. 路径总和 III</title>
+    <link href="https://hopoz.github.io/437.%20%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C%20III/"/>
+    <id>https://hopoz.github.io/437.%20%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C%20III/</id>
+    <published>2025-08-14T09:06:05.000Z</published>
+    <updated>2025-08-31T06:19:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><blockquote><p>Problem: <a href="https://leetcode.cn/problems/path-sum-iii/description/">437. 路径总和 III</a></p></blockquote><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><h2 id="双层暴力递归"><a href="#双层暴力递归" class="headerlink" title="双层暴力递归"></a>双层暴力递归</h2><p>暴力递归，遍历每个节点，计算从该节点开始的路径和</p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line">  <span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function"><span class="type">int</span> <span class="title">pathSum</span><span class="params">(TreeNode *root, <span class="type">int</span> targetSum)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (!root) {</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">dfs</span>(root, <span class="number">0</span>, targetSum);</span><br><span class="line">    <span class="built_in">pathSum</span>(root-&gt;left, targetSum);</span><br><span class="line">    <span class="built_in">pathSum</span>(root-&gt;right, targetSum);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">  }</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(TreeNode *node, <span class="type">long</span> nowSum, <span class="type">int</span> targetSum)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (!node) {</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    nowSum += node-&gt;val;</span><br><span class="line">    <span class="keyword">if</span> (nowSum == targetSum) {</span><br><span class="line">      ++res;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="built_in">dfs</span>(node-&gt;left, nowSum, targetSum);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">dfs</span>(node-&gt;right, nowSum, targetSum);</span><br><span class="line">  }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure><h2 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h2><p>前缀和的思路是记录从根节点到当前节点的路径和，然后在遍历过程中检查是否存在满足条件的路径和。</p><pre><code class="language-C++"></code></pre></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="algo" scheme="https://hopoz.github.io/categories/algo/"/>
+    
+    
+    <category term="leetcode" scheme="https://hopoz.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>148. 排序链表</title>
+    <link href="https://hopoz.github.io/148.%20%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/"/>
+    <id>https://hopoz.github.io/148.%20%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</id>
+    <published>2025-07-10T14:01:01.000Z</published>
+    <updated>2025-07-10T14:20:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><blockquote><p>Problem: <a href="https://leetcode-cn.com/problems/sort-list/">148. 排序链表</a></p></blockquote><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>参考<a href="/21.%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8">合并两个有序链表</a>,那么需要做的只是把链表递归分为两半,然后合并两半即可，即归并排序，<br><a href="/images/Snipaste_2025-07-10_22-04-10.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-07-10_22-04-10.png"></a><br>slow和fast指针的使用可以找到要分割的点。</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//! nlogn,logn</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function">ListNode *<span class="title">sortList</span><span class="params">(ListNode *head)</span> </span>{ <span class="keyword">return</span> <span class="built_in">sortList</span>(head, <span class="literal">nullptr</span>); }</span><br><span class="line">  <span class="function">ListNode *<span class="title">sortList</span><span class="params">(ListNode *head, ListNode *tail)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (head == <span class="literal">nullptr</span>) {</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(head-&gt;next==tail){</span><br><span class="line">        head-&gt;next=<span class="literal">nullptr</span>;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    }</span><br><span class="line">    ListNode *slow = head;</span><br><span class="line">    ListNode *fast = head;</span><br><span class="line">    <span class="keyword">while</span> (fast != tail) {</span><br><span class="line">      slow = slow-&gt;next;</span><br><span class="line">      fast = fast-&gt;next;</span><br><span class="line">      <span class="keyword">if</span> (fast != tail) {</span><br><span class="line">        fast = fast-&gt;next;</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">mergeTwoLists</span>(<span class="built_in">sortList</span>(head, slow), <span class="built_in">sortList</span>(slow, tail));</span><br><span class="line">  }</span><br><span class="line">  <span class="function">ListNode *<span class="title">mergeTwoLists</span><span class="params">(ListNode *list1, ListNode *list2)</span> </span>{</span><br><span class="line">    <span class="keyword">auto</span> dummy = <span class="built_in">make_unique</span>&lt;ListNode&gt;(<span class="number">-1</span>);</span><br><span class="line">    ListNode *node = dummy.<span class="built_in">get</span>();</span><br><span class="line">    <span class="keyword">while</span> (list1 != <span class="literal">nullptr</span> &amp;&amp; list2 != <span class="literal">nullptr</span>) {</span><br><span class="line">      <span class="keyword">if</span> (list1-&gt;val &lt;= list2-&gt;val) {</span><br><span class="line">        node-&gt;next = list1;</span><br><span class="line">        list1 = list1-&gt;next;</span><br><span class="line">        node = node-&gt;next;</span><br><span class="line">      } <span class="keyword">else</span> {</span><br><span class="line">        node-&gt;next = list2;</span><br><span class="line">        list2 = list2-&gt;next;</span><br><span class="line">        node = node-&gt;next;</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span> (list1 != <span class="literal">nullptr</span>) {</span><br><span class="line">      node-&gt;next = list1;</span><br><span class="line">      list1 = list1-&gt;next;</span><br><span class="line">      node = node-&gt;next;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span> (list2 != <span class="literal">nullptr</span>) {</span><br><span class="line">      node-&gt;next = list2;</span><br><span class="line">      list2 = list2-&gt;next;</span><br><span class="line">      node = node-&gt;next;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">  }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="algo" scheme="https://hopoz.github.io/categories/algo/"/>
+    
+    
+    <category term="leetcode" scheme="https://hopoz.github.io/tags/leetcode/"/>
+    
+    <category term="链表" scheme="https://hopoz.github.io/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+    <category term="指针" scheme="https://hopoz.github.io/tags/%E6%8C%87%E9%92%88/"/>
+    
+    <category term="归并排序" scheme="https://hopoz.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云OSS配置</title>
+    <link href="https://hopoz.github.io/%E9%98%BF%E9%87%8C%E4%BA%91OSS%E9%85%8D%E7%BD%AE/"/>
+    <id>https://hopoz.github.io/%E9%98%BF%E9%87%8C%E4%BA%91OSS%E9%85%8D%E7%BD%AE/</id>
+    <published>2025-07-03T02:17:53.000Z</published>
+    <updated>2025-07-09T07:48:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="阿里云OSS配置"><a href="#阿里云OSS配置" class="headerlink" title="阿里云OSS配置"></a>阿里云OSS配置</h1><ol><li>申请阿里云OSS<br><a href="/images/Snipaste_2025-07-03_09-36-18.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-07-03_09-36-18.png"></a><br><a href="/images/Snipaste_2025-07-03_09-37-17.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-07-03_09-37-17.png"></a><br>经过以上操作进入OSS管理界面，再申请新的Bucket,和申请AccessKey的账号和密码，通过</li></ol><figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setx OSS_ACCESS_KEY_ID "YOUR_ACCESS_KEY_ID"</span><br><span class="line">setx OSS_ACCESS_KEY_SECRET "YOUR_ACCESS_KEY_SECRET"</span><br></pre></td></tr></tbody></table></figure><p>在系统环境变量中设置好AccessKey的账号和密码。<br>2. 安装OSS Java SDK<br>pom.xml中</p><figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.aliyun.oss<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>aliyun-sdk-oss<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.17.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.xml.bind<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jaxb-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.activation<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>activation<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- no more than 2.3.3--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.glassfish.jaxb<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jaxb-runtime<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><ol start="3"><li>代码配置OSS<br>文件上传Demo</li></ol><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//用于将文件流上传到目标存储空间examplebucket中exampledir目录下的exampleobject.txt文件。</span></span><br><span class="line"><span class="keyword">import</span> com.aliyun.oss.*;</span><br><span class="line"><span class="keyword">import</span> com.aliyun.oss.common.auth.*;</span><br><span class="line"><span class="keyword">import</span> com.aliyun.oss.common.comm.SignVersion;</span><br><span class="line"><span class="keyword">import</span> com.aliyun.oss.model.PutObjectRequest;</span><br><span class="line"><span class="keyword">import</span> com.aliyun.oss.model.PutObjectResult;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Demo</span> {</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">        <span class="comment">// Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">endpoint</span> <span class="operator">=</span> <span class="string">"https://oss-cn-hangzhou.aliyuncs.com"</span>;</span><br><span class="line">        <span class="comment">// 从环境变量中获取访问凭证。运行本代码示例之前，请确保已设置环境变量OSS_ACCESS_KEY_ID和OSS_ACCESS_KEY_SECRET。</span></span><br><span class="line">        <span class="type">EnvironmentVariableCredentialsProvider</span> <span class="variable">credentialsProvider</span> <span class="operator">=</span> CredentialsProviderFactory.newEnvironmentVariableCredentialsProvider();</span><br><span class="line">        <span class="comment">// 填写Bucket名称，例如examplebucket。</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">bucketName</span> <span class="operator">=</span> <span class="string">"examplebucket"</span>;</span><br><span class="line">        <span class="comment">// 填写Object完整路径，完整路径中不能包含Bucket名称，例如exampledir/exampleobject.txt。</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">objectName</span> <span class="operator">=</span> <span class="string">"exampledir/exampleobject.txt"</span>;</span><br><span class="line">        <span class="comment">// 填写本地文件的完整路径，例如D:\\localpath\\examplefile.txt。</span></span><br><span class="line">        <span class="comment">// 如果未指定本地路径，则默认从示例程序所属项目对应本地路径中上传文件流。</span></span><br><span class="line">        String filePath= <span class="string">"D:\\localpath\\examplefile.txt"</span>;</span><br><span class="line">        <span class="comment">// 填写Bucket所在地域。以华东1（杭州）为例，Region填写为cn-hangzhou。</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">region</span> <span class="operator">=</span> <span class="string">"cn-hangzhou"</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建OSSClient实例。</span></span><br><span class="line">        <span class="comment">// 当OSSClient实例不再使用时，调用shutdown方法以释放资源。</span></span><br><span class="line">        <span class="type">ClientBuilderConfiguration</span> <span class="variable">clientBuilderConfiguration</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ClientBuilderConfiguration</span>();</span><br><span class="line">        clientBuilderConfiguration.setSignatureVersion(SignVersion.V4);</span><br><span class="line">        <span class="type">OSS</span> <span class="variable">ossClient</span> <span class="operator">=</span> OSSClientBuilder.create()</span><br><span class="line">        .endpoint(endpoint)</span><br><span class="line">        .credentialsProvider(credentialsProvider)</span><br><span class="line">        .clientConfiguration(clientBuilderConfiguration)</span><br><span class="line">        .region(region)</span><br><span class="line">        .build();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> {</span><br><span class="line">            <span class="type">InputStream</span> <span class="variable">inputStream</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileInputStream</span>(filePath);</span><br><span class="line">            <span class="comment">// 创建PutObjectRequest对象。</span></span><br><span class="line">            <span class="type">PutObjectRequest</span> <span class="variable">putObjectRequest</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PutObjectRequest</span>(bucketName, objectName, inputStream);</span><br><span class="line">            <span class="comment">// 创建PutObject请求。</span></span><br><span class="line">            <span class="type">PutObjectResult</span> <span class="variable">result</span> <span class="operator">=</span> ossClient.putObject(putObjectRequest);</span><br><span class="line">        } <span class="keyword">catch</span> (OSSException oe) {</span><br><span class="line">            System.out.println(<span class="string">"Caught an OSSException, which means your request made it to OSS, "</span></span><br><span class="line">                    + <span class="string">"but was rejected with an error response for some reason."</span>);</span><br><span class="line">            System.out.println(<span class="string">"Error Message:"</span> + oe.getErrorMessage());</span><br><span class="line">            System.out.println(<span class="string">"Error Code:"</span> + oe.getErrorCode());</span><br><span class="line">            System.out.println(<span class="string">"Request ID:"</span> + oe.getRequestId());</span><br><span class="line">            System.out.println(<span class="string">"Host ID:"</span> + oe.getHostId());</span><br><span class="line">        } <span class="keyword">catch</span> (ClientException ce) {</span><br><span class="line">            System.out.println(<span class="string">"Caught an ClientException, which means the client encountered "</span></span><br><span class="line">                    + <span class="string">"a serious internal problem while trying to communicate with OSS, "</span></span><br><span class="line">                    + <span class="string">"such as not being able to access the network."</span>);</span><br><span class="line">            System.out.println(<span class="string">"Error Message:"</span> + ce.getMessage());</span><br><span class="line">        } <span class="keyword">finally</span> {</span><br><span class="line">            <span class="keyword">if</span> (ossClient != <span class="literal">null</span>) {</span><br><span class="line">                ossClient.shutdown();</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><ol start="4"><li>运行结果<br><a href="/images/Snipaste_2025-07-03_10-16-31.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-07-03_10-16-31.png"></a><br>成功上传</li></ol><h1 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h1><p><a href="https://github.com/HopoZ/Java-BaseShow/blob/main/src/main/java/hopoz/upload_test/OSSUploadFile.java">OSSUploadFile</a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="daily" scheme="https://hopoz.github.io/categories/daily/"/>
+    
+    
+    <category term="java" scheme="https://hopoz.github.io/tags/java/"/>
+    
+    <category term="阿里云" scheme="https://hopoz.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+    <category term="OSS" scheme="https://hopoz.github.io/tags/OSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2025-07</title>
+    <link href="https://hopoz.github.io/2507/"/>
+    <id>https://hopoz.github.io/2507/</id>
+    <published>2025-06-30T08:24:27.000Z</published>
+    <updated>2025-06-30T08:24:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="UE5启动"><a href="#UE5启动" class="headerlink" title="UE5启动"></a>UE5启动</h1><p><a href="/images/Snipaste_2025-06-30_16-22-30.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-06-30_16-22-30.png"></a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="daily" scheme="https://hopoz.github.io/categories/daily/"/>
+    
+    
+    <category term="code" scheme="https://hopoz.github.io/tags/code/"/>
+    
+    <category term="computer" scheme="https://hopoz.github.io/tags/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>idea</title>
+    <link href="https://hopoz.github.io/idea/"/>
+    <id>https://hopoz.github.io/idea/</id>
+    <published>2025-06-29T08:02:17.000Z</published>
+    <updated>2025-06-29T08:02:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="idea数据库连接"><a href="#idea数据库连接" class="headerlink" title="idea数据库连接"></a>idea数据库连接</h1><p>idea中连接数据库要指定到具体数据库，要不然idea无法识别要依据哪个数据库做智能提示<br><a href="/images/Snipaste_2025-06-16_12-12-36.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-06-16_12-12-36.png"></a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="tools" scheme="https://hopoz.github.io/categories/tools/"/>
+    
+    
+    <category term="idea" scheme="https://hopoz.github.io/tags/idea/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2025-06</title>
+    <link href="https://hopoz.github.io/2506/"/>
+    <id>https://hopoz.github.io/2506/</id>
+    <published>2025-06-29T08:02:12.000Z</published>
+    <updated>2025-07-11T23:52:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="MD5生成"><a href="#MD5生成" class="headerlink" title="MD5生成"></a>MD5生成</h1><p><a href="/images/Snipaste_2025-06-01_07-06-54.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-06-01_07-06-54.png"></a></p><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><p><a href="/Spring">Spring</a><br><a href="/idea">idea</a></p><h1 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h1><p><a href="/cpp">cpp</a></p><h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><p>迭代器 类继承 生成器 单例<br><a href="https://github.com/HopoZ/Python-BaseShow">代码演示</a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="daily" scheme="https://hopoz.github.io/categories/daily/"/>
+    
+    
+    <category term="code" scheme="https://hopoz.github.io/tags/code/"/>
+    
+    <category term="computer" scheme="https://hopoz.github.io/tags/computer/"/>
+    
+    <category term="Spring" scheme="https://hopoz.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文件上传</title>
+    <link href="https://hopoz.github.io/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    <id>https://hopoz.github.io/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</id>
+    <published>2025-06-29T08:02:04.000Z</published>
+    <updated>2025-06-29T08:02:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h1><h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><p><a href="https://github.com/HopoZ/Java-BaseShow">Java-BaseShow</a></p><h2 id="文件上传前端三要素"><a href="#文件上传前端三要素" class="headerlink" title="文件上传前端三要素"></a>文件上传前端三要素</h2><ol><li>表单项：<code>&lt;input type="file"&gt;</code></li><li>提交方式：<code>method="POST"</code></li><li>编码类型：<code>enctype="multipart/form-data"</code><br>示例代码</li></ol><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/upload"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"file"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>上传<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h2 id="文件上传后端设置"><a href="#文件上传后端设置" class="headerlink" title="文件上传后端设置"></a>文件上传后端设置</h2><p><a href="/images/Snipaste_2025-06-28_22-03-39.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-06-28_22-03-39.png"></a><br>如图，要设置好注解@PostMapping和@RequestParam<br>,RequestParam不是必须的，只有当后端参数名与前端上传参数名不一致时才需要这个注解</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="daily" scheme="https://hopoz.github.io/categories/daily/"/>
+    
+    
+    <category term="java" scheme="https://hopoz.github.io/tags/java/"/>
+    
+    <category term="frontend" scheme="https://hopoz.github.io/tags/frontend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring</title>
+    <link href="https://hopoz.github.io/Spring/"/>
+    <id>https://hopoz.github.io/Spring/</id>
+    <published>2025-06-29T08:01:57.000Z</published>
+    <updated>2025-06-29T08:02:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><p>IoC(Inversion of Control)是把创建对象的权力交给第三方，最常见以及最合理的实现方式叫做依赖注入（Dependency Injection，简称 DI）。</p><p>AOP(Aspect Oriented Programming)将横切关注点（如日志记录、事务管理、权限控制、接口限流、接口幂等等）从核心业务逻辑中分离出来。<br>Spring事务</p><h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><p>封装对象创建逻辑的方法</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.FileSystemXmlApplicationContext;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">App</span> {</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">    <span class="type">ApplicationContext</span> <span class="variable">context</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileSystemXmlApplicationContext</span>(</span><br><span class="line">        <span class="string">"&lt;yourPath&gt;/src/main/resources/bean-factory-config.xml"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">HelloApplicationContext</span> <span class="variable">obj</span> <span class="operator">=</span> (HelloApplicationContext) context.getBean(<span class="string">"helloApplicationContext"</span>);</span><br><span class="line">    obj.getMsg();</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>这段代码使用了工厂模式来管理Bean的创建和依赖注入</p><h2 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h2><p>不能犯重婚罪的类(手动狗头)</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> Map&lt;String, Object&gt; singletonObjects = <span class="keyword">new</span> <span class="title class_">ConcurrentHashMap</span>&lt;String, Object&gt;(<span class="number">64</span>);</span><br></pre></td></tr></tbody></table></figure><h2 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h2><p>为某个对象提供一个代理，以控制对该对象的访问。代理模式可以用于增强功能、延迟加载、权限控制、日志记录等场景。</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//EXP jdk动态代理</span></span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.InvocationHandler;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Proxy;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1. 定义接口</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">Service</span> {</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">perform</span><span class="params">()</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 真实业务类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">RealService</span> <span class="keyword">implements</span> <span class="title class_">Service</span> {</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">perform</span><span class="params">()</span> {</span><br><span class="line">        System.out.println(<span class="string">"执行真实业务逻辑..."</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 动态代理类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">DynamicProxyHandler</span> <span class="keyword">implements</span> <span class="title class_">InvocationHandler</span> {</span><br><span class="line">    <span class="keyword">private</span> Object target;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">DynamicProxyHandler</span><span class="params">(Object target)</span> {</span><br><span class="line">        <span class="built_in">this</span>.target = target;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> Object <span class="title function_">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span> <span class="keyword">throws</span> Throwable {</span><br><span class="line">        System.out.println(<span class="string">"日志：调用方法 "</span> + method.getName());</span><br><span class="line">        <span class="type">Object</span> <span class="variable">result</span> <span class="operator">=</span> method.invoke(target, args);</span><br><span class="line">        System.out.println(<span class="string">"日志：方法执行完毕"</span>);</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4. 测试</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">JDKDynamicProxyDemo</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">        <span class="comment">// 创建真实对象</span></span><br><span class="line">        <span class="type">RealService</span> <span class="variable">realService</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">RealService</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建代理对象</span></span><br><span class="line">        <span class="type">Service</span> <span class="variable">proxyInstance</span> <span class="operator">=</span> (Service) Proxy.newProxyInstance(</span><br><span class="line">            realService.getClass().getClassLoader(),</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">Class</span>[]{Service.class},</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">DynamicProxyHandler</span>(realService)</span><br><span class="line">        );</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调用代理方法</span></span><br><span class="line">        proxyInstance.perform();</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h2 id="模板模式"><a href="#模板模式" class="headerlink" title="模板模式"></a>模板模式</h2><p>定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。有点cpp虚拟函数的味道了</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br></pre></td></tr></tbody></table></figure><h2 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h2><p>表示的是一种对象与对象之间具有依赖关系，当一个对象发生改变的时候，依赖这个对象的所有对象也会做出反应。</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> org.springframework.context;</span><br><span class="line"><span class="keyword">import</span> java.util.EventListener;</span><br><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">ApplicationListener</span>&lt;E <span class="keyword">extends</span> <span class="title class_">ApplicationEvent</span>&gt; <span class="keyword">extends</span> <span class="title class_">EventListener</span> {</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">onApplicationEvent</span><span class="params">(E var1)</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h2 id="适配器模式"><a href="#适配器模式" class="headerlink" title="适配器模式"></a>适配器模式</h2><p>将一个接口转换成客户希望的另一个接口，适配器模式使接口不兼容的那些类可以一起工作。<br>就是中间层那个味儿~</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// JDBC 统一标准</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">DatabaseDriver</span> {</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">connect</span><span class="params">(String url, String user, String password)</span>;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">executeQuery</span><span class="params">(String sql)</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h2 id="装饰器模式"><a href="#装饰器模式" class="headerlink" title="装饰器模式"></a>装饰器模式</h2><p>不修改原有对象的基础上，动态地给一个对象添加一些额外的职责。</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Car</span> { }</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TurboDecorator</span> <span class="keyword">extends</span> <span class="title class_">Car</span> { }  <span class="comment">// 仅增强涡轮</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SeatDecorator</span> <span class="keyword">extends</span> <span class="title class_">Car</span> { }  <span class="comment">// 仅增强座椅</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SoundDecorator</span> <span class="keyword">extends</span> <span class="title class_">Car</span> { }  <span class="comment">// 仅增强音响</span></span><br><span class="line"><span class="type">Car</span> <span class="variable">myCar</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SoundDecorator</span>(<span class="keyword">new</span> <span class="title class_">SeatDecorator</span>(<span class="keyword">new</span> <span class="title class_">TurboDecorator</span>(<span class="keyword">new</span> <span class="title class_">Car</span>())));</span><br></pre></td></tr></tbody></table></figure><p>可以穿很多层衣服，和继承还是有区别的，它是组合关系。</p><h1 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h1><p>SpringBoot自动装配，简化了配置文件，提供了很多starter，可以快速搭建项目。</p><h1 id="Spring中数据流"><a href="#Spring中数据流" class="headerlink" title="Spring中数据流"></a>Spring中数据流</h1><p>POJO (Plain Old Java Object)最简单的对象,只包含私有属性和getter/setter方法</p><p>DTO (Data Transfer Object)传输用的物件，包装的PO</p><p>PO (persistent object)数据库table对应的java物件</p><p>DAO (data access object)逻辑物件，提取SQL并包装为PO</p><p>VO (View Object)视图对象，通常是POJO的子类，包含额外的属性和方法</p><p><a href="/images/1JuZ1qI.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/1JuZ1qI.png"></a></p><h1 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h1><p>MyBatis</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="base" scheme="https://hopoz.github.io/categories/base/"/>
+    
+    
+    <category term="java" scheme="https://hopoz.github.io/tags/java/"/>
+    
+    <category term="Spring" scheme="https://hopoz.github.io/tags/Spring/"/>
+    
+    <category term="SpringBoot" scheme="https://hopoz.github.io/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java</title>
+    <link href="https://hopoz.github.io/java/"/>
+    <id>https://hopoz.github.io/java/</id>
+    <published>2025-06-29T08:01:36.000Z</published>
+    <updated>2025-06-29T08:02:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="info"><a href="#info" class="headerlink" title="info"></a>info</h1><p>可以刷下黑马b站入门视频，也可以看java核心技术卷一，这本书是java的圣经，可以看看<br>然后找一些项目刷一刷，巩固下</p><h1 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h1><pre><code>* 语法错误:* 相似字符混淆* 中英字符错误* 拼写错误* 业务错误* 环境错误</code></pre><h1 id="java基本概念"><a href="#java基本概念" class="headerlink" title="java基本概念"></a><a href="">java基本概念</a></h1><h1 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h1><p>Unicode转义序列会在解析代码之前得到处理，如”\u0022+\u0022”只是一个空串。注释中的<code>\u</code>型符号也会被处理</p><p>double对除以零有一个特殊返回值POSITIVE_INFINITY，因此当您将数除以零时它会返回这个值。</p><p>有小数运算时很多运算都会变成近似运算，所以不要用<code>==</code></p><p><code>Boolean</code>,布尔类型,不可用0或1代替,Java类型比C++严格点<br><code>byte</code> <code>short</code> <code>char</code>在参与运算时会自动转换为<code>int</code></p><p><a href="">浮点数相等判断</a> 浮点数是否相等，需要有一个相等的精度，浮点数是无法在计算机中精准储存的</p><p>java没有提供运算符重载功能</p><h1 id="ThreadLocal"><a href="#ThreadLocal" class="headerlink" title="ThreadLocal"></a>ThreadLocal</h1><p>Java中ThreadLocal可以用于在方法间传递变量</p><h1 id="java切面，反射"><a href="#java切面，反射" class="headerlink" title="java切面，反射"></a>java切面，反射</h1><p>通过注解Annotation实现函数的选中，汇集成一个切面Aspect，在切面通过反射实现一些公共属性的自动填充<br><a href="/images/Snipaste_2025-06-25_20-36-02.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-06-25_20-36-02.png"></a><br><a href="/images/Snipaste_2025-06-25_20-37-14.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-06-25_20-37-14.png"></a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="base" scheme="https://hopoz.github.io/categories/base/"/>
+    
+    
+    <category term="java" scheme="https://hopoz.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu</title>
+    <link href="https://hopoz.github.io/ubuntu/"/>
+    <id>https://hopoz.github.io/ubuntu/</id>
+    <published>2025-04-29T02:20:07.000Z</published>
+    <updated>2025-05-31T23:08:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="快照"><a href="#快照" class="headerlink" title="快照"></a><a href="">快照</a></h1><p><a href="">CRLF</a>  Carriage Return Line Feed 回车换行符，*unix上是LF<br><code>touch filename</code> 生成新文件<br><code>ENOENT</code> Error NO ENTity</p><h1 id="挂载主机共享文件夹"><a href="#挂载主机共享文件夹" class="headerlink" title="挂载主机共享文件夹"></a>挂载主机共享文件夹</h1><ol><li>在设置里启用共享文件夹，我在这里用的名字Share</li><li>将共享文件夹挂载在Home的Share文件夹里<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /mnt/hgfs/Share ~/Share</span><br></pre></td></tr></tbody></table></figure></li><li>设置开机自动挂载，写入/etc/fstab文件<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.host:/    /home/simple/Share        fuse.vmhgfs-fuse allow_other,defaults  0    0</span><br></pre></td></tr></tbody></table></figure></li></ol><h1 id="安装中文输入法"><a href="#安装中文输入法" class="headerlink" title="安装中文输入法"></a>安装中文输入法</h1><p><a href="https://zhuanlan.zhihu.com/p/529892064">ubuntu安装中文输入法</a></p><p>匪夷所思，bash能输入中文,vscode里输入不了…</p><h1 id="curl设置代理"><a href="#curl设置代理" class="headerlink" title="curl设置代理"></a>curl设置代理</h1><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export http_proxy=http://127.0.0.1:7891</span><br><span class="line">export https_proxy=http://127.0.0.1:7891</span><br></pre></td></tr></tbody></table></figure><h1 id="vscode"><a href="#vscode" class="headerlink" title="vscode"></a>vscode</h1><p>不要用图形化商店里的snap包，去官网下载，snap包用不了中文输入法</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="tools" scheme="https://hopoz.github.io/categories/tools/"/>
+    
+    
+    <category term="linux" scheme="https://hopoz.github.io/tags/linux/"/>
+    
+    <category term="Ubuntu" scheme="https://hopoz.github.io/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2504每日杂谈</title>
+    <link href="https://hopoz.github.io/2504/"/>
+    <id>https://hopoz.github.io/2504/</id>
+    <published>2025-04-09T08:31:56.000Z</published>
+    <updated>2025-07-10T14:20:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="2025-03-01"><a href="#2025-03-01" class="headerlink" title="2025-03-01"></a>2025-03-01</h1><p>开源软件好，但是使用起来不如商业软件舒服，很是折磨浪费时间，比如Gimp 2，这界面一看人就得崩溃。</p><h1 id="2025-04-09"><a href="#2025-04-09" class="headerlink" title="2025-04-09"></a>2025-04-09</h1><p>搞了半天知识问答，这将是我每日新的任务，每日通过AI刁钻的问题发现巩固知识点的薄弱点。<br>那些BaseShow也要好好搞一下。</p><p>有个规则想法，md文件不达到一定规模不分文件，只有目录过长时才会分开不同内容到不同md里。<br>因为你有这时间规划目录，倒不如直接写内容。不要过度设计思想，而忘记了行动。很多时间内容的分类是在你记录量上去后才有实用的分类方法。</p><p>测试相对链接<br><a href="/2506">跳转到2506</a></p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="daily" scheme="https://hopoz.github.io/categories/daily/"/>
+    
+    
+    <category term="code" scheme="https://hopoz.github.io/tags/code/"/>
+    
+    <category term="computer" scheme="https://hopoz.github.io/tags/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日问答</title>
+    <link href="https://hopoz.github.io/daily_question/"/>
+    <id>https://hopoz.github.io/daily_question/</id>
+    <published>2025-04-09T00:19:01.000Z</published>
+    <updated>2025-04-29T02:20:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h1 id="0322"><a href="#0322" class="headerlink" title="0322"></a>0322</h1><p>全排列</p><h1 id="0327-逝者如斯夫"><a href="#0327-逝者如斯夫" class="headerlink" title="0327 逝者如斯夫"></a>0327 逝者如斯夫</h1><p>  学如逆水行舟，不进则退。这点是真明显了，不能拉下一天功夫了。</p><h1 id="250409"><a href="#250409" class="headerlink" title="250409"></a>250409</h1><hr><ol><li>同步代码是不是一定是阻塞的？异步代码是不是一定是非阻塞的？请举例说明。</li></ol><ul><li>同步代码需要等待前序列结果，一定是阻塞的，异步代码一定是非阻塞的。</li><li>Standard:</li><li><ol><li>同步和异步是指”发起请求和拿到结果的模式”，阻塞和非阻塞是指”等待过程中不能干别的事”</li></ol></li></ul><hr><ol start="2"><li>在单线程环境下，异步 IO 和多线程 IO 的区别是什么？为什么异步 IO 不需要多线程？</li></ol><ul><li>异步IO会等IO结束后才通知CPU，多线程IO是等IO线程运行态时才会检查IO是否结束。异步IO由中断实现，不需要CPU轮询式查看。</li><li>Standard:</li><li>多线程IO = 一个线程对应一个阻塞IO</li><li>异步IO = 一个线程发出多个IO，由操作系统管理，等待结果用事件或回调返回</li></ul><hr><ol start="3"><li>同步 + 非阻塞 这个组合存在吗？能举一个实际例子吗？</li></ol><ul><li>不存在</li></ul><hr><h1 id="200410"><a href="#200410" class="headerlink" title="200410"></a>200410</h1><ol start="4"><li>JavaScript 的 async/await 是同步还是异步？是不是阻塞线程？背后的运行机制是什么？</li></ol><hr><ol start="5"><li>select、poll、epoll、IOCP 这四种 IO 模型，哪个是同步的？哪个是异步的？为什么？</li></ol><hr><ol start="6"><li>为什么 Python 的 asyncio 要求用协程函数（async def）？普通函数为什么不能直接用 await？</li></ol><hr><ol start="7"><li>Node.js 是单线程，为什么还能做到高并发处理 IO？事件循环和线程池分别负责什么？</li></ol><hr><ol start="8"><li>操作系统内核态的异步 IO 和用户态的异步 IO 有什么区别？哪些语言或框架用的是内核态异步 IO？</li></ol><hr><ol start="9"><li>一个 IO 操作同时满足：</li></ol><ul><li>异步</li><li>非阻塞</li><li>不需要回调</li><li>单线程<br>这种模式存在吗？请举例或解释。</li></ul><hr><ol start="10"><li>同步和异步的核心区别到底是什么？是执行顺序的问题，还是等待的问题，还是线程数量的问题？</li></ol><hr></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="daily" scheme="https://hopoz.github.io/categories/daily/"/>
+    
+    
+    <category term="QA" scheme="https://hopoz.github.io/tags/QA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>236. 二叉树的最近公共祖先</title>
+    <link href="https://hopoz.github.io/236.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/"/>
+    <id>https://hopoz.github.io/236.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/</id>
+    <published>2025-04-01T06:53:32.000Z</published>
+    <updated>2025-04-02T03:31:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><blockquote><p>Problem: <a href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/">236. 二叉树的最近公共祖先</a></p></blockquote><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><h2 id="dfs"><a href="#dfs" class="headerlink" title="dfs"></a>dfs</h2></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="algo" scheme="https://hopoz.github.io/categories/algo/"/>
+    
+    
+    <category term="leetcode" scheme="https://hopoz.github.io/tags/leetcode/"/>
+    
+    <category term="二叉树" scheme="https://hopoz.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>105. 从前序与中序遍历序列构造二叉树</title>
+    <link href="https://hopoz.github.io/105.%20%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>https://hopoz.github.io/105.%20%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
+    <published>2025-04-01T05:49:16.000Z</published>
+    <updated>2025-04-09T08:11:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class=".article-gallery"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><blockquote><p>Problem: <a href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">105. 从前序与中序遍历序列构造二叉树</a></p></blockquote><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><h2 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h2><p>重点是计算索引值<br><a href="/images/Snipaste_2025-04-01_14-48-10.png" class="gallery-item" style="box-shadow: none;"> <img src="/images/Snipaste_2025-04-01_14-48-10.png"></a></p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function">TreeNode *<span class="title">buildTree</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;preorder, vector&lt;<span class="type">int</span>&gt; &amp;inorder)</span> </span>{</span><br><span class="line">    unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; hashTable;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i =<span class="number">0</span>;i&lt;inorder.<span class="built_in">size</span>();++i){</span><br><span class="line">      hashTable.<span class="built_in">insert</span>({inorder[i],i});</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">dfs</span>(preorder,inorder,hashTable,<span class="number">0</span>,<span class="number">0</span>,inorder.<span class="built_in">size</span>()<span class="number">-1</span>);</span><br><span class="line"></span><br><span class="line">  }</span><br><span class="line">  <span class="function">TreeNode* <span class="title">dfs</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; preorder,vector&lt;<span class="type">int</span>&gt;&amp; inorder,unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&amp; hashTable,<span class="type">int</span> pIndex, <span class="type">int</span> iLeftIndex, <span class="type">int</span> iRightIndex)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(iLeftIndex&gt;iRightIndex){</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">    }</span><br><span class="line">    TreeNode * node =<span class="keyword">new</span> <span class="built_in">TreeNode</span>(preorder[pIndex]);</span><br><span class="line">    <span class="type">int</span> iRootIndex =hashTable[preorder[pIndex]];</span><br><span class="line">    node-&gt;left =<span class="built_in">dfs</span>(preorder,inorder,hashTable,pIndex<span class="number">+1</span>,iLeftIndex,iRootIndex<span class="number">-1</span>);</span><br><span class="line">    node-&gt;right=<span class="built_in">dfs</span>(preorder,inorder,hashTable,pIndex+iRootIndex-iLeftIndex<span class="number">+1</span>,iRootIndex<span class="number">+1</span>,iRightIndex);</span><br><span class="line">    <span class="keyword">return</span> node;</span><br><span class="line">  }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure><h2 id="TODO-迭代"><a href="#TODO-迭代" class="headerlink" title="TODO 迭代"></a>TODO 迭代</h2></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;.article-gallery&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.cs</summary>
+      
+    
+    
+    
+    <category term="algo" scheme="https://hopoz.github.io/categories/algo/"/>
+    
+    
+    <category term="leetcode" scheme="https://hopoz.github.io/tags/leetcode/"/>
+    
+    <category term="树" scheme="https://hopoz.github.io/tags/%E6%A0%91/"/>
+    
+    <category term="前序遍历" scheme="https://hopoz.github.io/tags/%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86/"/>
+    
+    <category term="中序遍历" scheme="https://hopoz.github.io/tags/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/"/>
+    
+  </entry>
+  
+</feed>
